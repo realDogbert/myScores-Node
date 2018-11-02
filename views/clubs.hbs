@@ -1,0 +1,22 @@
+<div class="container">
+
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+<form action="api/clubs" method="POST">
+    <div class="form-group">
+        <label for="club name">Club Name</label>
+        <input type="text" class="form-control" name="clubName" placeholder="Enter the name of the club">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+  <ul class="clubs">
+  {{#each clubs}} 
+    <li class="quote">
+      <span>{{clubName}}</span>
+    </li>
+  {{/each}}
+  </ul>
+
+</div>
