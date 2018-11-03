@@ -1,10 +1,12 @@
+require('dotenv').config();
+
 var express = require('express');
 var request = require("request");
 var router = express.Router();
 
 router.get('/', function(req, res, next) {
 
-  request.get("http://localhost:3000/api/clubs", (error, response, body) => {
+  request.get(process.env.BASE_URL + "api/clubs", (error, response, body) => {
     if (error) {
       console.log(error);
     }
