@@ -1,8 +1,29 @@
-<div class="container">
+
 
 <h1>{{title}}</h1>
 <p>Welcome to {{title}}</p>
 
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each clubs.clubs}} 
+    <tr>
+      <th scope="row">{{@index}}</th>
+      <td>{{_id}}</td>
+      <td>{{clubName}}</td>
+      <td>{{clubLocation}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+  
 <form action="api/clubs" method="POST">
     <div class="form-group">
         <label for="club name">Club Name</label>
@@ -14,13 +35,3 @@
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-
-  <ul class="clubs">
-  {{#each clubs}} 
-    <li class="quote">
-      <span>{{clubName}}</span>
-    </li>
-  {{/each}}
-  </ul>
-
-</div>

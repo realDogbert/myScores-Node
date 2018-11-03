@@ -28,10 +28,10 @@ router.get('/clubs', function(req, res, next) {
 router.post('/clubs', function(req, res, next) {
 
   console.log("Body " + req.body.clubName);
-  db.collection('clubs').save(req.body, (err, result) => {
+  db.collection('clubs').insertOne(req.body, (err, result) => {
     if (err) return console.log(err);
   });
-  res.render('clubs', { title: 'POST' });
+  res.redirect('/clubs');
 
 });
 
