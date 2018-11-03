@@ -3,6 +3,7 @@ require('dotenv').config();
 var express = require('express');
 var router = express.Router();
 const MongoClient = require('mongodb').MongoClient;
+var ObjectID = require('mongodb').ObjectID; 
 var db;
 
 MongoClient.connect(process.env.DB_CONN, 
@@ -25,6 +26,13 @@ router.get('/clubs', function(req, res, next) {
   })
 });
 
+router.get('/clubs/:id', function(req,res,next) {
+  db.collection('clubs').findOne(  {"_id": new ObjectID(req.params.id)}, function(err, document) {
+    console.log(document);
+    res.send(JSON.stringify({ club: document }))
+  } );
+});
+
 router.post('/clubs', function(req, res, next) {
 
   console.log("Body " + req.body.clubName);
@@ -32,6 +40,16 @@ router.post('/clubs', function(req, res, next) {
     if (err) return console.log(err);
   });
   res.redirect('/clubs');
+
+});
+
+router.delete('/clubs/:id', function (req, res, next) {
+
+  db.collection('clubs').delete(  {"_id": new ObjectID(req.params.id)}, function(err, document) {
+    console.log(document);
+    res.send(JSON.stringify({ club: document }))
+  } );
+
 
 });
 
