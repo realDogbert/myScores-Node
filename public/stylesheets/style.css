@@ -6,3 +6,23 @@ body {
 a {
   color: #00B7FF;
 }
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  height: 500px;
+  margin-bottom: 60px;
+  background-image: url("/images/image.jpg");
+  background-size: 100% auto;
+  color: white;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+.jumbotron h1 {
+  padding-top: 100px;
+  padding-bottom: 25px;
+}

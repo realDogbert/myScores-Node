@@ -28,14 +28,12 @@ router.get('/clubs', function(req, res, next) {
 
 router.get('/clubs/:id', function(req,res,next) {
   db.collection('clubs').findOne(  {"_id": new ObjectID(req.params.id)}, function(err, document) {
-    console.log(document);
     res.send(JSON.stringify({ club: document }))
   } );
 });
 
 router.post('/clubs', function(req, res, next) {
 
-  console.log("Body " + req.body.clubName);
   db.collection('clubs').insertOne(req.body, (err, result) => {
     if (err) return console.log(err);
   });
@@ -46,10 +44,8 @@ router.post('/clubs', function(req, res, next) {
 router.delete('/clubs/:id', function (req, res, next) {
 
   db.collection('clubs').delete(  {"_id": new ObjectID(req.params.id)}, function(err, document) {
-    console.log(document);
     res.send(JSON.stringify({ club: document }))
   } );
-
 
 });
 

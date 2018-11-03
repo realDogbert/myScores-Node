@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'myScores' });
 });
 
+router.get('/register', function(req, res, next) {
+  res.render('register', { title: 'myScores' });
+});
+
 module.exports = router;
