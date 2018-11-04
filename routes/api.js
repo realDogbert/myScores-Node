@@ -49,4 +49,27 @@ router.delete('/clubs/:id', function (req, res, next) {
 
 });
 
+
+
+
+router.get('/users', function(req, res, next) {
+  db.collection('users').find().toArray((err, result) => {
+    if (err) return console.log(err)
+    res.send(JSON.stringify({ users: result }))
+  })
+});
+
+router.get('/users/:id', function(req,res,next) {
+  db.collection('users').findOne(  {"_id": new ObjectID(req.params.id)}, function(err, document) {
+    res.send(JSON.stringify({ user: document }))
+  } );
+});
+
+router.post('/users', function(req, res, next) {
+  db.collection('users').insertOne(req.body, (err, result) => {
+    if (err) return console.log(err);
+  });
+  res.redirect('/users');
+});
+
 module.exports = router;

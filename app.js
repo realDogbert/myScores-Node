@@ -1,9 +1,11 @@
 var createError = require('http-errors');
 var express = require('express');
+var session = require('express-session');
 var path = require('path');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var passport = require('passport');
 
 var indexRouter = require('./routes/index');
 var clubsRouter = require('./routes/clubs');
@@ -24,6 +26,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(session({
+  secret: 'pleasereplacethissecret',
+  resave: false,
+  saveUninitialized: false,
+  // cookie: { secure: true }
+}));
+app.use(passport.initialize());
+app.use(passport.session());
 
 app.use('/', indexRouter);
 app.use('/clubs', clubsRouter);
