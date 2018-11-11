@@ -29,6 +29,10 @@ router.get('/register', function(req, res, next) {
   res.render('register', { title: 'myScores' });
 });
 
+router.get('/login', function(req,res, next) {
+  res.render('login', { title: 'myScores' });
+});
+
 router.post('/register', [
   check('username')
     .isLength({min:5}).withMessage('must be at least 5 chars long'),
@@ -50,7 +54,7 @@ router.post('/register', [
     db.collection('users').insertOne(user, (err, result) => {
       if (err) return console.log(err);
     });
-    
+
   });
 
 
