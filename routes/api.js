@@ -2,74 +2,44 @@ require('dotenv').config();
 
 var express = require('express');
 var router = express.Router();
-const MongoClient = require('mongodb').MongoClient;
-var ObjectID = require('mongodb').ObjectID; 
-var db;
 
-MongoClient.connect(process.env.DB_CONN, 
-  { useNewUrlParser: true }, 
-  (err, client) => {
+var clubController = require('../controllers/clubController');
+var userController = require('../controllers/userController');
 
-  if (err) return console.log(err);
-  db = client.db('scores');
-
-});
 
 router.get('/', function(req, res, next) {
   res.render('clubs', { title: 'myScores' });
 });
 
 router.get('/clubs', function(req, res, next) {
-  db.collection('clubs').find().toArray((err, result) => {
-    if (err) return console.log(err)
-    res.send(JSON.stringify({ clubs: result }))
-  })
+  clubController.get(req, res);
 });
 
 router.get('/clubs/:id', function(req,res,next) {
-  db.collection('clubs').findOne(  {"_id": new ObjectID(req.params.id)}, function(err, document) {
-    res.send(JSON.stringify({ club: document }))
-  } );
+  clubController.getByID(req.params.id, req, res);
 });
 
 router.post('/clubs', function(req, res, next) {
-
-  db.collection('clubs').insertOne(req.body, (err, result) => {
-    if (err) return console.log(err);
-  });
-  res.redirect('/clubs');
-
+  clubController.create(req, res);
 });
 
 router.delete('/clubs/:id', function (req, res, next) {
-
-  db.collection('clubs').delete(  {"_id": new ObjectID(req.params.id)}, function(err, document) {
-    res.send(JSON.stringify({ club: document }))
-  } );
-
+  clubController.delete(req, res);
 });
 
 
 
 
 router.get('/users', function(req, res, next) {
-  db.collection('users').find().toArray((err, result) => {
-    if (err) return console.log(err)
-    res.send(JSON.stringify({ users: result }))
-  })
+  userController.get(req, res);
 });
 
 router.get('/users/:id', function(req,res,next) {
-  db.collection('users').findOne(  {"_id": new ObjectID(req.params.id)}, function(err, document) {
-    res.send(JSON.stringify({ user: document }))
-  } );
+  userController.getByID(req.params.id, req, res);
 });
 
 router.post('/users', function(req, res, next) {
-  db.collection('users').insertOne(req.body, (err, result) => {
-    if (err) return console.log(err);
-  });
-  res.redirect('/users');
+  userController.create(req, res);
 });
 
 module.exports = router;
