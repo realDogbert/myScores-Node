@@ -1,10 +1,12 @@
 var express = require('express');
 var router = express.Router();
 var request = require("request");
+var passport = require('passport');
 
 const { check, validationResult } = require('express-validator/check');
 
 const MongoClient = require('mongodb').MongoClient;
+var ObjectID = require('mongodb').ObjectID; 
 var db;
 
 const bcrypt = require('bcrypt');
@@ -25,12 +27,22 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'myScores' });
 });
 
-router.get('/register', function(req, res, next) {
-  res.render('register', { title: 'myScores' });
+router.get('/profile', function(req, res, next) {
+  console.log(req.user);
+  console.log(req.isAuthenticated());
+  if (req.isAuthenticated()) {
+    res.render('profile', { title: 'profile' });
+  }
+  else {
+    res.render('login', { title: 'myScores' }); 
+  }
+  
 });
 
-router.get('/login', function(req,res, next) {
-  res.render('login', { title: 'myScores' });
+router.get('/register', function(req, res, next) {
+  console.log(req.user);
+  console.log(req.isAuthenticated());
+  res.render('register', { title: 'myScores' });
 });
 
 router.post('/register', [
@@ -52,14 +64,40 @@ router.post('/register', [
     user.password = hash;  
     
     db.collection('users').insertOne(user, (err, result) => {
+
       if (err) return console.log(err);
+      
+      db.collection('users').findOne(  {"_id": new ObjectID(user._id)}, function(err, document) {
+
+        if(err) {
+          return res.render('register', { title: 'Error', errors: err.array() });
+        }
+        else {
+          req.login(user, function(err) {
+            return res.render('profile', { title: 'Profile ' + user.name }); 
+          });
+        }
+      });
+
     });
-
   });
+});
 
 
-  res.render('register', { title: 'Success' });
+router.get('/login', function(req,res, next) {
+  res.render('login', { title: 'myScores' });
+});
 
+router.post('/login', passport.authenticate('local', { failureRedirect: '/login' }), function(req,res, next) {
+  res.render('profile', { title: 'Profile ' + req.user.name });
+});
+
+passport.serializeUser(function(user, done) {
+  done(null, user);
+});
+
+passport.deserializeUser(function(user, done) {
+    done(null, user);
 });
 
 module.exports = router;
