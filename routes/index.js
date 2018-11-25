@@ -24,14 +24,14 @@ MongoClient.connect(process.env.DB_CONN,
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'myScores' });
+  res.render('index', { title: 'myScores', user: req.user });
 });
 
 router.get('/profile', function(req, res, next) {
   console.log(req.user);
   console.log(req.isAuthenticated());
   if (req.isAuthenticated()) {
-    res.render('profile', { title: 'profile' });
+    res.render('profile', { title: 'profile', user: req.user });
   }
   else {
     res.render('login', { title: 'myScores' }); 
@@ -62,6 +62,7 @@ router.post('/register', [
     user.name = req.body.username;
     user.email = req.body.email;
     user.password = hash;  
+  
     
     db.collection('users').insertOne(user, (err, result) => {
 
@@ -88,8 +89,18 @@ router.get('/login', function(req,res, next) {
   res.render('login', { title: 'myScores' });
 });
 
-router.post('/login', passport.authenticate('local', { failureRedirect: '/login' }), function(req,res, next) {
-  res.render('profile', { title: 'Profile ' + req.user.name });
+router.post('/login', 
+            passport.authenticate('local', { successRedirect: '/profile', failureRedirect: '/login' }), 
+            function(req,res, next) {
+
+  res.render('profile', { 
+    user: req.user });
+
+});
+
+router.get('/logout', function(req, res) {
+  req.logout();
+  res.redirect('/');
 });
 
 passport.serializeUser(function(user, done) {
