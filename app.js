@@ -12,8 +12,6 @@ var indexRouter = require('./routes/index');
 var clubsRouter = require('./routes/clubs');
 var apiRouter = require('./routes/api');
 
-var userController = require('./controllers/userController');
-
 var app = express();
 
 const MongoClient = require('mongodb').MongoClient;
@@ -23,7 +21,7 @@ MongoClient.connect(process.env.DB_CONN,
   { useNewUrlParser: true }, 
   (err, client) => {
       if (err) return console.log(err);
-      db = client.db('scores');
+      db = client.db(process.env.DB_NAME);
   }
 );
 
@@ -54,13 +52,10 @@ app.use(passport.session());
 passport.use(new LocalStrategy(
   function(username, password, done) {
 
-    console.log(username);
     db.collection('users').findOne(  {name: username}, function(err, document) {
-      console.log(document);
       bcrypt.compare(password, document.password, function(err, response) {
         return done(null, (response)?document:false);
       });
-      
     });
     
   }

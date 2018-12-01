@@ -12,7 +12,7 @@ MongoClient.connect(process.env.DB_CONN,
     { useNewUrlParser: true }, 
     (err, client) => {
         if (err) return console.log(err);
-        db = client.db('scores');
+        db = client.db(process.env.DB_NAME);
     }
 );
 
