@@ -1,29 +1,8 @@
 
 <h1>Clubs</h1>
 <p>Welcome {{user.name}}</p>
-
-<table class="table table-striped">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">ID</th>
-      <th scope="col">Name</th>
-      <th scope="col">Location</th>
-    </tr>
-  </thead>
-  <tbody>
-    {{#each clubs}} 
-    <tr>
-      <th scope="row">{{@index}}</th>
-      <td>{{_id}}</td>
-      <td>{{clubName}}</td>
-      <td>{{clubLocation}}</td>
-    </tr>
-    {{/each}}
-  </tbody>
-</table>
   
-<form action="api/clubs" method="POST">
+<form action="/api/clubs" method="POST">
     <div class="form-group">
         <label for="club name">Club Name</label>
         <input type="text" class="form-control" name="clubName" placeholder="Enter the name of the club">

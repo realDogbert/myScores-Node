@@ -4,11 +4,13 @@ var express = require('express');
 var request = require("request");
 var router = express.Router();
 
+
 router.get('/', function(req, res, next) {
 
   if (req.isAuthenticated()) {
 
     request.get(process.env.BASE_URL + "api/clubs", (error, response, body) => {
+
       if (error) {
         console.log(error);
       }
@@ -23,5 +25,9 @@ router.get('/', function(req, res, next) {
   }
 
 });
+
+router.get('/admin', (req, res) => {
+  res.render('admin/clubs', { title: 'admin', user: req.user});
+})
 
 module.exports = router;

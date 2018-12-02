@@ -20,13 +20,13 @@ MongoClient.connect(process.env.DB_CONN,
 controller.get = function(req, res) {
     db.collection(collection).find().toArray((err, result) => {
         if (err) return console.log(err)
-        res.send(JSON.stringify({ clubs: result }))
+        res.json(result);
     });
 }
 
 controller.getByID = function(id, req, res) {
     db.collection(collection).findOne(  {"_id": new ObjectID(id)}, function(err, document) {
-        res.send(JSON.stringify({ club: document }))
+        res.json(document);
     });
 }
 
@@ -38,8 +38,8 @@ controller.create = function(req, res) {
 }
 
 controller.delete = function(req, res) {
-    db.collection(collection).delete(  {"_id": new ObjectID(req.params.id)}, function(err, document) {
-        res.send(JSON.stringify({ club: document }))
+    db.collection(collection).deleteOne(  {"_id": new ObjectID(req.params.id)}, function(err, document) {
+        res.json(document)
     });
 }
 
