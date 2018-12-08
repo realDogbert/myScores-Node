@@ -28,6 +28,19 @@ router.delete('/clubs/:id', function (req, res, next) {
 });
 
 
+router.get('/courses', function(req, res, next) {
+  clubController.getCourses(req, res);
+});
+
+router.get('/courses/:id', function(req,res,next) {
+  clubController.getCourseByID(req.params.id, req, res);
+});
+
+router.post('/courses', (req, res, next) => {
+  clubController.createCourse(req, res);
+})
+
+
 
 
 router.get('/users', function(req, res, next) {

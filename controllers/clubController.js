@@ -7,6 +7,7 @@ var db;
 var controller = new Object();
 
 const collection = "clubs";
+const collectionCourses = "courses";
 
 MongoClient.connect(process.env.DB_CONN, 
     { useNewUrlParser: true }, 
@@ -40,6 +41,27 @@ controller.create = function(req, res) {
 controller.delete = function(req, res) {
     db.collection(collection).deleteOne(  {"_id": new ObjectID(req.params.id)}, function(err, document) {
         res.json(document)
+    });
+}
+
+controller.createCourse = function(req, res) {
+    console.log(req.body);
+    db.collection(collectionCourses).insertOne(req.body, (err, result) => {
+        if (err) return console.log(err);
+        res.json(result);
+    });
+}
+
+controller.getCourses = function(req, res) {
+    db.collection(collectionCourses).find().toArray((err, result) => {
+        if (err) return console.log(err)
+        res.json(result);
+    });
+}
+
+controller.getCourseByID = function(id, req, res) {
+    db.collection(collectionCourses).findOne(  {"_id": new ObjectID(id)}, function(err, document) {
+        res.json(document);
     });
 }
 
