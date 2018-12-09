@@ -1,7 +1,17 @@
 
 <h1>Course</h1>
+
   
 <form method="POST" action="/api/courses">
+
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Club Name</label>
+      <select class="form-control" id="exampleFormControlSelect1" name="club[id]">
+      {{#each clubs}} 
+        <option value="{{_id}}">{{clubName}} - {{clubLocation}}</option>
+      {{/each}}
+      </select>
+    </div>
     
 </form>
 

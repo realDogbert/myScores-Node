@@ -1,76 +1,54 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
-    // <div class="form-group">
-    // <label for="club name">Course Name</label>
-    // <input type="text" class="form-control" name="course[name]" placeholder="Enter the name of the Course">
-    // </div>
+    $courseName = $("<div>")
+        .addClass("form-group")
+        .append("<label for='course[name]'>Course Name</label>")
+        .append(
+            $("<input>")
+                .addClass("form-control")
+                .attr({
+                    type : "text",
+                    name : "course[name]",
+                    placeholder: "Enter Name of the Course"
+                })
+            );
+    $("form").append($courseName);
 
-    $clubNameInput = $("<input>")
-    .addClass("form-control")
-    .attr("type", "text")
-    .attr("name", "course[name]")
-    .attr("placeholder", "Enter Name of the Course");
-
-    $clubName = $("<div class='form-group'></div>")
-    .append("<label for='courseName'>Course Name</label>")
-    .append($clubNameInput);
-    
-
-    $("form").append($clubName);
-
-    $hole = $("<div></div>");
-    for (i = 0; i < 9; i++) {
-
-        $row = $("<div class='row'></div>");
-
-        $label = $("<div class='col'><label for='Hole " + i + "'>Hole " + (i+1) + "</label></div>");
-        $row.append($label);
-       
-        $colPar = $("<div class='col'></div>");
-        $inputPar = $("<input type='text' class='form-control'></input>");
-        $inputPar.attr("name", "holes[" + i + "][par]");
-        $inputPar.attr("placeholder", "Enter Par");
-        $colPar.append($inputPar);
-        $row.append($colPar);
-
-        $colLength = $("<div class='col'></div>");
-        $inputLength = $("<input type='text' class='form-control'></input>");
-        $inputLength.attr("name", "holes[" + i + "][length][man]");
-        $inputLength.attr("placeholder", "Enter Length Man");
-        $colLength.append($inputLength);
-        $row.append($colLength);
-
-        $colLengthWoman = $("<div class='col'></div>");
-        $inputLengthWoman = $("<input type='text' class='form-control'></input>");
-        $inputLengthWoman.attr("name", "holes[" + i + "][length][woman]");
-        $inputLengthWoman.attr("placeholder", "Enter Length Woman");
-        $colLengthWoman.append($inputLengthWoman);
-        $row.append($colLengthWoman);
-
-        $colHCP = $("<div class='col'></div>");
-        $inputHCP = $("<input type='text' class='form-control'></input>");
-        $inputHCP.attr("name", "holes[" + i + "][hcp]");
-        $inputHCP.attr("placeholder", "Enter HCP");
-        $colHCP.append($inputHCP);
-        $row.append($colHCP);
-
-        $hole.append($row);
-
-    }
+    $courseNumOfHoles = $("<div>")
+        .addClass("form-group")         
+        .append(
+            $("<div>")
+                .addClass("form-check form-check-inline")
+                .append(createRadio("course[numOfHoles]", 9))
+                .append(
+                    $("<label>").addClass("form-check-label").html("9 Holes")
+                )
+        )
+        .append(
+            $("<div>")
+                .addClass("form-check form-check-inline")
+                .append(createRadio("course[numOfHoles]", 18))
+                .append(
+                    $("<label>").addClass("form-check-label").html("18 Holes")
+                )
+        );
+    $("form").append($courseNumOfHoles);    
+        
+    $hole = $("<div>").attr("id", "holes");
     $("form").append($hole);
-
-{/* <button id="submit" type="submit" class="btn btn-primary">Submit</button> */}
+    createHolesTable(18);
 
     $submitButton = $("<button>Submit</button>")
-    .addClass("btn btn-primary")
-    .attr("type", "submit");
+        .addClass("btn btn-primary")
+        .attr("type", "submit");
 
     $("form").append($submitButton);
+
+
 
     $("form").submit( function(event){
 
         var form = $(this);
-
         $.ajax({
             type: "POST",
             url: '/api/courses',
@@ -86,3 +64,53 @@ $(document).ready(function(){
     });
     
 });
+
+
+
+function createInput(i, inputType, placeholderText) {
+    return $("<input>")
+        .addClass("form-control")
+        .attr({
+            type: "text",
+            name : "holes[" + i + "]"+ inputType,
+            placeholder : placeholderText
+        });
+};
+
+function createRadio(radioType, radioValue) {
+    return $("<input>")
+        .addClass("form-check-input")
+        .attr({
+            type : "radio",
+            name : radioType,
+            value : radioValue
+        });
+}
+
+function createHolesTable(numOfHoles) {
+
+    for (i = 0; i < numOfHoles; i++) {
+
+        $row = $("<div>")
+            .addClass("row")
+            .append(
+                $("<div class='col'><label for='Hole " + i + "'>Hole " + (i+1) + "</label></div>")
+            )
+            .append(
+                $("<div>").addClass("col").append(createInput(i, "[par]", "Enter Par"))    
+            )
+            .append(
+                $("<div>").addClass("col").append(createInput(i, "[length][man]", "Enter Length Man"))    
+            )
+            .append(
+                $("<div>").addClass("col").append(createInput(i, "[length][woman]", "Enter Length Woman"))   
+            )
+            .append(
+                $("<div>").addClass("col").append(createInput(i, "[hcp]", "Enter HCP"))   
+            );
+
+        $("#holes").append($row);
+
+    }
+
+}
