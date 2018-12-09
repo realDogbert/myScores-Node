@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    $("form").append($("<div>").attr("id", "courses"));
+
     $courseName = $("<div>")
         .addClass("form-group")
         .append("<label for='course[name]'>Course Name</label>")
@@ -36,7 +38,6 @@ $(document).ready(function() {
         
     $hole = $("<div>").attr("id", "holes");
     $("form").append($hole);
-    createHolesTable(18);
 
     $submitButton = $("<button>Submit</button>")
         .addClass("btn btn-primary")
@@ -48,20 +49,45 @@ $(document).ready(function() {
 
     $("form").submit( function(event){
 
+        event.preventDefault();
         var form = $(this);
         $.ajax({
-            type: "POST",
-            url: '/api/courses',
+            method: "POST",
+            url: "/api/courses",
             data: form.serialize(),
-            success: function(data)
-            {
-                alert(data);
-            }
+        })
+        .done(function(data) {
+            alert(data);
+        })
+        .fail(function() {
+            alert("error");
         });
 
-        event.preventDefault();
-
     });
+
+    $('input[type=radio]').change(function() {
+        $("#holes").html("");
+        if (this.value == '9') { 
+            createHolesTable(9);
+        } else {
+            createHolesTable(18);
+        }
+    });
+
+    $("#clubselector").change( function(event) {
+
+        $.ajax({
+            url: '/api/courses',
+        })
+        .done(function(data) {
+            createListOfCourses(data);
+        })
+        .fail(function() {
+            alert("error");
+        });     
+        
+    });
+
     
 });
 
@@ -87,10 +113,10 @@ function createRadio(radioType, radioValue) {
         });
 }
 
+
 function createHolesTable(numOfHoles) {
 
     for (i = 0; i < numOfHoles; i++) {
-
         $row = $("<div>")
             .addClass("row")
             .append(
@@ -110,7 +136,13 @@ function createHolesTable(numOfHoles) {
             );
 
         $("#holes").append($row);
-
     }
+}
+
+function createListOfCourses(json) {
+
+    $.each(json, function (idx, courses) {
+        $("#courses").append("<div>" + courses.course.name + "</div>");
+    });
 
 }
