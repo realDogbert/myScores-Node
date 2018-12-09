@@ -53,8 +53,9 @@ controller.createCourse = function(req, res) {
 }
 
 controller.getCourses = function(req, res) {
-    db.collection(collectionCourses).find().toArray((err, result) => {
-        if (err) return console.log(err)
+
+    db.collection(collectionCourses).find(req.query).toArray((err, result) => {
+        if (err) return console.log(err);
         res.json(result);
     });
 }

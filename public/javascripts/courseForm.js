@@ -74,10 +74,10 @@ $(document).ready(function() {
         }
     });
 
-    $("#clubselector").change( function(event) {
+    $("#clubselector").change( function() {
 
         $.ajax({
-            url: '/api/courses',
+            url: "/api/courses?club[id]=" + this.value,
         })
         .done(function(data) {
             createListOfCourses(data);
