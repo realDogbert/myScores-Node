@@ -7,7 +7,7 @@
     <div class="form-group">
       <label for="clubselector">Club Name</label>
       <select class="form-control" id="clubselector" name="club[id]">
-        <option value="">Please select</option>
+        <option selected>Please select</option>
         {{#each clubs}} 
           <option value="{{_id}}">{{clubName}} - {{clubLocation}}</option>
         {{/each}}

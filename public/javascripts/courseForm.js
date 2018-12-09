@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+    $("form").append($("<div>").attr("id", "result"));
     $("form").append($("<div>").attr("id", "courses"));
 
     $courseName = $("<div>")
@@ -14,7 +15,7 @@ $(document).ready(function() {
                     placeholder: "Enter Name of the Course"
                 })
             );
-    $("form").append($courseName);
+    $("#courses").append($courseName);
 
     $courseNumOfHoles = $("<div>")
         .addClass("form-group")         
@@ -34,10 +35,9 @@ $(document).ready(function() {
                     $("<label>").addClass("form-check-label").html("18 Holes")
                 )
         );
-    $("form").append($courseNumOfHoles);    
+    $("#courses").append($courseNumOfHoles);    
         
-    $hole = $("<div>").attr("id", "holes");
-    $("form").append($hole);
+    $("form").append($("<div>").attr("id", "holes"));
 
     $submitButton = $("<button>Submit</button>")
         .addClass("btn btn-primary")
@@ -45,6 +45,8 @@ $(document).ready(function() {
 
     $("form").append($submitButton);
 
+
+    $("#courses").hide();
 
 
     $("form").submit( function(event){
@@ -81,6 +83,9 @@ $(document).ready(function() {
         })
         .done(function(data) {
             createListOfCourses(data);
+            $("#result").show();
+            $("#courses").hide();
+            $("#holes").hide();
         })
         .fail(function() {
             alert("error");
@@ -116,6 +121,8 @@ function createRadio(radioType, radioValue) {
 
 function createHolesTable(numOfHoles) {
 
+    //clear content of holes-div
+    $("#holes").html("");
     for (i = 0; i < numOfHoles; i++) {
         $row = $("<div>")
             .addClass("row")
@@ -145,6 +152,16 @@ function createListOfCourses(json) {
         .append($("<tr>")
             .append($("<th>").html("Name"))
             .append($("<th>").html("# of Holes"))
+            .append($("<th>")
+                .append($("<button>New Course</button>")
+                .addClass("btn btn-primary")
+                .click(function(event) {
+                    event.preventDefault();
+                    $("#result").hide();
+                    $("#courses").show();
+                    $("#holes").show();
+                })
+            ))
         );
 
     $tbody = $("<tbody>");
@@ -152,12 +169,60 @@ function createListOfCourses(json) {
         $tbody.append($("<tr>")
             .append($("<td>").html(courses.course.name))
             .append($("<td>").html(courses.course.numOfHoles))
+            .append($("<td>")
+                .append($("<button>")
+                .html("Edit")
+                .addClass("btn btn-primary")
+                .click(function(event) {
+                    event.preventDefault();
+                    editCourse(courses._id);
+                })
+            )
+                .append($("<button>")
+                .html("Delete")
+                .addClass("btn btn-danger")
+                .click(function(event) {
+                    event.preventDefault();
+                    $("#result").hide();
+                    $("#courses").show();
+                    $("#holes").show();
+                })
+        )
+            )
         )
     });
 
-    $("#courses").html("").append($("<table>").addClass("table table-striped")
+    $("#result").html("").append($("<table>").addClass("table table-striped")
         .append($theader)
         .append($tbody)
     );
 
 };
+
+function editCourse(courseId) {
+
+    $.ajax({
+        url: "/api/courses/" + courseId,
+    })
+    .done(function(data) {
+
+        $("input[name='course[name]']").val(data.course.name);
+        if (data.course.numOfHoles == '9') {
+            createHolesTable(9);
+        }
+        else {
+            createHolesTable(18);
+        }
+
+
+        $("#result").hide();
+        $("#courses").show();
+        $("#holes").show();
+    })
+    .fail(function() {
+        alert("error");
+    }); 
+
+
+
+}
