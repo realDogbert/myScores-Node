@@ -141,8 +141,23 @@ function createHolesTable(numOfHoles) {
 
 function createListOfCourses(json) {
 
+    $theader = $("<thead>").addClass("thead-dark")
+        .append($("<tr>")
+            .append($("<th>").html("Name"))
+            .append($("<th>").html("# of Holes"))
+        );
+
+    $tbody = $("<tbody>");
     $.each(json, function (idx, courses) {
-        $("#courses").append("<div>" + courses.course.name + "</div>");
+        $tbody.append($("<tr>")
+            .append($("<td>").html(courses.course.name))
+            .append($("<td>").html(courses.course.numOfHoles))
+        )
     });
 
-}
+    $("#courses").html("").append($("<table>").addClass("table table-striped")
+        .append($theader)
+        .append($tbody)
+    );
+
+};
