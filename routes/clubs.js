@@ -27,21 +27,4 @@ router.get('/', function(req, res, next) {
 });
 
 
-router.get('/admin', (req, res) => {
-
-
-  request.get(process.env.BASE_URL + "api/clubs", (error, response, body) => {
-
-    if (error) {
-      console.log(error);
-    }
-    const json = JSON.parse(body);
-    res.render('admin/clubs', { 
-      title: 'Course Administration', 
-      clubs: json, 
-      user: req.user});
-  });
-
-})
-
 module.exports = router;
