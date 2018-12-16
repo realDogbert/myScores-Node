@@ -64,7 +64,7 @@ router.post('/register', [
         }
         else {
           req.login(user, function(err) {
-            return res.render('profile', { title: 'Profile ' + user.name }); 
+            return res.render('user/dashboard', { title: 'Dashboard ' + user.name }); 
           });
         }
       });
