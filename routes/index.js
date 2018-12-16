@@ -27,17 +27,6 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'myScores', user: req.user });
 });
 
-router.get('/profile', function(req, res, next) {
-  console.log(req.user);
-  console.log(req.isAuthenticated());
-  if (req.isAuthenticated()) {
-    res.render('profile', { title: 'profile', user: req.user });
-  }
-  else {
-    res.render('login', { title: 'myScores' }); 
-  }
-  
-});
 
 router.get('/register', function(req, res, next) {
   console.log(req.user);
@@ -90,11 +79,10 @@ router.get('/login', function(req,res, next) {
 });
 
 router.post('/login', 
-            passport.authenticate('local', { successRedirect: '/profile', failureRedirect: '/login' }), 
+            passport.authenticate('local', { successRedirect: '/user/profile', failureRedirect: '/login' }), 
             function(req,res, next) {
 
-  res.render('profile', { 
-    user: req.user });
+  res.redirect('/user/profile');
 
 });
 

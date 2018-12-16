@@ -102,7 +102,7 @@ function createInput(i, inputType, placeholderText) {
     return $("<input>")
         .addClass("form-control")
         .attr({
-            type: "text",
+            type: "number",
             name : "holes[" + i + "]"+ inputType,
             placeholder : placeholderText
         });

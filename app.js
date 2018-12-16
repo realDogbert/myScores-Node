@@ -11,6 +11,7 @@ var LocalStrategy = require('passport-local').Strategy;
 var indexRouter = require('./routes/index');
 var clubsRouter = require('./routes/clubs');
 var apiRouter = require('./routes/api');
+var userRouter = require('./routes/userRoutes');
 
 var app = express();
 
@@ -64,6 +65,7 @@ passport.use(new LocalStrategy(
 app.use('/', indexRouter);
 app.use('/clubs', clubsRouter);
 app.use('/api', apiRouter);
+app.use('/user', userRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
