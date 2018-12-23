@@ -26,9 +26,11 @@
             -->
             {{#if user}}
 
+              {{#if user.isAdmin}}
               <li class="nav-item">
                 <a class="nav-link" href="/admin">Admin</a>
               </li>
+              {{/if}}
               <li class="nav-item">
                 <a class="nav-link" href="/user/profile">Profile</a>
               </li>

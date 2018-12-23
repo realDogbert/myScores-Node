@@ -43,5 +43,22 @@ controller.delete = function(req, res) {
     });
 }
 
+controller.update = function(id, req, res) {
+
+    console.log("update " +  id + " with " + req.body);
+
+    db.collection(collection).updateOne(
+        {"_id": new ObjectID(id)},
+        { $set: req.body},
+        function(err, document) {
+            if (err) {
+                console.log("error" + err);
+            }
+            // console.log(document);
+            res.json(document)
+        }
+    );
+}
+
 
 module.exports = controller;
