@@ -57,6 +57,10 @@ router.post('/users', function(req, res, next) {
 
 router.put('/users/:id', (req, res) => {
   userController.update(req.params.id, req,res);
-})
+});
+
+router.delete('/users/:id', (req, res) => {
+  userController.delete(req, res);
+});
 
 module.exports = router;
