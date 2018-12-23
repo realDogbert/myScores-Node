@@ -6,20 +6,51 @@
   </ol>
 </nav>
 
-<h1>User Management</h1>
+<h1>User Profile {{profile.name}}</h1>
 
 <div id="profile">
   <form>
-    <input type="hidden" class="form-control" name="_id" value="{{profile._id}}">
-    <input type="text" class="form-control" name="userName" value="{{profile.name}}">
-    <input type="text" class="form-control" name="email" value="{{profile.email}}">
-    <input type="text" class="form-control" name="realName" value="{{profile.realName}}">
-    
-    <input type="checkbox" class="form-check-input" name="isAdmin">
-    <label class="form-check-label" for="isAdmin">Admin</label>
+    <div class="form-group row">
+      <label for="_id" class="col-sm-2 col-form-label">ID</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control-plaintext" name="_id" id="_id" value="{{profile._id}}" readonly>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="userName" class="col-sm-2 col-form-label">Login Name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" name="userName" id="userName" value="{{profile.name}}">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="email" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" name="email" id="email" value="{{profile.email}}">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="realName" class="col-sm-2 col-form-label">User Name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" name="realName" id="realName" value="{{profile.realName}}">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-2">Roles</div>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" name="isAdmin" {{#if profile.isAdmin}}checked{{/if}}>
+          <label class="form-check-label" for="isAdmin">Admin</label>
+        </div>
+      </div>
+    </div>
 
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-secondary" id="cancel">Cancel</button>
+      </div>
+    </div>
 
-    <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
 

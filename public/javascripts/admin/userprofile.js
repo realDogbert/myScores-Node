@@ -21,7 +21,7 @@ $(document).ready(function() {
             },
         })
         .done(function(data) {
-            alert(data);
+            alert("Changes for " + params[1].value + " have been saved.");
         })
         .fail(function() {
             alert("error");
@@ -29,6 +29,9 @@ $(document).ready(function() {
 
     });
 
+    $('#cancel').click(function() {
+        window.location.href = "/admin/users/"
+    })
     
 });
 
