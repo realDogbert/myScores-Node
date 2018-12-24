@@ -29,8 +29,6 @@ router.get('/', function(req, res, next) {
 
 
 router.get('/register', function(req, res, next) {
-  console.log(req.user);
-  console.log(req.isAuthenticated());
   res.render('register', { title: 'myScores' });
 });
 
@@ -64,7 +62,10 @@ router.post('/register', [
         }
         else {
           req.login(user, function(err) {
-            return res.render('user/dashboard', { title: 'Dashboard ' + user.name }); 
+            return res.render('user/dashboard', { 
+              title: 'Dashboard ' + user.name,
+              user: user 
+            }); 
           });
         }
       });
