@@ -17,18 +17,27 @@ MongoClient.connect(process.env.DB_CONN,
 );
 
 
-controller.get = function(req, res) {
-    db.collection(collection).find().toArray((err, result) => {
-        if (err) return console.log(err)
-        res.json(result)
-    });
+controller.get = function(callback) {
+
+    db.collection(collection).find().toArray(callback);
+
 }
 
-controller.getByID = function(id, req, res) {
-    db.collection(collection).findOne(  {"_id": new ObjectID(id)}, function(err, document) {
-        res.json(document)
-    });
+controller.getByID = function(id, callback) {
+
+    db.collection(collection).findOne(  
+        {"_id": new ObjectID(id)}, 
+        callback
+    );
+
 }
+
+
+// controller.getByID = function(id, req, res) {
+//     db.collection(collection).findOne(  {"_id": new ObjectID(id)}, function(err, document) {
+//         res.json(document)
+//     });
+// }
 
 controller.create = function(req, res) {
     db.collection(collection).insertOne(req.body, (err, result) => {
@@ -59,6 +68,7 @@ controller.update = function(id, req, res) {
         }
     );
 }
+
 
 
 module.exports = controller;

@@ -41,14 +41,18 @@ router.post('/courses', (req, res, next) => {
 })
 
 
+router.get('/users', (req, res) => {
+  userController.get((err, result) => {
+      if (err) return console.log(err)
+      res.json(result)
+  });
+})
 
-
-router.get('/users', function(req, res, next) {
-  userController.get(req, res);
-});
-
-router.get('/users/:id', function(req,res,next) {
-  userController.getByID(req.params.id, req, res);
+router.get('/users/:id', (req,res,) => {
+  userController.getByID(req.params.id, function(err, result) {
+    if (err) return console.log(err)
+    res.json(result)
+  });
 });
 
 router.post('/users', function(req, res, next) {
@@ -62,5 +66,6 @@ router.put('/users/:id', (req, res) => {
 router.delete('/users/:id', (req, res) => {
   userController.delete(req, res);
 });
+
 
 module.exports = router;
