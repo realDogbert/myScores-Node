@@ -32,13 +32,6 @@ controller.getByID = function(id, callback) {
 
 }
 
-
-// controller.getByID = function(id, req, res) {
-//     db.collection(collection).findOne(  {"_id": new ObjectID(id)}, function(err, document) {
-//         res.json(document)
-//     });
-// }
-
 controller.create = function(req, res) {
     db.collection(collection).insertOne(req.body, (err, result) => {
         if (err) return console.log(err);
