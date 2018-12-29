@@ -5,7 +5,7 @@ var router = express.Router();
 
 var clubController = require('../controllers/clubController');
 var userController = require('../controllers/userController');
-
+var roundsController = require('../controllers/roundsController');
 
 router.get('/', function(req, res, next) {
   res.render('clubs', { title: 'myScores' });
@@ -67,5 +67,19 @@ router.delete('/users/:id', (req, res) => {
   userController.delete(req, res);
 });
 
+
+router.post('/rounds', (req, res) => {
+
+  roundsController.create(
+    req.body,
+    function(error, result) {
+      if (error) {
+        return console.log(error)
+      };
+      res.json(result.ops);  
+    }
+  );
+
+});
 
 module.exports = router;

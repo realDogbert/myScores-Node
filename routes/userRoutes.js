@@ -25,5 +25,15 @@ router.get('/profile', (req, res) => {
 
 });
 
+router.get('/round/:course_id', (req, res) => {
+
+    res.render('user/round', { 
+        title: 'User Round', 
+        user: req.user,
+        course_id: req.params.course_id
+    });
+
+});
+
 
 module.exports = router;
