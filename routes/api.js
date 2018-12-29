@@ -82,4 +82,15 @@ router.post('/rounds', (req, res) => {
 
 });
 
+router.get('/rounds', (req,res) => {
+
+  roundsController.get(req.query.playerId, function(error, result) {
+    if (error) {
+      return console.log(error)
+    };
+    res.json(result);  
+  });
+
+});
+
 module.exports = router;

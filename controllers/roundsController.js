@@ -16,6 +16,14 @@ MongoClient.connect(process.env.DB_CONN,
     }
 );
 
+controller.getRoundsByPlayerID = function(playerId, callback) {
+    db.collection(collection).find({"player_id": playerId}).toArray(callback);
+}
+
+controller.get = function(playerId, callback) {
+    db.collection(collection).find().toArray(callback);
+}
+
 controller.create = function(round, callback) {
 
     console.log(round);

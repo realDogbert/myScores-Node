@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
     $.ajax({
+        method: "GET",
         url: "/api/courses"
     })
     .done(function(json) {
@@ -16,5 +17,15 @@ $(document).ready(function() {
 
     $('#newRound').click(function() {
         window.location.href = "/user/round/" + $("#courseSelector").val();
+    });
+
+    $.ajax({
+        method: "GET",
+        url: "/api/rounds/"
+    })
+    .done(function(json){
+        $.each(json, function(idx, round){
+            $("#rounds").append($("<li>").html(round.dateCreated + ": " + round.course_name));
+        });
     })
 })
