@@ -32,6 +32,7 @@ $(document).ready(function() {
         var data = {
             "player_id": $("#user_id").val(),
             "course_id": $("#course_id").val(),
+            "course_name": $("#course_name").text(),
             "score": $('input[name="hole[]"]').map(function(){return parseInt($(this).val());}).get()
         };
         console.log(data);
