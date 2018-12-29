@@ -14,7 +14,9 @@ $(document).ready(function() {
                 .append($("<td>").html(hole.length.woman))
                 .append($("<td>").html(hole.hcp))
                 .append($("<td>").append(
-                    $("<input>").attr("name", "hole[]")
+                    $("<input>").attr({
+                        "name": "hole[]",
+                        "type": "number"})
                 ))
             );
         })
@@ -30,7 +32,7 @@ $(document).ready(function() {
         var data = {
             "player_id": $("#user_id").val(),
             "course_id": $("#course_id").val(),
-            "score": $('input[name="hole[]"]').map(function(){return $(this).val();}).get()
+            "score": $('input[name="hole[]"]').map(function(){return parseInt($(this).val());}).get()
         };
         console.log(data);
 
