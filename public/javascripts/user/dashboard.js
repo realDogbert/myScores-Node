@@ -25,7 +25,9 @@ $(document).ready(function() {
     })
     .done(function(json){
         $.each(json, function(idx, round){
-            $("#rounds").append($("<li>").html(round.dateCreated + ": " + round.course_name));
+            $("#rounds").append($("<li>")
+                .addClass("list-group-item")
+                .html(round.dateCreated + ": " + round.course_name));
         });
     })
 })
