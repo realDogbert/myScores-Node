@@ -33,19 +33,22 @@ $(document).ready(function() {
             "player_id": $("#user_id").val(),
             "course_id": $("#course_id").val(),
             "course_name": $("#course_name").text(),
-            "score": $('input[name="hole[]"]').map(function(){return parseInt($(this).val());}).get()
+            "score": $('input[name="hole[]"]').map(function(){return Number($(this).val());}).get()
         };
         console.log(data);
 
         $.ajax({
             method: "POST",
             url: "/api/rounds",
-            data: data
+            dataType: "json",
+            data: data,
+            contentType: 'application/json'
         })
         .done(function(data) {
             alert(data);
         })
-        .fail(function() {
+        .fail(function(error) {
+            console.log(error);
             alert("error");
         });
 

@@ -21,7 +21,7 @@ $(document).ready(function() {
 
     $.ajax({
         method: "GET",
-        url: "/api/rounds/"
+        url: "/api/rounds?playerId=" + $("#user_id").val()
     })
     .done(function(json){
         $.each(json, function(idx, round){

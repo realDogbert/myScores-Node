@@ -20,8 +20,8 @@ controller.getRoundsByPlayerID = function(playerId, callback) {
     db.collection(collection).find({"player_id": playerId}).toArray(callback);
 }
 
-controller.get = function(playerId, callback) {
-    db.collection(collection).find().toArray(callback);
+controller.get = function(query, callback) {
+    db.collection(collection).find(query).toArray(callback);
 }
 
 controller.create = function(round, callback) {
@@ -30,7 +30,7 @@ controller.create = function(round, callback) {
 
     round.dateCreated = new Date();
     round.dateLastModified = new Date();
-
+    
     db.collection(collection).insertOne( round, callback); 
     //     function(error, result) {
 

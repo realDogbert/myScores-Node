@@ -70,6 +70,8 @@ router.delete('/users/:id', (req, res) => {
 
 router.post('/rounds', (req, res) => {
 
+  console.log(req.headers);
+
   roundsController.create(
     req.body,
     function(error, result) {
@@ -84,7 +86,7 @@ router.post('/rounds', (req, res) => {
 
 router.get('/rounds', (req,res) => {
 
-  roundsController.get(req.query.playerId, function(error, result) {
+  roundsController.get(req.query, function(error, result) {
     if (error) {
       return console.log(error)
     };
