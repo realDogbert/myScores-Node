@@ -24,6 +24,10 @@ controller.get = function(query, callback) {
     db.collection(collection).find(query).toArray(callback);
 }
 
+controller.getByID = function(id, callback) {
+    db.collection(collection).findOne({"_id": new ObjectID(id)}, callback);
+}
+
 controller.create = function(round, callback) {
 
     console.log(round);
@@ -32,30 +36,16 @@ controller.create = function(round, callback) {
     round.dateLastModified = new Date();
     
     db.collection(collection).insertOne( round, callback); 
-    //     function(error, result) {
 
-            
-    //         var playerStat = updateStats(round.player, round.course, round.score);
-
-    //         var newRoundID = result.insertedId;
-    //         var statistics = {
-    //             "player": round.player,
-    //             "course": round.course,
-    //             "total": calculateStatistics(round.score)     
-    //         };
-
-    //         console.log(statistics);
-
-    //         db.collection(stats).insertOne(statistics, function(error, result) {
-    //             db.collection(collection).findOne(  
-    //                 {"_id": new ObjectID(newRoundID)}, 
-    //                 callback
-    //             );
-    //         })
-    //     }
-    // );
 
 };
+
+controller.delete = function(id, callback) {
+    db.collection(collection).deleteOne(
+        {"_id": new ObjectID(id)},
+        callback
+    );
+}
 
 
 function updateStats(player, course, score) {

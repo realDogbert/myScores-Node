@@ -95,4 +95,26 @@ router.get('/rounds', (req,res) => {
 
 });
 
+router.get('/rounds/:id', (req, res) => {
+
+  roundsController.getByID(req.params.id, function(error, result) {
+    if (error) {
+      return console.log(error)
+    };
+    res.json(result);
+  });
+
+});
+
+router.delete('/rounds/:id', (req, res) => {
+
+  roundsController.delete(req.params.id, function(error, result) {
+    if (error) {
+      return console.log(error)
+    };
+    res.json(result);
+  });
+
+});
+
 module.exports = router;
