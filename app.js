@@ -1,5 +1,6 @@
 var createError = require('http-errors');
 var express = require('express');
+var cors = require('cors');
 var session = require('express-session');
 var path = require('path');
 var bodyParser = require('body-parser');
@@ -35,6 +36,7 @@ app.set('view engine', 'hbs');
 // this will let us get the data from a POST
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(cors());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -68,6 +70,10 @@ app.use('/clubs', clubsRouter);
 app.use('/api', apiRouter);
 app.use('/user', userRouter);
 app.use('/admin', adminRouter);
+
+// Enabling CORS Pre-Flight
+// include before other routes
+app.options('*', cors()) 
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
