@@ -35,13 +35,12 @@ $(document).ready(function() {
             "course_name": $("#course_name").text(),
             "score": $('input[name="hole[]"]').map(function(){return Number($(this).val());}).get()
         };
-        console.log(data);
 
         $.ajax({
             method: "POST",
             url: "/api/rounds",
             dataType: "json",
-            data: data,
+            data: JSON.stringify(data),
             contentType: 'application/json'
         })
         .done(function(data) {
