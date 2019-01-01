@@ -60,7 +60,6 @@ router.get('/users/:id', (req, res) => {
 
 router.get('/clubs', (req, res) => {
 
-
     request.get(process.env.BASE_URL + "api/clubs", (error, response, body) => {
   
       if (error) {
@@ -73,7 +72,20 @@ router.get('/clubs', (req, res) => {
         user: req.user});
     });
   
-  })
+});
+
+router.get('/clubs/:id', (req, res) => {
+
+    request.get(process.env.BASE_URL + "api/clubs/" + req.params.id, (error, response, body) => {
+
+        res.render('admin/clubDetails', {
+            title: 'Club Details',
+            club: JSON.parse(body),
+            user: req.user
+        });
+
+    });
+});
 
 
 module.exports = router;
