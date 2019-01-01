@@ -44,7 +44,7 @@ $(document).ready(function() {
             contentType: 'application/json'
         })
         .done(function(data) {
-            alert(data);
+            alert(JSON.stringify(data));
         })
         .fail(function(error) {
             console.log(error);

@@ -21,13 +21,17 @@ $(document).ready(function() {
 
     $.ajax({
         method: "GET",
-        url: "/api/rounds?playerId=" + $("#user_id").val()
+        url: "/api/rounds?player_id=" + $("#user_id").val()
     })
     .done(function(json){
-        $.each(json, function(idx, round){
-            $("#rounds").append($("<li>")
-                .addClass("list-group-item")
-                .html(round.dateCreated + ": " + round.course_name));
+
+        $.each(json, function(idx, round) {
+            $("#rounds").append($("<tr>")
+                .append($("<td>").html(new Date(round.dateCreated).toLocaleString()))
+                .append($("<td>").html(round.course_name))
+                .append($("<td>").html(round.score.reduce((a,b) => {return a+b}, 0)))
+                .append($("<td>").html(round.score))
+            )
         });
     })
 })

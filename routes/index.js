@@ -80,7 +80,7 @@ router.get('/login', function(req,res, next) {
 });
 
 router.post('/login', 
-            passport.authenticate('local', { successRedirect: '/user/profile', failureRedirect: '/login' }), 
+            passport.authenticate('local', { successRedirect: '/user', failureRedirect: '/login' }), 
             function(req,res, next) {
 
   res.redirect('/user/profile');
