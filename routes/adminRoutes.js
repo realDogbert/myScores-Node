@@ -87,5 +87,12 @@ router.get('/clubs/:id', (req, res) => {
     });
 });
 
+router.get('/courses/:id', (req, res) => {
+    res.render('admin/courseDetails', {
+        title: "Course Details",
+        courseId: req.params.id    
+    })
+});
+
 
 module.exports = router;

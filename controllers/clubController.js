@@ -44,6 +44,17 @@ controller.delete = function(req, res) {
     });
 }
 
+controller.update = function(id, data, callback) {
+
+    data.dateLastModified = new Date();
+    db.collection(collection).updateOne(
+        {"_id": new ObjectID(id)},
+        { $set: data},
+        callback
+    );
+    
+};
+
 controller.createCourse = function(req, res) {
     console.log(req.body);
     db.collection(collectionCourses).insertOne(req.body, (err, result) => {

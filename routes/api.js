@@ -23,6 +23,13 @@ router.post('/clubs', function(req, res, next) {
   clubController.create(req, res);
 });
 
+router.put('/clubs/:id', (req, res) => {
+  clubController.update(req.params.id, req.body, (error, result) => {
+    if (error) return console.log(error)
+    res.json(result);
+  });
+});
+
 router.delete('/clubs/:id', function (req, res, next) {
   clubController.delete(req, res);
 });
