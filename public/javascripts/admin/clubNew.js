@@ -6,7 +6,17 @@ $(document).ready(function() {
         
         var data = {
             name: $("#clubName").val(),
-            location: $("#clubLocation").val()
+            address: {
+                street: $("#street").val(),
+                zip: $("#zip").val(),
+                city: $("#city").val(),
+                country: $("#country").val()
+            },
+            contact: {
+                website: $("#website").val(),
+                email: $("#email").val(),
+                phone: $("#phone").val()
+            }
         };
 
         $.ajax({
