@@ -78,14 +78,29 @@ router.get('/clubs/:id', (req, res) => {
 
     request.get(process.env.BASE_URL + "api/clubs/" + req.params.id, (error, response, body) => {
 
+        var club = JSON.parse(body);
+        var lastModified = new Date(club.dateLastModified).toLocaleString();
+        var created = new Date(club.dateCreated).toLocaleString();
+
         res.render('admin/clubDetails', {
             title: 'Club Details',
-            club: JSON.parse(body),
+            club: club,
+            lastModified: lastModified,
+            created: created,
             user: req.user
         });
 
     });
 });
+
+router.get('/addClub', (req, res) => {
+    res.render('admin/clubDetails', {
+        title: 'Add new Club',
+        create: true,
+        user: req.user
+    });
+});
+
 
 router.get('/courses/:id', (req, res) => {
     res.render('admin/courseDetails', {

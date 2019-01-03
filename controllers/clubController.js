@@ -31,11 +31,12 @@ controller.getByID = function(id, req, res) {
     });
 }
 
-controller.create = function(req, res) {
-    db.collection(collection).insertOne(req.body, (err, result) => {
-        if (err) return console.log(err);
-    });
-    res.redirect('/clubs');
+controller.create = function(data, callback) {
+
+    data.dateCreated = new Date();
+    data.dateLastModified = new Date();
+
+    db.collection(collection).insertOne(data, callback);
 }
 
 controller.delete = function(req, res) {
