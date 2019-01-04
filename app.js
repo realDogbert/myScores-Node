@@ -66,7 +66,6 @@ passport.use(new LocalStrategy(
 ));
 
 app.use('/', indexRouter);
-app.use('/clubs', clubsRouter);
 app.use('/api', apiRouter);
 app.use('/user', userRouter);
 app.use('/admin', adminRouter);
