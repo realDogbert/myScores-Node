@@ -45,20 +45,14 @@ controller.delete = function(req, res) {
     });
 }
 
-controller.update = function(id, req, res) {
+controller.update = function(id, data, callback) {
 
-    console.log("update " +  id + " with " + req.body);
+    data.dateLastModified = new Date();
 
     db.collection(collection).updateOne(
         {"_id": new ObjectID(id)},
-        { $set: req.body},
-        function(err, document) {
-            if (err) {
-                console.log("error" + err);
-            }
-            // console.log(document);
-            res.json(document)
-        }
+        { $set: data},
+        callback
     );
 }
 

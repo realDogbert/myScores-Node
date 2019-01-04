@@ -89,7 +89,10 @@ router.post('/users', function(req, res, next) {
 });
 
 router.put('/users/:id', (req, res) => {
-  userController.update(req.params.id, req,res);
+  userController.update(req.params.id, req.body, (error, result) => {
+    if (error) return console.log(error)
+    res.json(result)
+  });
 });
 
 router.delete('/users/:id', (req, res) => {

@@ -12,18 +12,8 @@ function showUserTable() {
     })
     .done(function(data) {
 
-        $theader = $("<thead>").addClass("thead-dark")
-        .append($("<tr>")
-            .append($("<th>").html("Login Name"))
-            .append($("<th>").html("EMail"))
-            .append($("<th>").html("User Name"))
-            .append($("<th>").html("Admin Role"))
-            .append($("<th>").html("Action"))
-        );
-
-        $tbody = $("<tbody>");
         $.each(data, (idx, user) => {
-            $tbody
+            $("#users")
                 .append($('<tr>')
                     .append($('<td>').html(user.name))
                     .append($('<td>').html(user.email))
@@ -70,11 +60,6 @@ function showUserTable() {
             );
         });
 
-        $('#users').append($('<table>').addClass('table table-striped')
-            .append($theader)
-            .append($tbody));
-        
-        
     })
     .fail(function() {
         alert("error");
