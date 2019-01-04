@@ -109,5 +109,15 @@ router.get('/courses/:id', (req, res) => {
     })
 });
 
+router.get('/addCourse', (req, res) => {
+    res.render('admin/courseDetails', {
+        title: 'Add new Course',
+        create: true,
+        clubId: req.query.clubId,
+        clubName: req.query.clubName,
+        user: req.user
+    });
+});
+
 
 module.exports = router;

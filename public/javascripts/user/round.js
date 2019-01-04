@@ -4,7 +4,7 @@ $(document).ready(function() {
         url: "/api/courses/" + $("#course_id").val()
     })
     .done(function(json) {
-        $("#course_name").html(json.course.name);
+        $("#course_name").html(json.name);
         $.each(json.holes, function(idx, hole) {
             $("#holes").append(
                 $("<tr>")

@@ -39,8 +39,16 @@ router.delete('/clubs/:id', function (req, res, next) {
 });
 
 
-router.get('/courses', function(req, res, next) {
-  clubController.getCourses(req, res);
+
+router.get('/courses', (req, res) => {
+
+  clubController.getCourses(req.query, function(error, result) {
+    if (error) {
+      return console.log(error)
+    };
+    res.json(result);  
+  });
+
 });
 
 router.get('/courses/:id', function(req,res,next) {
@@ -48,9 +56,19 @@ router.get('/courses/:id', function(req,res,next) {
 });
 
 router.post('/courses', (req, res, next) => {
-  clubController.createCourse(req, res);
+  clubController.createCourse(req.body, (error, result) => {
+    if (error) return console.log(error)
+    // return the created object, which is the first element in ops
+    res.json(result.ops[0]);  
+  });
 })
 
+router.put('/courses/:id', (req, res) => {
+  clubController.updateCourse(req.params.id, req.body, (error, result) => {
+    if (error) return console.log(error)
+    res.json(result);
+  });
+});
 
 router.get('/users', (req, res) => {
   userController.get((err, result) => {

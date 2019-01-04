@@ -6,8 +6,8 @@ var ObjectID = require('mongodb').ObjectID;
 var db;
 var controller = new Object();
 
-const collection = "clubs";
-const collectionCourses = "courses";
+const clubs = "clubs";
+const courses = "courses";
 
 MongoClient.connect(process.env.DB_CONN, 
     { useNewUrlParser: true }, 
@@ -19,14 +19,14 @@ MongoClient.connect(process.env.DB_CONN,
 
 
 controller.get = function(req, res) {
-    db.collection(collection).find().toArray((err, result) => {
+    db.collection(clubs).find().toArray((err, result) => {
         if (err) return console.log(err)
         res.json(result);
     });
 }
 
 controller.getByID = function(id, req, res) {
-    db.collection(collection).findOne(  {"_id": new ObjectID(id)}, function(err, document) {
+    db.collection(clubs).findOne(  {"_id": new ObjectID(id)}, function(err, document) {
         res.json(document);
     });
 }
@@ -36,11 +36,11 @@ controller.create = function(data, callback) {
     data.dateCreated = new Date();
     data.dateLastModified = new Date();
 
-    db.collection(collection).insertOne(data, callback);
+    db.collection(clubs).insertOne(data, callback);
 }
 
 controller.delete = function(req, res) {
-    db.collection(collection).deleteOne(  {"_id": new ObjectID(req.params.id)}, function(err, document) {
+    db.collection(clubs).deleteOne(  {"_id": new ObjectID(req.params.id)}, function(err, document) {
         res.json(document)
     });
 }
@@ -48,7 +48,7 @@ controller.delete = function(req, res) {
 controller.update = function(id, data, callback) {
 
     data.dateLastModified = new Date();
-    db.collection(collection).updateOne(
+    db.collection(clubs).updateOne(
         {"_id": new ObjectID(id)},
         { $set: data},
         callback
@@ -56,24 +56,33 @@ controller.update = function(id, data, callback) {
     
 };
 
-controller.createCourse = function(req, res) {
-    console.log(req.body);
-    db.collection(collectionCourses).insertOne(req.body, (err, result) => {
-        if (err) return console.log(err);
-        res.json(result);
-    });
+controller.createCourse = function(data, callback) {
+
+    data.dateCreated = new Date();
+    data.dateLastModified = new Date();
+
+    db.collection(courses).insertOne(data, callback);
 }
 
-controller.getCourses = function(req, res) {
+controller.updateCourse = function(id, data, callback) {
 
-    db.collection(collectionCourses).find(req.query).toArray((err, result) => {
-        if (err) return console.log(err);
-        res.json(result);
-    });
-}
+    data.dateLastModified = new Date();
+    db.collection(courses).updateOne(
+        {"_id": new ObjectID(id)},
+        { $set: data},
+        callback
+    );
+
+};
+
+controller.getCourses = function(query, callback) {
+
+    db.collection(courses).find(query).toArray(callback);
+
+};
 
 controller.getCourseByID = function(id, req, res) {
-    db.collection(collectionCourses).findOne(  {"_id": new ObjectID(id)}, function(err, document) {
+    db.collection(courses).findOne(  {"_id": new ObjectID(id)}, function(err, document) {
         res.json(document);
     });
 }

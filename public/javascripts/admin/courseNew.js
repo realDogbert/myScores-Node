@@ -1,30 +1,10 @@
 $(document).ready(function() {
 
-    var courseId = $("#course_id").val();
-    
-    $.ajax({
-        method: "GET",
-        url: "/api/courses/" + courseId
+    createTable(Number($("#numOfHoles").val()));
+
+    $("#numOfHoles").change(function() {
+        createTable(Number($("#numOfHoles").val()));
     })
-    .done(function(json) {
-
-        $("#nav_club")
-            .attr("href", "/admin/clubs/" + json.club.id)
-            .html(json.club.name);
-        $("#nav_course").html(json.name);
-        $("#courseName").val(json.name);
-        $("#clubId").val(json.club.id);
-        $("#clubName").val(json.club.name);
-
-        $.each(json.holes, function (idx, hole) {
-            $("#holesForm").append(
-                createTableRow(idx, hole.par, hole.hcp, hole.length)
-            )
-        })
-    })
-    .fail(function(error){
-
-    });
 
     $("form").submit( function(event){
 
@@ -53,14 +33,14 @@ $(document).ready(function() {
         };
 
         $.ajax({
-            method: "PUT",
-            url: "/api/courses/" + courseId,
+            method: "POST",
+            url: "/api/courses/",
             dataType: "json",
             data: JSON.stringify(data),
             contentType: 'application/json'
         })
         .done(function(data) {
-            alert(JSON.stringify(data));
+            window.location.href = "/admin/clubs/" + $("#clubId").val()
         })
         .fail(function(error) {
             console.log(error);
@@ -77,7 +57,14 @@ $(document).ready(function() {
 
 });
 
-
+function createTable(numOfHoles) {
+    $("#holesForm").empty();
+    for (var idx=0; idx < numOfHoles; idx++) {
+        $("#holesForm").append(
+            createTableRow(idx, 0, 0, {man: 0, woman: 0})
+        )
+    }
+}
 
 function createTableRow(idx, par, hcp, length) {
     return $("<tr>")

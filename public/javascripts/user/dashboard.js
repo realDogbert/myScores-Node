@@ -7,7 +7,7 @@ $(document).ready(function() {
     .done(function(json) {
         $.each(json, function (idx, courses) {
             $("#courseSelector").append(
-                $("<option>").attr("value", courses._id).text(courses.course.name)
+                $("<option>").attr("value", courses._id).text(courses.name)
             );
         });
     })

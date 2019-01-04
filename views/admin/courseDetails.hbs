@@ -2,26 +2,47 @@
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="/admin">Administration</a></li>
     <li class="breadcrumb-item"><a href="/admin/clubs">Club Management</a></li>
-    <li class="breadcrumb-item"><a href="/admin/clubs/" id="nav_club">Club Name</a></li>
-    <li class="breadcrumb-item active"  aria-current="page" id="nav_course">Course Name</li>
+    <li class="breadcrumb-item"><a href="/admin/clubs/" id="nav_club">{{clubName}}</a></li>
+    <li class="breadcrumb-item active"  aria-current="page" id="nav_course">
+      {{#if create}}New Course{{else}}Course Name{{/if}}
+    </li>
   </ol>
 </nav>
 
+{{#if create}}
+<h1>New Course</h1>
+{{else}}
 <h1>Course Details</h1>
-
+{{/if}}
 
 
 <form>
 
-    <input type="text" id="course_id" value="{{courseId}}" hidden>
-    
-    <div class="form-group row">
-        <label for="courseName">Course Name</label>
-        <input class="form-control" type="text" id="courseName">
+    {{#unless create}}
+    <div class="form-group">
+      <label for="course_id">Course Id</label>
+      <input class="form-control" type="text" id="course_id" value="{{courseId}}" readonly>
     </div>
-    <div class="form-group row">
-        <label for="clubName">Club Name</label>
-        <input class="form-control" type="text" id="clubName">
+    {{/unless}}
+    <div class="form-group">
+      <label for="courseName">Course Name</label>
+      <input class="form-control" type="text" id="courseName">
+    </div>
+    <div class="form-group">
+      <label for="clubId">Club Id</label>
+      <input class="form-control" type="text" id="clubId" value="{{clubId}}" readonly>
+    </div>
+    <div class="form-group">
+      <label for="clubName">Club Name</label>
+      <input class="form-control" type="text" id="clubName" value="{{clubName}}">
+    </div>
+
+    <div class="form-group">
+      <label for="numOfHoles">Number of Holes</label>
+      <select class="form-control" id="numOfHoles">
+        <option selected>9</option>
+        <option>18</option>
+      </select>
     </div>
 
     <table class="table table-sm table-striped table-hover">
@@ -45,4 +66,10 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="/javascripts/admin/courseDetails.js"></script>
+
+
+{{#if create}}
+    <script src="/javascripts/admin/courseNew.js"></script>
+{{else}}
+    <script src="/javascripts/admin/courseDetails.js"></script>
+{{/if}}

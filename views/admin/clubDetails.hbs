@@ -20,47 +20,47 @@
 
     {{#unless create}}
     <input type="text" id="club_id" value="{{club._id}}" hidden>
-    <div class="form-group row">
+    <div class="form-group">
         <label for="clubLastModified">Last Modified</label>
         <input class="form-control" type="text" id="clubLastModified" value="{{lastModified}}" readonly>
     </div>
-    <div class="form-group row">
+    <div class="form-group">
         <label for="clubCreated">Created</label>
         <input class="form-control" type="text" id="clubCreated" value="{{created}}" readonly>
     </div>
     {{/unless}}
-    <div class="form-group row">
+    <div class="form-group">
         <label for="clubName">Club Name</label>
         <input class="form-control" type="text" id="clubName" value="{{club.name}}">
     </div>
 
 
-    <div class="form-group row">
+    <div class="form-group">
         <label for="street">Street</label>
         <input class="form-control" type="text" id="street" value="{{club.address.street}}">
     </div>
-    <div class="form-group row">
+    <div class="form-group">
         <label for="zip">ZIP</label>
         <input class="form-control" type="text" id="zip" value="{{club.address.zip}}">
     </div>
-    <div class="form-group row">
+    <div class="form-group">
         <label for="city">City</label>
         <input class="form-control" type="text" id="city" value="{{club.address.city}}">
     </div>
-    <div class="form-group row">
+    <div class="form-group">
         <label for="country">Country</label>
         <input class="form-control" type="text" id="country" value="{{club.address.country}}">
     </div>
 
-    <div class="form-group row">
+    <div class="form-group">
         <label for="website">Website</label>
         <input class="form-control" type="text" id="website" value="{{club.contact.website}}">
     </div>
-    <div class="form-group row">
+    <div class="form-group">
         <label for="email">Email</label>
         <input class="form-control" type="text" id="email" value="{{club.contact.email}}">
     </div>
-    <div class="form-group row">
+    <div class="form-group">
         <label for="phone">Phone</label>
         <input class="form-control" type="text" id="phone" value="{{club.contact.phone}}">
     </div>
@@ -77,6 +77,10 @@
 
 {{#unless create}}
 <p>
+<h1>
+    Club Courses
+    <button type="button" class="btn btn-primary" id="courseNew">+</button>
+</h1>
 <table class="table table-sm table-striped table-hover">
     <caption>Club Courses</caption>
     <thead>

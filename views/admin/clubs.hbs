@@ -7,7 +7,7 @@
 
 <h1>
   Club
-  <button type="button" class="btn btn-primary" id="clubbNew">+</button>
+  <button type="button" class="btn btn-primary" id="clubNew">+</button>
 </h1>
 
 
@@ -16,6 +16,7 @@
     <tr>
       <th>Club Name</th>
       <th>Club Location</th>
+      <th>WebSite</th>
     </tr>
   </thead>
   <tbody>
@@ -24,7 +25,8 @@
         <td>
           <a href="/admin/clubs/{{_id}}">{{name}}</a>
         </td>
-        <td>{{location}}</td>
+        <td>{{address.country}}</td>
+        <td>{{contact.website}}</td>
       </tr>
     {{/each}}
   </tbody>

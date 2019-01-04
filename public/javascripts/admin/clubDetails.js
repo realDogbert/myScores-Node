@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     $.ajax({
         method: "GET",
-        url: "/api/courses?club[id]=" + clubId
+        url: "/api/courses?club.id=" + clubId
     })
     .done(function(json) {
         $.each(json, function (idx, course) {
@@ -13,8 +13,8 @@ $(document).ready(function() {
                     .append($("<td>")
                         .append($("<a>")
                         .attr("href", "/admin/courses/" + course._id)
-                        .html(course.course.name)))
-                    .append($("<td>").html(course.course.numOfHoles))
+                        .html(course.name)))
+                    .append($("<td>").html(course.numOfHoles))
             )
         })
     })
@@ -62,5 +62,9 @@ $(document).ready(function() {
     $("#cancel").click(function(){
         window.location.href = "/admin/clubs"
     });
+
+    $("#courseNew").click(function() {
+        window.location.href = "/admin/addCourse?clubId=" + $("#club_id").val() + "&clubName=" + $("#clubName").val();
+    })
 
 });
