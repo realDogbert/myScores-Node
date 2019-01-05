@@ -16,9 +16,19 @@ $(document).ready(function() {
         $("#clubId").val(json.club.id);
         $("#clubName").val(json.club.name);
 
+        $("#crWhite").val(json.cr.white);
+        $("#crBlue").val(json.cr.blue);
+        $("#crYellow").val(json.cr.yellow);
+        $("#crRed").val(json.cr.red);
+
+        $("#slWhite").val(json.sl.white);
+        $("#slBlue").val(json.sl.blue);
+        $("#slYellow").val(json.sl.yellow);
+        $("#slRed").val(json.sl.red);
+
         $.each(json.holes, function (idx, hole) {
             $("#holesForm").append(
-                createTableRow(idx, hole.par, hole.hcp, hole.length)
+                createTableRow(idx, hole.par, hole.hcp, hole.tee)
             )
         })
     })
@@ -35,9 +45,11 @@ $(document).ready(function() {
             holesArray.push({
                 par: Number($("#par_" + i).val()),
                 hcp: Number($("#hcp_" + i).val()),
-                length: {
-                    man: Number($("#lengthMan_" + i).val()),
-                    woman: Number($("#lengthWoman_" + i).val())
+                tee: {
+                    white: Number($("#teeWhite_" + i).val()),
+                    blue: Number($("#teeBlue_" + i).val()),
+                    red: Number($("#teeRed_" + i).val()),
+                    yellow: Number($("#teeYellow_" + i).val())
                 }
             });
         }
@@ -48,6 +60,18 @@ $(document).ready(function() {
             club: {
                 id: $("#clubId").val(),
                 name: $("#clubName").val()
+            },
+            cr: {
+                white: Number($("#crWhite").val()),
+                blue: Number($("#crBlue").val()),
+                yellow: Number($("#crYellow").val()),
+                red: Number($("#crRed").val())
+            },
+            sl: {
+                white: Number($("#slWhite").val()),
+                blue: Number($("#slBlue").val()),
+                yellow: Number($("#slYellow").val()),
+                red: Number($("#slRed").val())
             },
             holes: holesArray
         };
@@ -70,7 +94,7 @@ $(document).ready(function() {
     });
 
     $("#cancel").click(function(){
-        window.location.href = "/admin/clubs"
+        window.location.href = "/admin/clubs/" + $("#clubId").val()
     });
 
     
@@ -79,13 +103,15 @@ $(document).ready(function() {
 
 
 
-function createTableRow(idx, par, hcp, length) {
+function createTableRow(idx, par, hcp, tee) {
     return $("<tr>")
         .append($("<th>").html(idx+1))
+        .append($("<td>").append(createInput(idx, tee.white, "teeWhite").attr("style","background-color:#ece4e4")))
+        .append($("<td>").append(createInput(idx, tee.blue, "teeBlue").attr("style","background-color:#0000ff4d")))
         .append($("<td>").append(createInput(idx, par, "par")))
+        .append($("<td>").append(createInput(idx, tee.yellow, "teeYellow").attr("style","background-color:#f003")))
+        .append($("<td>").append(createInput(idx, tee.red, "teeRed").attr("style","background-color:#ffff004d")))
         .append($("<td>").append(createInput(idx, hcp, "hcp")))
-        .append($("<td>").append(createInput(idx, length.man, "lengthMan")))
-        .append($("<td>").append(createInput(idx, length.woman, "lengthWoman")))
 }
 
 function createInput(i, value, inputName) {

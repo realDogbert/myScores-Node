@@ -15,9 +15,11 @@ $(document).ready(function() {
             holesArray.push({
                 par: Number($("#par_" + i).val()),
                 hcp: Number($("#hcp_" + i).val()),
-                length: {
-                    man: Number($("#lengthMan_" + i).val()),
-                    woman: Number($("#lengthWoman_" + i).val())
+                tee: {
+                    white: Number($("#teeWhite_" + i).val()),
+                    blue: Number($("#teeBlue_" + i).val()),
+                    red: Number($("#teeRed_" + i).val()),
+                    yellow: Number($("#teeYellow_" + i).val())
                 }
             });
         }
@@ -28,6 +30,18 @@ $(document).ready(function() {
             club: {
                 id: $("#clubId").val(),
                 name: $("#clubName").val()
+            },
+            cr: {
+                white: Number($("#crWhite").val()),
+                blue: Number($("#crBlue").val()),
+                yellow: Number($("#crYellow").val()),
+                red: Number($("#crRed").val())
+            },
+            sl: {
+                white: Number($("#slWhite").val()),
+                blue: Number($("#slBlue").val()),
+                yellow: Number($("#slYellow").val()),
+                red: Number($("#slRed").val())
             },
             holes: holesArray
         };
@@ -50,7 +64,7 @@ $(document).ready(function() {
     });
 
     $("#cancel").click(function(){
-        window.location.href = "/admin/clubs"
+        window.location.href = "/admin/clubs/" + $("#clubId").val()
     });
 
     
@@ -61,18 +75,20 @@ function createTable(numOfHoles) {
     $("#holesForm").empty();
     for (var idx=0; idx < numOfHoles; idx++) {
         $("#holesForm").append(
-            createTableRow(idx, 0, 0, {man: 0, woman: 0})
+            createTableRow(idx, 0, 0, {white: 0, blue: 0, red: 0, yellow: 0})
         )
     }
 }
 
-function createTableRow(idx, par, hcp, length) {
+function createTableRow(idx, par, hcp, tee) {
     return $("<tr>")
         .append($("<th>").html(idx+1))
+        .append($("<td>").append(createInput(idx, tee.white, "teeWhite").attr("style","background-color:#ece4e4")))
+        .append($("<td>").append(createInput(idx, tee.blue, "teeBlue").attr("style","background-color:#0000ff4d")))
         .append($("<td>").append(createInput(idx, par, "par")))
+        .append($("<td>").append(createInput(idx, tee.red, "teeYellow").attr("style","background-color:#ffff004d")))
+        .append($("<td>").append(createInput(idx, tee.yellow, "teeRed").attr("style","background-color:#f003")))
         .append($("<td>").append(createInput(idx, hcp, "hcp")))
-        .append($("<td>").append(createInput(idx, length.man, "lengthMan")))
-        .append($("<td>").append(createInput(idx, length.woman, "lengthWoman")))
 }
 
 function createInput(i, value, inputName) {

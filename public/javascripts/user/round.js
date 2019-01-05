@@ -8,10 +8,10 @@ $(document).ready(function() {
         $.each(json.holes, function(idx, hole) {
             $("#holes").append(
                 $("<tr>")
-                .append($("<td>").html(idx+1))
-                .append($("<td>").html(hole.length.man))
+                .append($("<th>").html(idx+1))
+                .append($("<td>").html(hole.tee.yellow))
                 .append($("<td>").html(hole.par))
-                .append($("<td>").html(hole.length.woman))
+                .append($("<td>").html(hole.tee.red))
                 .append($("<td>").html(hole.hcp))
                 .append($("<td>").append(
                     $("<input>").attr({
