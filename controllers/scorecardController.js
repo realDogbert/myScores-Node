@@ -1,11 +1,4 @@
-require('dotenv').config();
-var clubController = require('./clubController');
 var controller = new Object();
-
-
-controller.getScorecard = (courseId) => {
-    return "Hello";
-}
 
 controller.getVorgabe = (spielvorgabe, hcp) => {
 
