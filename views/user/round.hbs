@@ -7,16 +7,33 @@
     <input id="user_id" name="player_id" value="{{user._id}}" hidden></input>
     <input id="course_id" name="course_id" value="{{course_id}}" hidden></input>
 
+    Date <input name="date" type="date" class="form-control">
+    Handicap <input name="handicap" type="number" class="form-control">
+
     <table class="table table-sm table-striped table-hover">
         <thead>
             <th>Hole</th>
-            <th>Man</th>
+            <th>Man<div>CR/SL</div></th>
             <th>Par</th>
-            <th>Woman</th>
+            <th>Woman<div>CR/SL</div></th>
             <th>HCP</th>
+            <th></th>
             <th>Score</th>
+            <th>Brutto</th>
+            <th>Netto</th>
         </thead>
         <tbody id="holes"></tbody>
+        <tr>
+            <th></th>
+            <th></th>
+            <th id="sumPar"></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th id="sum"></th>
+            <th id="sumBrutto"></th>
+            <th id="sumNetto"></th>
+        </tr>
     </table>
 
     <button type="submit" class="btn btn-primary" id="save">Save</button>
