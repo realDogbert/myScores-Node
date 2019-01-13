@@ -4,6 +4,7 @@ $(document).ready(function() {
     var _scores = [];
     var _sumPar = 0;
 
+    $('input[name="date"]').val(new Date().toLocaleString());
 
     $.ajax({
         url: "/api/courses/" + $("#course_id").val()
@@ -82,26 +83,29 @@ $(document).ready(function() {
 
     var calculation = function() {
 
+        //TODO calculate vorgabe for every hole
+        const vorgabe = 3;
+
         let idx = this.parentNode.id.split("_")[1];
         let par = _holes[idx].par;
-        let score = new Number(this.value);
+        let strokes = new Number(this.value);
     
-        let brutto = (par-score)+5;
+        let brutto = (par-strokes) + 2;
         if (brutto < 0) brutto = 0;
         $('td#brutto_'+idx).html(brutto);
     
-        let netto = (par-score)+2;
+        let netto = (par-strokes) + 2 + vorgabe;
         if (netto < 0) netto = 0;
         $('td#netto_'+idx).html(netto);
 
         _scores[idx]= {
-            "score": score,
-            "brutto": brutto,
-            "netto": netto
+            strokes: strokes,
+            brutto: brutto,
+            netto: netto
         };
 
         let sum = calculateSum();
-        $("#sum").html(sum.score);
+        $("#sum").html(sum.strokes);
         $("#sumBrutto").html(sum.brutto);
         $("#sumNetto").html(sum.netto);
     }
@@ -110,13 +114,13 @@ $(document).ready(function() {
         let sum = 0;
         let brutto = 0;
         let netto = 0;
-        _scores.forEach(function(hole){
-            sum += hole.score;
-            brutto += hole.brutto;
-            netto += hole.netto;
+        _scores.forEach(function(score){
+            sum += score.strokes;
+            brutto += score.brutto;
+            netto += score.netto;
         });
         return {
-            score: sum,
+            strokes: sum,
             brutto: brutto,
             netto: netto
         };

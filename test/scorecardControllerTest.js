@@ -37,5 +37,10 @@ describe("Test ScoreCardController", function() {
             assert.equal(controller.getVorgabe(-5,value), expected[idx]);
         })
 
-    })
-})
+    });
+
+    it ("should use a default handicap is no handicap is supplied", () => {
+        assert.equal(controller.getVorgabe(null,1),3);
+    });
+
+});

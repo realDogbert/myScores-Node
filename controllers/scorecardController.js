@@ -1,8 +1,15 @@
+require('dotenv').config();
+var clubController = require('./clubController');
 var controller = new Object();
 
 
+controller.getScorecard = (courseId) => {
+    return "Hello";
+}
+
 controller.getVorgabe = (spielvorgabe, hcp) => {
 
+    if(!spielvorgabe) spielvorgabe = -54;
     spielvorgabe = Math.abs(spielvorgabe);
 
     var vorgabe = 0;
