@@ -45,8 +45,8 @@ describe("Test ScoreCardController", function() {
 
     it ("sould return scorecard with spielvorgabe", () => {
         
-        let spielvorgabe = -47;
-        let course = {
+        spielvorgabe = -47;
+        course = {
             holes: [
                 {par: 3, hcp: 11, expected: 3},
                 {par: 4, hcp: 9, expected: 3},
