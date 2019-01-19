@@ -2,6 +2,10 @@ version: 2.1
 jobs:
   build:
     working_directory: ~/myScore
+    branches:
+      only:
+        - master
+        - develop
     docker:
       - image: circleci/node:4.8.2
     steps:
