@@ -2,26 +2,32 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: circleci/node:4.8.2
+    - image: circleci/node:4.8.2
     working_directory: ~/myScore
     steps:
-      - checkout
-      - run:
-          name: update-npm
-          command: 'sudo npm install -g npm@5'
-      - restore_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
-      - run:
-          name: install-npm-wee
-          command: npm install
-      - save_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
-          paths:
-            - ./node_modules
-      - run:
-          name: test
-          command: npm test
-      - store_artifacts:
-          path: test-results
-      - store_test_results:
-          path: test-results
+    - checkout
+    - run:
+        name: update-npm
+        command: sudo npm install -g npm@5
+    - restore_cache:
+        key: dependency-cache-{{ checksum "package.json" }}
+    - run:
+        name: install-npm-wee
+        command: npm install
+    - save_cache:
+        key: dependency-cache-{{ checksum "package.json" }}
+        paths:
+        - ./node_modules
+    - run:
+        name: test
+        command: npm test
+    - store_artifacts:
+        path: test-results.xml
+        prefix: tests
+    - store_test_results:
+        path: test-results
+workflows:
+  version: 2
+  workflow:
+    jobs:
+    - build
