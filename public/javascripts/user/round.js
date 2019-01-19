@@ -5,9 +5,14 @@ $(document).ready(function() {
     var _sumPar = 0;
 
     $('input[name="date"]').val(new Date().toLocaleString());
+    var spielvorgabe = $('input[name="spielvorgabe"]').val();
+    if (!spielvorgabe || 0 === spielvorgabe.length) {
+        spielvorgabe = -54;
+        $('input[name="spielvorgabe"]').val(spielvorgabe);
+    }
 
     $.ajax({
-        url: "/api/courses/" + $("#course_id").val()
+        url: "/api/scorecards/" + $("#course_id").val() + "?spielvorgabe=" + $('input[name="spielvorgabe"]').val()
     })
     .done(function(json) {
         $("#course_name").html(json.name);
@@ -23,7 +28,7 @@ $(document).ready(function() {
                 .append($("<td>").attr("id", "par_"+idx).html(hole.par))
                 .append($("<td>").html(hole.tee.red))
                 .append($("<td>").html(hole.hcp))
-                .append($("<td>").html("///"))
+                .append($("<td>").html(hole.vorgabe))
                 .append($("<td>").attr("id", "score_"+idx).append(
                     $("<input>")
                     .addClass("form-control-sm")
@@ -56,7 +61,10 @@ $(document).ready(function() {
             "player_id": $("#user_id").val(),
             "course_id": $("#course_id").val(),
             "course_name": $("#course_name").text(),
-            "score": $('input[name="hole"').map(function(){return Number($(this).val());}).get()
+            "spielvorgabe": spielvorgabe,
+            "score": $('input[name="hole"').map(function(){return Number($(this).val());}).get(),
+            "brutto": $('td[name="brutto"').map(function(){return Number($(this).text());}).get(),
+            "netto": $('td[name="netto"').map(function(){return Number($(this).text());}).get()
         };
 
         $.ajax({
@@ -76,19 +84,18 @@ $(document).ready(function() {
 
     });
 
-    $('#cancel').click(function() {
+    $('#cancel').click(function(event) {
+        event.preventDefault();
         window.location.href = "/user/";
     });
 
 
     var calculation = function() {
 
-        //TODO calculate vorgabe for every hole
-        const vorgabe = 3;
-
         let idx = this.parentNode.id.split("_")[1];
         let par = _holes[idx].par;
         let strokes = new Number(this.value);
+        let vorgabe = _holes[idx].vorgabe;
     
         let brutto = (par-strokes) + 2;
         if (brutto < 0) brutto = 0;

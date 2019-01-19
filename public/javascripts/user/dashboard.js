@@ -30,7 +30,8 @@ $(document).ready(function() {
                 .append($("<td>").html(new Date(round.dateCreated).toLocaleString()))
                 .append($("<td>").html(round.course_name))
                 .append($("<td>").html(round.score.reduce((a,b) => {return a+b}, 0)))
-                .append($("<td>").html(round.score))
+                .append($("<td>").html(round.brutto.reduce((a,b) => {return a+b}, 0)))
+                .append($("<td>").html(round.netto.reduce((a,b) => {return a+b}, 0)))
             )
         });
     })

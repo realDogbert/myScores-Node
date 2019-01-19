@@ -70,6 +70,10 @@ router.put('/courses/:id', (req, res) => {
   });
 });
 
+router.get('/scorecards/:id', function(req,res,next) {
+  clubController.getScorecardByID(req.params.id, req, res);
+});
+
 router.get('/users', (req, res) => {
   userController.get((err, result) => {
       if (err) return console.log(err)

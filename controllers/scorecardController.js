@@ -1,17 +1,5 @@
-require('dotenv').config();
-
-const MongoClient = require('mongodb').MongoClient;
-var db;
 var controller = new Object();
 
-
-MongoClient.connect(process.env.DB_CONN, 
-    { useNewUrlParser: true }, 
-    (err, client) => {
-        if (err) return console.log(err);
-        db = client.db(process.env.DB_NAME);
-    }
-);
 
 controller.getVorgabe = (spielvorgabe, hcp) => {
 
@@ -36,5 +24,16 @@ controller.getVorgabe = (spielvorgabe, hcp) => {
     return vorgabe;
 
 };
+
+controller.getScorecard = (spielvorgabe, course) => {
+
+    if(!spielvorgabe) spielvorgabe = -54;
+    
+    course.holes.forEach((hole, idx) => {
+        hole.vorgabe = controller.getVorgabe(spielvorgabe, hole.hcp);
+    });
+    return course;
+
+}
 
 module.exports = controller;

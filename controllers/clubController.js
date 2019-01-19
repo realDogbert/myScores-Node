@@ -4,6 +4,7 @@ var express = require('express');
 const MongoClient = require('mongodb').MongoClient;
 var ObjectID = require('mongodb').ObjectID; 
 var db;
+var scorecardController = require('./scorecardController');
 var controller = new Object();
 
 const clubs = "clubs";
@@ -84,6 +85,13 @@ controller.getCourses = function(query, callback) {
 controller.getCourseByID = function(id, req, res) {
     db.collection(courses).findOne(  {"_id": new ObjectID(id)}, function(err, document) {
         res.json(document);
+    });
+}
+
+controller.getScorecardByID = function(id, req, res) {
+    db.collection(courses).findOne(  {"_id": new ObjectID(id)}, function(err, document) {
+        let scorecard = scorecardController.getScorecard(req.query.spielvorgabe, document);
+        res.json(scorecard);
     });
 }
 

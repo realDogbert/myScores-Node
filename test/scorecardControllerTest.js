@@ -43,4 +43,34 @@ describe("Test ScoreCardController", function() {
         assert.equal(controller.getVorgabe(null,1),3);
     });
 
+    it ("sould return scorecard with spielvorgabe", () => {
+        
+        let spielvorgabe = -47;
+        let course = {
+            holes: [
+                {par: 3, hcp: 11, expected: 3},
+                {par: 4, hcp: 9, expected: 3},
+                {par: 3, hcp: 5, expected: 3},
+                {par: 3, hcp: 1, expected: 3},
+                {par: 3, hcp: 13, expected: 2},
+                {par: 4, hcp: 7, expected: 3},
+                {par: 3, hcp: 3, expected: 3},
+                {par: 3, hcp: 17, expected: 2},
+                {par: 3, hcp: 15, expected: 2},
+            ]
+        };
+
+        controller.getScorecard(spielvorgabe, course);
+        course.holes.forEach((hole, idx) => {
+            assert.equal(hole.vorgabe, hole.expected)
+        });
+
+        controller.getScorecard(null, course);
+        course.holes.forEach((hole, idx) => {
+            assert.equal(hole.vorgabe, controller.getVorgabe(null, hole.hcp))
+        });
+
+    })
+
+
 });
