@@ -29,9 +29,8 @@ workflows:
   version: 2
   workflow:
     jobs:
-    - build
-        filters:
+      - build:
+          filters:
             branches:
-                only:
-                    - master
-                    - develop
+              ignore:
+                - /feature/
