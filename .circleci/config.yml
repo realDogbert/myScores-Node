@@ -1,36 +1,50 @@
-version: 2.1
+version: 2
 jobs:
-  build:
-    docker:
-    - image: circleci/node:4.8.2
-    working_directory: ~/myScore
-    steps:
-    - checkout
-    - run:
-        name: update-npm
-        command: sudo npm install -g npm@5
-    - restore_cache:
-        key: dependency-cache-{{ checksum "package.json" }}
-    - run:
-        name: install-npm-wee
-        command: npm install
-    - save_cache:
-        key: dependency-cache-{{ checksum "package.json" }}
-        paths:
-        - ./node_modules
-    - run:
-        name: test
-        command: npm test
-    - store_artifacts:
-        path: test-results
-    - store_test_results:
-        path: test-results
+    build:
+        docker:
+            - image: circleci/node:4.8.2
+        working_directory: ~/myScore
+        steps:
+            - checkout
+            - run:
+                name: update-npm
+                command: sudo npm install -g npm@5
+            - restore_cache:
+                key: dependency-cache-{{ checksum "package.json" }}
+            - run:
+                name: install-npm-wee
+                command: npm install
+            - save_cache:
+                key: dependency-cache-{{ checksum "package.json" }}
+                paths:
+                - ./node_modules
+            - run:
+                name: test
+                command: npm test
+            - store_artifacts:
+                path: test-results
+            - store_test_results:
+                path: test-results
+    deploy-prod:
+        docker:
+        - image: ubuntu:14.04
+        steps:
+            - checkout
+            - run:
+                name: Deploy Master to Heroku
+                command: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/myscores-node.git master
 workflows:
-  version: 2
-  workflow:
-    jobs:
-      - build:
-          filters:
-            branches:
-              ignore:
-                - /feature/*
+    version: 2
+        workflow:
+            jobs:
+            - build:
+                filters:
+                    branches:
+                    only: develop
+            - deploy:
+                requires:
+                    - build
+                filters:
+                    branches:
+                        only: master
+
