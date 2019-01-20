@@ -35,16 +35,16 @@ jobs:
                 command: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/myscores-node.git master
 workflows:
     version: 2
-        workflow:
+        build-deploy:
             jobs:
-            - build:
-                filters:
-                    branches:
-                    only: develop
-            - deploy:
-                requires:
-                    - build
-                filters:
-                    branches:
-                        only: master
+                - build:
+                    filters:
+                        branches:
+                        only: develop
+                - deploy:
+                    requires:
+                        - build
+                    filters:
+                        branches:
+                            only: master
 
