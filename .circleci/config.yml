@@ -33,6 +33,7 @@ jobs:
             - run:
                 name: Deploy Master to Heroku
                 command: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/myscores-node.git master
+                
 workflows:
     version: 2
     build-deploy:
@@ -40,11 +41,7 @@ workflows:
             - build:
                 filters:
                     branches:
-                    only: develop
-            - deploy:
+                        only: master
+            - deploy-prod:
                 requires:
                     - build
-                filters:
-                    branches:
-                        only: master
-
