@@ -27,7 +27,7 @@ jobs:
                 path: test-results
     deploy-prod:
         docker:
-            - image: ubuntu:14.04
+            - image: circleci/node:4.8.2
         steps:
             - checkout
             - run:
@@ -36,6 +36,12 @@ jobs:
                 
 workflows:
     version: 2
+    build-only:
+        jobs:
+            - build:
+                filters:
+                    branches:
+                        only: develop
     build-deploy:
         jobs:
             - build:
