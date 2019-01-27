@@ -45,7 +45,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 const bcrypt = require('bcrypt');
 
 app.use(session({
-  secret: 'pleasereplacethissecret',
+  secret: process.env.SECRET_SESSION,
   resave: false,
   saveUninitialized: false,
   // cookie: { secure: true }
