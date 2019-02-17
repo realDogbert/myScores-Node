@@ -10,14 +10,13 @@ describe("Test mongo interface with promises", function(){
         var database = new db;
         database.connect()
         .then(function() {
-            console.log("Success1");
             var query = {
-                player_id: "5bf9cdcced55037e529da386"
+                player_id: "5bf9cdcced55037e529da386",
+                course_id: "5c2f712e122f7d0606b7b3b9"
             }
             return database.find(rounds, query);
         })
         .then(function(data) {
-            console.log("Success2");
             console.log(data);
             database.close();
         })

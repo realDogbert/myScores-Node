@@ -23,13 +23,25 @@ controller.getDashboard = (playerId, courseId) => {
             function(data) {
                 
                 var dashboard = {
-                    rounds: [],
-                    status: null
+                    rounds: 0,
+                    scores: [],
+                    sumScore: [],
+                    averageScore: []
                 };
 
-                data.forEach((score)=>{
-                    dashboard.rounds.push(score.brutto);
+                data.forEach((round) => {
+                    for (let i = 0; i < round.score.length; i++) {
+                        if (!dashboard.sumScore[i]) { dashboard.sumScore[i]=0 }
+                        dashboard.sumScore[i] += round.score[i];
+                    }
+                    dashboard.scores.push(round.score);
+                    dashboard.rounds++;
                 });
+
+                dashboard.sumScore.forEach((sum) => {
+                    dashboard.averageScore.push(sum / dashboard.rounds);
+                })
+
                 database.close();
                 resolve(dashboard);
             },
