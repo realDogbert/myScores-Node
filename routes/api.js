@@ -6,6 +6,7 @@ var router = express.Router();
 var clubController = require('../controllers/clubController');
 var userController = require('../controllers/userController');
 var roundsController = require('../controllers/roundsController');
+var dashboardController = require('../controllers/dashboardController');
 
 router.get('/', function(req, res, next) {
   res.render('clubs', { title: 'myScores' });
@@ -102,6 +103,13 @@ router.put('/users/:id', (req, res) => {
 router.delete('/users/:id', (req, res) => {
   userController.delete(req, res);
 });
+
+router.get('/users/:id/dashboard/:course', (req, res) => {
+  dashboardController.getDashboard(req.params.id, req.params.course)
+  .then(function(result) {
+    res.json(result);
+  })
+})
 
 
 router.post('/rounds', (req, res) => {
