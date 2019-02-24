@@ -5,10 +5,16 @@ const roundsCollection = "rounds";
 
 controller.getDashboard = (playerId, courseId) => {
 
+    if (!playerId) {
+        playerId = "5bf9cdcced55037e529da386";
+    }
+    if (!courseId) {
+        courseId = "5c2f712e122f7d0606b7b3b9";
+    }
+
     var promise = new Promise(function(resolve, reject) {
 
         var database = new db;
-        var result = null;
     
         database.connect()
         .then(function() {
@@ -23,23 +29,34 @@ controller.getDashboard = (playerId, courseId) => {
             function(data) {
                 
                 var dashboard = {
-                    rounds: 0,
-                    scores: [],
+                    course: {
+                        name: data[0].course_name
+                    },
+                    rounds: [],
                     sumScore: [],
-                    averageScore: []
+                    averageScore: [],
+                    statistics: [0,0,0,0,0]
                 };
 
                 data.forEach((round) => {
                     for (let i = 0; i < round.score.length; i++) {
                         if (!dashboard.sumScore[i]) { dashboard.sumScore[i]=0 }
                         dashboard.sumScore[i] += round.score[i];
+
+                        dashboard.statistics[round.brutto[i]]++;
+
                     }
-                    dashboard.scores.push(round.score);
-                    dashboard.rounds++;
+                    dashboard.rounds.push({
+                        dateCreated: round.dateCreated,
+                        spielvorgabe: round.spielvorgabe,
+                        score: round.score,
+                        brutto: round.brutto,
+                        netto: round.netto
+                    });
                 });
 
                 dashboard.sumScore.forEach((sum) => {
-                    dashboard.averageScore.push(sum / dashboard.rounds);
+                    dashboard.averageScore.push(sum / dashboard.rounds.length);
                 })
 
                 database.close();

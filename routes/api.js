@@ -109,7 +109,14 @@ router.get('/users/:id/dashboard/:course', (req, res) => {
   .then(function(result) {
     res.json(result);
   })
-})
+});
+
+router.get('/dashboard/:course', (req, res) => {
+  dashboardController.getDashboard(null, req.params.course)
+  .then(function(result) {
+    res.json(result);
+  })
+});
 
 
 router.post('/rounds', (req, res) => {
