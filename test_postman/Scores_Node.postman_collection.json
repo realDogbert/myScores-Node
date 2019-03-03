@@ -1,0 +1,258 @@
+{
+	"info": {
+		"_postman_id": "87f704f2-dd86-45d8-9011-ffc0a14a8e8f",
+		"name": "Scores Node",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Clubs",
+			"item": [
+				{
+					"name": "{{endpoint_API}}/api/clubs",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1f659fca-6edb-4446-8a90-e5ecfa89b18e",
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([200, 201,202]);",
+									"});",
+									"pm.test(\"Response contains _id\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"_id\");",
+									"});",
+									"",
+									"console.log(pm.response.text());"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\n        \"name\": \"{{name}}\",\n        \"address\": {\n            \"street\": \"{{address_street}}\",\n            \"zip\": \"{{address_zip}}\",\n            \"city\": \"{{address_city}}\",\n            \"country\": \"{{address_country}}\"\n        },\n        \"contact\": {\n            \"website\": \"https://www.testclub1.de/\",\n            \"email\": \"info@testclub1.de\",\n            \"phone\": \"+49 (0) 8094 - 00 00 01\"\n        }\n    }"
+						},
+						"url": {
+							"raw": "{{endpoint_API}}/api/clubs",
+							"host": [
+								"{{endpoint_API}}"
+							],
+							"path": [
+								"api",
+								"clubs"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "createClub",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "    {\n        \"name\": \"Testclub 1\",\n        \"address\": {\n            \"street\": \"Test Street 1\",\n            \"zip\": \"80000\",\n            \"city\": \"Test City 1\",\n            \"country\": \"Test Country 1\"\n        },\n        \"contact\": {\n            \"website\": \"https://www.testclub1.de/\",\n            \"email\": \"info@testclub1.de\",\n            \"phone\": \"+49 (0) 8094 - 00 00 01\"\n        }\n    }"
+								},
+								"url": {
+									"raw": "{{endpoint_API}}/api/clubs",
+									"host": [
+										"{{endpoint_API}}"
+									],
+									"path": [
+										"api",
+										"clubs"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "352"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"160-OrApmvNVMJ695IE6woPsFz7PzLw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 02 Mar 2019 13:34:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"Testclub 1\",\n    \"address\": {\n        \"street\": \"Test Street 1\",\n        \"zip\": \"80000\",\n        \"city\": \"Test City 1\",\n        \"country\": \"Test Country 1\"\n    },\n    \"contact\": {\n        \"website\": \"https://www.testclub1.de/\",\n        \"email\": \"info@testclub1.de\",\n        \"phone\": \"+49 (0) 8094 - 00 00 01\"\n    },\n    \"dateCreated\": \"2019-03-02T13:34:45.566Z\",\n    \"dateLastModified\": \"2019-03-02T13:34:45.566Z\",\n    \"_id\": \"5c7a86753feb683336b75c03\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "GetClubs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{endpoint_API}}/api/clubs",
+					"host": [
+						"{{endpoint_API}}"
+					],
+					"path": [
+						"api",
+						"clubs"
+					]
+				},
+				"description": "Get all clubs"
+			},
+			"response": []
+		},
+		{
+			"name": "GetUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{endpoint_API}}/api/users",
+					"host": [
+						"{{endpoint_API}}"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetUsers",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{endpoint_API}}/api/users",
+							"host": [
+								"{{endpoint_API}}"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "188"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"bc-vrxwzPiAu63PgpQ+2dEcP/6Mobs\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 02 Mar 2019 12:20:39 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"5c02954950724b153afa3c6e\",\n        \"name\": \"fveitzen\",\n        \"email\": \"fveitzen@gmail.com\",\n        \"password\": \"$2b$10$8u9V5Evc3wh38sLQPqMdZuA0j9HCyKUVE0ZSDUF5VUTZSAPyb3w4e\",\n        \"isAdmin\": \"true\",\n        \"realName\": \"\"\n    }\n]"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "fc591f87-dc93-4840-a63d-40ff3f04e37c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "28da6307-7844-4e0d-8f56-46d6a568bc8c",
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
+				]
+			}
+		}
+	]
+}

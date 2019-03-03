@@ -1,6 +1,5 @@
 require('dotenv').config();
 
-var express = require('express');
 const MongoClient = require('mongodb').MongoClient;
 var ObjectID = require('mongodb').ObjectID; 
 var db;
@@ -20,16 +19,34 @@ MongoClient.connect(process.env.DB_CONN,
 
 
 controller.get = function(req, res) {
-    db.collection(clubs).find().toArray((err, result) => {
+
+    var query = null;
+    if (req.query.name) {
+        query = "{ name: {$regex: /Ebe/} }";
+    }
+
+    db.collection(clubs).find("{ name: {$regex: /Go/} }").toArray((err, result) => {
         if (err) return console.log(err)
         res.json(result);
     });
 }
 
 controller.getByID = function(id, req, res) {
-    db.collection(clubs).findOne(  {"_id": new ObjectID(id)}, function(err, document) {
-        res.json(document);
-    });
+
+    db.collection(clubs).findOne({"_id": new ObjectID(id)})
+    .then(
+        function(data) {
+            var status = 200;
+            if (!data) {
+                status = 404;
+            }
+            res.status(status).json(data);
+        },
+        function(error){
+            res.status(500).json(error);
+        }
+    );
+
 }
 
 controller.create = function(data, callback) {
@@ -49,7 +66,7 @@ controller.delete = function(req, res) {
 controller.update = function(id, data, callback) {
 
     data.dateLastModified = new Date();
-    db.collection(clubs).updateOne(
+    db.collection(clubs).findOneAndUpdate(
         {"_id": new ObjectID(id)},
         { $set: data},
         callback

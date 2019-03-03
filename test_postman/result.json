@@ -1,0 +1,19 @@
+{
+  "id": "5104eef8-8a93-4c96-960e-6e372da13b7e",
+  "values": [
+    {
+      "type": "any",
+      "value": [],
+      "key": "club_IDs"
+    },
+    {
+      "type": "any",
+      "value": "[\"5c7afcd1062b820412d000da\",\"5c7afcd1062b820412d000db\",\"5c7afcd1062b820412d000dc\",\"5c7afcd2062b820412d000dd\",\"5c7afcd2062b820412d000de\",\"5c7afcd2062b820412d000df\",\"5c7afcd2062b820412d000e0\",\"5c7afcd3062b820412d000e1\",\"5c7afcd3062b820412d000e2\",\"5c7afcd3062b820412d000e3\",\"5c7afcd3062b820412d000e4\",\"5c7afcd3062b820412d000e5\"]",
+      "key": "variable_key"
+    }
+  ],
+  "name": "globals",
+  "_postman_variable_scope": "globals",
+  "_postman_exported_at": "2019-03-02T21:59:47.927Z",
+  "_postman_exported_using": "Newman/4.4.0"
+}
