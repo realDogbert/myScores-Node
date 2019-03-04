@@ -21,11 +21,20 @@ MongoClient.connect(process.env.DB_CONN,
 controller.get = function(req, res) {
 
     var query = null;
-    if (req.query.name) {
-        query = "{ name: {$regex: /Ebe/} }";
+    if (req.query.search) {
+        query = {
+            name: { 
+                $regex: req.query.search ,
+                $options: "$i",
+            }
+        }
     }
 
-    db.collection(clubs).find("{ name: {$regex: /Go/} }").toArray((err, result) => {
+    var options = {
+        sort: ["name"]
+    };
+
+    db.collection(clubs).find(query, options).toArray((err, result) => {
         if (err) return console.log(err)
         res.json(result);
     });
@@ -59,7 +68,8 @@ controller.create = function(data, callback) {
 
 controller.delete = function(req, res) {
     db.collection(clubs).deleteOne(  {"_id": new ObjectID(req.params.id)}, function(err, document) {
-        res.json(document)
+        // make response status 204 => Success, but no content
+        res.status(204).json(document)
     });
 }
 

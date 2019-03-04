@@ -24,7 +24,7 @@ router.post('/clubs', function(req, res, next) {
   clubController.create(req.body, (error, result) => {
     if (error) return console.log(error)
     // return the created object, which is the first element in ops
-    res.json(result.ops[0]);
+    res.status(201).json(result.ops[0]);
   });
 });
 
