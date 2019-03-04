@@ -17,9 +17,23 @@ MongoClient.connect(process.env.DB_CONN,
 );
 
 
-controller.get = function(callback) {
+controller.get = function(search, callback) {
 
-    db.collection(collection).find().toArray(callback);
+    var query = null;
+    if (search) {
+        query = {
+            name: { 
+                $regex: search ,
+                $options: "$i",
+            }
+        }
+    }
+
+    var options = {
+        sort: ["name"]
+    };
+
+    db.collection(collection).find(query, options).toArray(callback);
 
 }
 

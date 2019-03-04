@@ -76,7 +76,7 @@ router.get('/scorecards/:id', function(req,res,next) {
 });
 
 router.get('/users', (req, res) => {
-  userController.get((err, result) => {
+  userController.get(req.query.search, (err, result) => {
       if (err) return console.log(err)
       res.json(result)
   });
