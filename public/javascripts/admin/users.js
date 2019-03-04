@@ -55,13 +55,9 @@ function createUserLine(user) {
         .append(
             $('<td>')
             .append(
-                $('<button>')
-                .addClass('btn btn-danger')
-                .attr({
-                    "type": "button",
-                    "value": "Delete" 
-                })
-                .text('Delete')
+                $('<i>')
+                .addClass('material-icons')
+                .text('delete')
                 .click(function() {
                     
                     $.ajax({
