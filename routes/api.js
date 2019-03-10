@@ -111,13 +111,18 @@ router.get('/users/:id/dashboard/:course', (req, res) => {
   })
 });
 
-router.get('/dashboard/:course', (req, res) => {
-  dashboardController.getDashboard(null, req.params.course)
-  .then(function(result) {
-    res.json(result);
-  })
-});
 
+router.get('/dashboard/statistics', (req, res) => {
+  dashboardController.getPlayerStatistics(req.user._id)
+  .then(
+    function(result) {
+      res.json(result);
+    },
+    function(error) {
+      res.json(error);
+    }
+  )
+});
 
 router.post('/rounds', (req, res) => {
 

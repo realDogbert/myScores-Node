@@ -74,4 +74,63 @@ controller.getDashboard = (playerId, courseId) => {
 
 }
 
+controller.getPlayerStatistics = (playerId) => {
+
+    var promise = new Promise(function(resolve, reject) {
+
+        var database = new db;
+    
+        database.connect()
+        .then(function() {
+            var query = {
+                player_id: playerId
+            }
+            return database.playerStatistics(roundsCollection, query);
+        })
+        .then(
+            function(data) {
+
+                var numOfRounds = data.length;
+                var numOfStrokes = 0;
+                var rounds = [];
+                var holes = 0;
+                var brutto_par = 0;
+
+                data.forEach( (round) => {
+                    numOfStrokes += round.score.reduce((a,b) => {return a+b}, 0);
+                    rounds.push(round);
+                    for (let i = 0; i < round.brutto.length; i++) {
+                        holes++;
+                        if (round.brutto[i] >= 2) brutto_par++;
+                    }
+                });
+
+                var response = {
+                    statistics: {
+                        rounds: numOfRounds,
+                        strokes: numOfStrokes,
+                        holes: holes,
+                        bruttoPar: brutto_par
+                    },
+                    rounds: rounds
+                }
+
+                database.close();
+                resolve(response);
+            },
+            function(error) {
+                database.close();
+                reject(error);
+            }
+        )
+        .catch(function(error) {
+            reject(error);
+        });
+
+    });
+
+    return promise;
+
+}
+
 module.exports = controller;

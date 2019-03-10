@@ -1,37 +1,84 @@
-<h1>Dashboard</h1>
-<input id="user_id" name="player_id" value="{{user._id}}" hidden></input>
-<p>
-    <select id="courseSelector"></select>
-    <button class="btn btn-primary" id="newRound">New Round</button>
-</p>
+<div class="row">
+    <div class="col-12 col-md-3 bd-sidebar">
 
+        <div>Übersicht</div>
+        <div>Plätze</div>
+        <ul>
+            <li>Platz 1</li>
+            <li>Platz 2</li>
+        </ul>
 
-<div>
-    <canvas id="pie" width="400" height="100"></canvas>
+    </div>
+    <main class="col-12 col-md-9">
+
+        <h1>Dashboard</h1>
+
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Runden</h5>
+                        <div class="card-text" id="numOfRounds">0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Schläge</h5>
+                        <div class="card-text" id="numOfStrokes">0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Par+</h5>
+                        <div class="card-text" id="bruttoPar">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-12">
+
+                <div class="card">
+                    <div class="card-body">
+
+                        <h2 class="card-title">Übersicht Runden</h2>
+                        <table class="table table-sm table-striped table-hover">
+                            <caption>Rounds played</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Spielvorgabe</th>
+                                    <th scope="col">Course</th>
+                                    <th scope="col">Score</th>
+                                    <th scope="col">Brutto</th>
+                                    <th scope="col">Netto</th>
+                                </tr>
+                            </thead>
+                            <tbody  id="rounds">
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
 </div>
 
-<div>
-    <canvas id="chart" width="400" height="100"></canvas>
-</div>
 
-<p>
-    <table class="table table-sm table-striped table-hover">
-        <caption>Rounds played</caption>
-        <thead>
-            <tr>
-                <th scope="col">Date</th>
-                <th scope="col">Spielvorgabe</th>
-                <th scope="col">Course</th>
-                <th scope="col">Score</th>
-                <th scope="col">Brutto</th>
-                <th scope="col">Netto</th>
-            </tr>
-        </thead>
-        <tbody  id="rounds">
 
-        </tbody>
-    </table>
-</p>
+
+
+
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

@@ -65,4 +65,12 @@ DB.prototype.find = function(collection, query) {
 
 }
 
+DB.prototype.playerStatistics = function(collection, query) {
+
+    var _this = this;
+    var db = _this.client.db(process.env.DB_NAME);
+    return db.collection(collection, query).find().toArray();
+
+}
+
 module.exports = DB;
