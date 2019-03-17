@@ -1,0 +1,201 @@
+{
+    "name": "--TEST-- 18 Loch Testplatz Nummer Eins",
+    "numOfHoles": "18",
+    "club": {
+      "name": "Testplatz für Entwicklung"
+    },
+    "holes": [
+      {
+        "par": 3,
+        "hcp": 11,
+        "tee": {
+          "white": 0,
+          "blue": 0,
+          "red": 108,
+          "yellow": 128
+        }
+      },
+      {
+        "par": 4,
+        "hcp": 9,
+        "tee": {
+          "white": 0,
+          "blue": 0,
+          "red": 210,
+          "yellow": 237
+        }
+      },
+      {
+        "par": 3,
+        "hcp": 5,
+        "tee": {
+          "white": 0,
+          "blue": 0,
+          "red": 139,
+          "yellow": 152
+        }
+      },
+      {
+        "par": 4,
+        "hcp": 1,
+        "tee": {
+          "white": 0,
+          "blue": 0,
+          "red": 290,
+          "yellow": 329
+        }
+      },
+      {
+        "par": 3,
+        "hcp": 13,
+        "tee": {
+          "white": 0,
+          "blue": 0,
+          "red": 91,
+          "yellow": 104
+        }
+      },
+      {
+        "par": 3,
+        "hcp": 7,
+        "tee": {
+          "white": 0,
+          "blue": 0,
+          "red": 147,
+          "yellow": 165
+        }
+      },
+      {
+        "par": 4,
+        "hcp": 3,
+        "tee": {
+          "white": 0,
+          "blue": 0,
+          "red": 244,
+          "yellow": 280
+        }
+      },
+      {
+        "par": 3,
+        "hcp": 17,
+        "tee": {
+          "white": 0,
+          "blue": 0,
+          "red": 113,
+          "yellow": 113
+        }
+      },
+      {
+        "par": 3,
+        "hcp": 15,
+        "tee": {
+          "white": 0,
+          "blue": 0,
+          "red": 91,
+          "yellow": 109
+        }
+      },
+      {
+        "par": 3,
+        "hcp": 11,
+        "tee": {
+          "white": 0,
+          "blue": 0,
+          "red": 108,
+          "yellow": 128
+        }
+      },
+      {
+        "par": 4,
+        "hcp": 9,
+        "tee": {
+          "white": 0,
+          "blue": 0,
+          "red": 210,
+          "yellow": 237
+        }
+      },
+      {
+        "par": 3,
+        "hcp": 5,
+        "tee": {
+          "white": 0,
+          "blue": 0,
+          "red": 139,
+          "yellow": 152
+        }
+      },
+      {
+        "par": 4,
+        "hcp": 1,
+        "tee": {
+          "white": 0,
+          "blue": 0,
+          "red": 290,
+          "yellow": 329
+        }
+      },
+      {
+        "par": 3,
+        "hcp": 13,
+        "tee": {
+          "white": 0,
+          "blue": 0,
+          "red": 91,
+          "yellow": 104
+        }
+      },
+      {
+        "par": 3,
+        "hcp": 7,
+        "tee": {
+          "white": 0,
+          "blue": 0,
+          "red": 147,
+          "yellow": 165
+        }
+      },
+      {
+        "par": 4,
+        "hcp": 3,
+        "tee": {
+          "white": 0,
+          "blue": 0,
+          "red": 244,
+          "yellow": 280
+        }
+      },
+      {
+        "par": 3,
+        "hcp": 17,
+        "tee": {
+          "white": 0,
+          "blue": 0,
+          "red": 113,
+          "yellow": 113
+        }
+      },
+      {
+        "par": 3,
+        "hcp": 15,
+        "tee": {
+          "white": 0,
+          "blue": 0,
+          "red": 91,
+          "yellow": 109
+        }
+      }
+    ],
+    "cr": {
+      "white": 0,
+      "blue": 0,
+      "yellow": 58,
+      "red": 57
+    },
+    "sl": {
+      "white": 0,
+      "blue": 0,
+      "yellow": 103,
+      "red": 92
+    }
+  }

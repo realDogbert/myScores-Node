@@ -34,6 +34,7 @@ controller.get = function(req, res) {
         sort: ["name"]
     };
 
+    console.log(query);
     db.collection(clubs).find(query, options).toArray((err, result) => {
         if (err) return console.log(err)
         res.json(result);
