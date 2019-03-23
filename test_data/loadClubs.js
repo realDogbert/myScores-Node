@@ -8,7 +8,7 @@ const csv = require('csv-parser');
 const fs = require('fs');
 
 const rootDirectory = "./test_data/";
-const clubsFile = "test-clubs_develop.csv";
+const clubsFile = "golfclubs_deutschland.csv";
 const coursesDirectory = "courses/";
 
 const apiClubs = "api/clubs";
@@ -35,9 +35,10 @@ fs.createReadStream(rootDirectory + clubsFile)
                 country: club.address_country
             },
             contact: {
-                website: "http://info@test.de",
+                website: club.website,
                 email: club.contact_email,
-                phone: club.contact_phone
+                phone: club.contact_phone,
+                fax: club.contact_fax,
             }
         };
         var currentCourses = getCoursesForClub(club.id);
@@ -60,6 +61,8 @@ fs.createReadStream(rootDirectory + clubsFile)
 // which filename start with the internal club id
 // Return array with courses as JSON objects
 function getCoursesForClub(clubID) {
+
+    if (!clubID) return [];
 
     var dir = rootDirectory + coursesDirectory;
     var results = [];

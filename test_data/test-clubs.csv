@@ -1,13 +1,18 @@
-name,address_street,address_zip,address_city,address_country
-Golf & Country Club Fleesensee,Test Street 1,80000,Göhren-Lebbin,Deutschland
-GC Garmisch-Partenkirchen,Street 2,80000,Oberau,Deutschland
-Land-GC Schloß Moyland,Street 3,80000,Bedburg-Hau,Deutschland
-Golf- und Landclub Schloß Liebenstein,Street 4,80000,Neckarwestheim,Deutschland
-Münchner Golf Eschenried & Golfpark Gut Häusern,Street 5,80000,Markt Indersdorf,Deutschland
-GC Dresden Elbflorenz,Street 6,80000,Possendorf,Deutschland
-GC Hardenberg,Street 7,80000,Northeim,Deutschland
-Golfplatz Spa & GolfResort Weimarer Land,Street 8,80000,Blankenhain,Deutschland
-Golf Resort Sonnenalp - Oberallgäu,Street 9,80000,Ofterschwang,Deutschland
-GC Falkenstein,Test Street 10,80000,Hamburg,Deutschland
-GC Hanau-Wilhelmsbad,Test Street 11,80000,Hanau,Deutschland
-GC Beuerberg,Test Street 12,80000,Beuerberg,Deutschland
+id,name,address_street,address_zip,address_city,address_country,contact_email,contact_phone,website
+0001,Golf & Country Club Fleesensee,Test Street 1,80000,Göhren-Lebbin,Deutschland,,,
+0002,GC Garmisch-Partenkirchen,Street 2,80000,Oberau,Deutschland,,,
+0003,Land-GC Schloß Moyland,Street 3,80000,Bedburg-Hau,Deutschland,,,
+0004,Golf- und Landclub Schloß Liebenstein,Street 4,80000,Neckarwestheim,Deutschland,,,
+0005,Münchner Golf Eschenried & Golfpark Gut Häusern,Street 5,80000,Markt Indersdorf,Deutschland,,,
+0006,GC Dresden Elbflorenz,Street 6,80000,Possendorf,Deutschland,,,
+0007,GC Hardenberg,Street 7,80000,Northeim,Deutschland,,,
+0008,Golfplatz Spa & GolfResort Weimarer Land,Street 8,80000,Blankenhain,Deutschland,,,
+0009,Golf Resort Sonnenalp - Oberallgäu,Street 9,80000,Ofterschwang,Deutschland,,,
+0010,GC Falkenstein,Test Street 10,80000,Hamburg,Deutschland,,,
+0011,GC Hanau-Wilhelmsbad,Test Street 11,80000,Hanau,Deutschland,,,
+0012,GC Beuerberg,Test Street 12,80000,Beuerberg,Deutschland,,,
+0013,Golf Club Ebersberg e.V.,Zaißing 6,85643,Steinhöring,Deutschland,info@gc-ebersberg.de,08094-8106,www.gc-ebersberg.de
+0014,Golfclub Gut Thailing e.V.,Thailing 4,85643,Steinhöring,Deutschland,info@thailing.de,08094-9055088,www.thailing.de
+0015,Golf-Club Schloss Elkofen e.V.,Hochreiterweg 14,85567,Grafing-Oberelkofen,Deutschland,nfo@gcschlosselkofen.de,08092-7494,www.gcschlosselkofen.de
+0016,Golfclub München-Riem e.V.,Graf-Lehndorff-Str. 36,81929,München,Deutschland,info@gcriem.de,(0 89) 94 500 800,www.gcriem.de
+0017,Golfclub Olching e.V.,Feursstrasse 89,82140,Olching,Deutschland,sportbuero@golfclub-olching.de,08142-4829-0,www.golfclub-olching.de

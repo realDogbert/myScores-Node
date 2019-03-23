@@ -62,3 +62,5 @@ typings/
 
 #ignore test results
 test-results
+test_data/golfclubs_deutschland.csv
+test_data/getData.js
