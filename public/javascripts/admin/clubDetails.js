@@ -38,7 +38,8 @@ $(document).ready(function() {
             contact: {
                 website: $("#website").val(),
                 email: $("#email").val(),
-                phone: $("#phone").val()
+                phone: $("#phone").val(),
+                fax: $("#fax").val()
             }
         };
 

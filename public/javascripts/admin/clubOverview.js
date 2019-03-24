@@ -30,7 +30,7 @@ $(document).ready(function() {
 function createClubLine(club) {
     var line = $("<tr>");
     line.append($("<td>").append($("<a>").attr("href", "/admin/clubs/" + club._id).html(club.name))); 
-    line.append($("<td>").html(club.address.country));
+    line.append($("<td>").html(club.address.street + "<br>" + club.address.zip + " " + club.address.country));
     line.append($("<td>").html(club.contact.website));
     return line;
 }
