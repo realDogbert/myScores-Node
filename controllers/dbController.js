@@ -73,4 +73,14 @@ DB.prototype.playerStatistics = function(collection, query) {
 
 }
 
+DB.prototype.count = function(collection) {
+
+    var _this = this;
+    var db = _this.client.db(process.env.DB_NAME);
+    
+    return db.collection(collection).countDocuments();
+
+
+}
+
 module.exports = DB;

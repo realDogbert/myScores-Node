@@ -9,12 +9,10 @@ $(document).ready(function() {
     .done(function(json) {
         $.each(json, function (idx, course) {
             $("#courses").append(
-                $("<tr>")
-                    .append($("<td>")
+                $("<li class='list-group-item'>")
                         .append($("<a>")
                         .attr("href", "/admin/courses/" + course._id)
-                        .html(course.name)))
-                    .append($("<td>").html(course.numOfHoles))
+                        .html(course.name))
             )
         })
     })

@@ -3,7 +3,7 @@ require('dotenv').config();
 var express = require('express');
 var request = require('request');
 var router = express.Router();
-
+var controller = require('../controllers/adminController');
 
 router.get('/', (req, res) => {
     res.render('admin/dashboard', {
@@ -119,5 +119,30 @@ router.get('/addCourse', (req, res) => {
     });
 });
 
+router.get('/statistics', (req, res) => {
+
+    var collections = ["clubs", "courses", "users"];
+    var promises = [];
+    collections.forEach(collection => {
+        promises.push(controller.getStatistics(collection));
+    })
+
+    Promise.all(promises)
+    .then(
+        values => {
+            var result = {
+                clubs: values[0],
+                courses:  values[1],
+                users:  values[2]
+            }
+            res.json(result);
+        },
+        error => {
+            console.log(error);
+            res.sendStatus(500)
+        }  
+    )
+
+});
 
 module.exports = router;
