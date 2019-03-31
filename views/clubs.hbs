@@ -1,41 +1,21 @@
 
-<h1>Clubs</h1>
-<p>Welcome {{user.name}}</p>
 
-<table class="table table-striped">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">ID</th>
-      <th scope="col">Name</th>
-      <th scope="col">Location</th>
-    </tr>
-  </thead>
-  <tbody>
-    {{#each clubs}} 
-    <tr>
-      <th scope="row">{{@index}}</th>
-      <td>{{_id}}</td>
-      <td>{{clubName}}</td>
-      <td>{{clubLocation}}</td>
-    </tr>
-    {{/each}}
-  </tbody>
-</table>
-  
-<form action="api/clubs" method="POST">
-    <div class="form-group">
-        <label for="club name">Club Name</label>
-        <input type="text" class="form-control" name="clubName" placeholder="Enter the name of the club">
-    </div>
-    <div class="form-group">
-        <label for="club location">Club Location</label>
-        <input type="text" class="form-control" name="clubLocation" placeholder="Enter the location of the club">
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-
+<form>
+  <div class="form-group">
+    <label for="search">Club Suche</label>
+    <input type="text" class="form-control" id="search" placeholder="Suche nach Club">
+    <small id="searchHelp" class="form-text text-muted">Suchen sie nach einem unserer 800 Clubs in Deutschland</small>
+  </div>
 </form>
 
-<div id="test"></div>
 
-<script src="javascripts/courseForm.js"></script>
+<div id="result"></div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="/stylesheets/search.css" rel="stylesheet">
+
+<script src="/javascripts/search.js"></script>

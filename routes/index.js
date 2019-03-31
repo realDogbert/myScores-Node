@@ -27,6 +27,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'myScores', user: req.user });
 });
 
+router.get('/clubs', (req, res, next) => {
+  res.render('clubs', { title: 'Search Club'});
+});
+
 
 router.get('/register', function(req, res, next) {
   res.render('register', { title: 'myScores' });
