@@ -28,7 +28,11 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/clubs', (req, res, next) => {
-  res.render('clubs', { title: 'Search Club'});
+  res.render('clubs', { title: 'Suche'});
+});
+
+router.get('/details', (req, res, next) => {
+  res.render('details', { title: 'Details'});
 });
 
 
