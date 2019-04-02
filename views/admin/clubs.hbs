@@ -11,66 +11,70 @@
   </div>
 </div>
 
-<h1>
-  <i class="material-icons md-36">location_on</i>
-  Club Management
-  <i class="material-icons" id="clubNew">add_circle_outline</i>
-</h1>
+<div class="container-fluid">
 
-<div class="row">
-  <div class="col-md-3">
+  <h1>
+    <i class="material-icons md-36">location_on</i>
+    Club Management
+    <i class="material-icons" id="clubNew">add_circle_outline</i>
+  </h1>
 
-    <div class="card">
-      <div class="card-header">
+  <div class="row">
+    <div class="col-md-3">
+
+      <div class="card">
+        <div class="card-header">
+            <h4>
+                Actions
+            </h4>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Add new Club</li>
+          <li class="list-group-item">Search Club</li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="col-md-9">
+
+      <div class="card">
+        <div class="card-header">
+
           <h4>
-              Actions
+            <input type="text" class="form-control" id="search" placeholder="Search">
           </h4>
-      </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Add new Club</li>
-        <li class="list-group-item">Search Club</li>
-      </ul>
-    </div>
 
-  </div>
-  <div class="col-md-9">
+        </div>
+        <div class="card-body">
 
-    <div class="card">
-      <div class="card-header">
-
-        <h4>
-          <input type="text" class="form-control" id="search" placeholder="Search">
-        </h4>
-
-      </div>
-      <div class="card-body">
-
-        <table class="table table-sm table-striped table-hover">
-          <thead>
-            <tr>
-              <th>Club Name</th>
-              <th>Club Location</th>
-              <th>WebSite</th>
-            </tr>
-          </thead>
-          <tbody id="result">
-            {{#each clubs}}
-              <tr id="{{_id}}">
-                <td>
-                  <a href="/admin/clubs/{{_id}}">{{name}}</a>
-                </td>
-                <td>{{address.street}}<br>{{address.zip}} {{address.country}}</td>
-                <td>{{contact.website}}</td>
+          <table class="table table-sm table-striped table-hover">
+            <thead>
+              <tr>
+                <th>Club Name</th>
+                <th>Club Location</th>
+                <th>WebSite</th>
               </tr>
-            {{/each}}
-          </tbody>
-        </table>
+            </thead>
+            <tbody id="result">
+              {{#each clubs}}
+                <tr id="{{_id}}">
+                  <td>
+                    <a href="/admin/clubs/{{_id}}">{{name}}</a>
+                  </td>
+                  <td>{{address.street}}<br>{{address.zip}} {{address.country}}</td>
+                  <td>{{contact.website}}</td>
+                </tr>
+              {{/each}}
+            </tbody>
+          </table>
 
+        </div>
       </div>
-    </div>
-    
+      
 
+    </div>
   </div>
+
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

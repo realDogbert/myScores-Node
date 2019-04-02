@@ -11,79 +11,83 @@
   </ol>
 </nav>
 
-{{#if create}}
-<h1>New Course</h1>
-{{else}}
-<h1>Course Details</h1>
-{{/if}}
+<div class="container-fluid">
+
+  {{#if create}}
+  <h1>New Course</h1>
+  {{else}}
+  <h1>Course Details</h1>
+  {{/if}}
 
 
-<form>
+  <form>
 
-    {{#unless create}}
-    <div class="form-group">
-      <label for="course_id">Course Id</label>
-      <input class="form-control" type="text" id="course_id" value="{{courseId}}" readonly>
-    </div>
-    {{/unless}}
-    <div class="form-group">
-      <label for="courseName">Course Name</label>
-      <input class="form-control" type="text" id="courseName">
-    </div>
-    <div class="form-group">
-      <label for="clubId">Club Id</label>
-      <input class="form-control" type="text" id="clubId" value="{{clubId}}" readonly>
-    </div>
-    <div class="form-group">
-      <label for="clubName">Club Name</label>
-      <input class="form-control" type="text" id="clubName" value="{{clubName}}">
-    </div>
+      {{#unless create}}
+      <div class="form-group">
+        <label for="course_id">Course Id</label>
+        <input class="form-control" type="text" id="course_id" value="{{courseId}}" readonly>
+      </div>
+      {{/unless}}
+      <div class="form-group">
+        <label for="courseName">Course Name</label>
+        <input class="form-control" type="text" id="courseName">
+      </div>
+      <div class="form-group">
+        <label for="clubId">Club Id</label>
+        <input class="form-control" type="text" id="clubId" value="{{clubId}}" readonly>
+      </div>
+      <div class="form-group">
+        <label for="clubName">Club Name</label>
+        <input class="form-control" type="text" id="clubName" value="{{clubName}}">
+      </div>
 
-    <div class="form-group">
-      <label for="numOfHoles">Number of Holes</label>
-      <select class="form-control" id="numOfHoles">
-        <option selected>9</option>
-        <option>18</option>
-      </select>
-    </div>
+      <div class="form-group">
+        <label for="numOfHoles">Number of Holes</label>
+        <select class="form-control" id="numOfHoles">
+          <option selected>9</option>
+          <option>18</option>
+        </select>
+      </div>
 
-    <table class="table table-sm table-striped table-hover">
-      <thead>
-        <tr>
-          <th>CR</th>
-          <td><input class="form-control" type="number" name="crWhite" id="crWhite"></td>
-          <td><input class="form-control" type="number" name="crBlue" id="crBlue"></td>
-          <td></td>
-          <td><input class="form-control" type="number" name="crYellow" id="crYellow"></td>
-          <td><input class="form-control" type="number" name="crRed" id="crRed"></td>
-          <td></td>
-        </tr>
-        <tr>
-          <th>SL</th>
-          <td><input class="form-control" type="number" name="slWhite" id="slWhite"></td>
-          <td><input class="form-control" type="number" name="slBlue" id="slBlue"></td>
-          <td></td>
-          <td><input class="form-control" type="number" name="slYellow" id="slYellow"></td>
-          <td><input class="form-control" type="number" name="slRed" id="slRed"></td>
-          <td></td>
-        </tr>
-        <tr>
-          <th>Number</th>
-          <th>Man</th>
-          <th>Woman</th>
-          <th>Par</th>
-          <th>Man</th>
-          <th>Woman</th>
-          <th>HCP</th>
-        </tr>
-      </thead>
-      <tbody id="holesForm"></tbody>
-    </table>
+      <table class="table table-sm table-striped table-hover">
+        <thead>
+          <tr>
+            <th>CR</th>
+            <td><input class="form-control" type="number" name="crWhite" id="crWhite"></td>
+            <td><input class="form-control" type="number" name="crBlue" id="crBlue"></td>
+            <td></td>
+            <td><input class="form-control" type="number" name="crYellow" id="crYellow"></td>
+            <td><input class="form-control" type="number" name="crRed" id="crRed"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>SL</th>
+            <td><input class="form-control" type="number" name="slWhite" id="slWhite"></td>
+            <td><input class="form-control" type="number" name="slBlue" id="slBlue"></td>
+            <td></td>
+            <td><input class="form-control" type="number" name="slYellow" id="slYellow"></td>
+            <td><input class="form-control" type="number" name="slRed" id="slRed"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Number</th>
+            <th>Man</th>
+            <th>Woman</th>
+            <th>Par</th>
+            <th>Man</th>
+            <th>Woman</th>
+            <th>HCP</th>
+          </tr>
+        </thead>
+        <tbody id="holesForm"></tbody>
+      </table>
 
-    <button type="submit" class="btn btn-primary">Submit</button>
-    <button type="button" class="btn btn-secondary" id="cancel">Cancel</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="button" class="btn btn-secondary" id="cancel">Cancel</button>
 
-</form>
+  </form>
+
+</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
