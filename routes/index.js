@@ -31,8 +31,23 @@ router.get('/clubs', (req, res, next) => {
   res.render('clubs', { title: 'Suche'});
 });
 
-router.get('/details', (req, res, next) => {
-  res.render('details', { title: 'Details'});
+router.get('/clubs/:id', (req, res, next) => {
+
+  request.get(process.env.BASE_URL + "api/clubs/" + req.params.id, (error, response, body) => {
+
+    var club = JSON.parse(body);
+    var lastModified = new Date(club.dateLastModified).toLocaleString();
+    var created = new Date(club.dateCreated).toLocaleString();
+
+    res.render('details', {
+        title: 'Club Details',
+        club: club,
+        lastModified: lastModified,
+        created: created,
+        user: req.user
+    });
+  });
+  
 });
 
 

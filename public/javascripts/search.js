@@ -30,7 +30,11 @@ function createClubLine(club) {
     card
         .append($("<img class='card-img-top' src='https://source.unsplash.com/300x150/?golf,course&" + club.address.zip + "'>"))
         .append($("<div class='card-body'>")
-            .append($("<h5 class='card-title'>").html(club.name))
+            .append($("<h5 class='card-title'>")
+                .append($("<a>")
+                    .attr("href","/clubs/" + club._id)
+                    .html(club.name))
+            )
             .append($("<div class='card-text'>").html(club.address.street + "<br>" + club.address.zip + " " + club.address.country))) 
     
     return card;

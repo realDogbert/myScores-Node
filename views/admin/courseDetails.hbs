@@ -13,40 +13,53 @@
 
 <div class="container-fluid">
 
-  {{#if create}}
-  <h1>New Course</h1>
-  {{else}}
-  <h1>Course Details</h1>
-  {{/if}}
-
+  <div class="card">
+    <div class="card-header">
+      <h4>
+        {{#if create}}
+        <h4>New Course</h4>
+        {{else}}
+        <h4>Course Details</h4>
+        {{/if}}
+      </h4>
+    </div>
+    <div class="card-body">
 
   <form>
 
       {{#unless create}}
-      <div class="form-group">
-        <label for="course_id">Course Id</label>
-        <input class="form-control" type="text" id="course_id" value="{{courseId}}" readonly>
-      </div>
+        <input type="text" id="course_id" value="{{courseId}}" hidden>
       {{/unless}}
-      <div class="form-group">
-        <label for="courseName">Course Name</label>
-        <input class="form-control" type="text" id="courseName">
-      </div>
-      <div class="form-group">
-        <label for="clubId">Club Id</label>
-        <input class="form-control" type="text" id="clubId" value="{{clubId}}" readonly>
-      </div>
-      <div class="form-group">
-        <label for="clubName">Club Name</label>
-        <input class="form-control" type="text" id="clubName" value="{{clubName}}">
-      </div>
+      <input type="text" id="clubId" value="{{clubId}}" hidden>
 
-      <div class="form-group">
-        <label for="numOfHoles">Number of Holes</label>
-        <select class="form-control" id="numOfHoles">
-          <option selected>9</option>
-          <option>18</option>
-        </select>
+      <div class="row">
+        <div class="col-md-5">
+
+          <div class="form-group">
+            <label for="courseName">Course Name</label>
+            <input class="form-control" type="text" id="courseName">
+          </div>
+
+        </div>
+        <div class="col-md-5">
+
+          <div class="form-group">
+            <label for="clubName">Club Name</label>
+            <input class="form-control" type="text" id="clubName" value="{{clubName}}">
+          </div>
+
+        </div>
+        <div class="col-md-2">
+
+          <div class="form-group">
+            <label for="numOfHoles">Number of Holes</label>
+            <select class="form-control" id="numOfHoles">
+              <option selected>9</option>
+              <option>18</option>
+            </select>
+          </div>
+
+        </div>
       </div>
 
       <table class="table table-sm table-striped table-hover">
@@ -86,6 +99,10 @@
       <button type="button" class="btn btn-secondary" id="cancel">Cancel</button>
 
   </form>
+
+
+    </div>
+  </div>
 
 </div>
 

@@ -1,19 +1,57 @@
-{{> nav}}
 
-<h1 id="name">Clubname</h1>
 
-<h2 class="label">Adresse</h2>
-<div id="address">Adresse</div>
+{{!-- <img class='card-img-top' src='https://source.unsplash.com/1024x300/?golf,course&{{ club.address.zip }}'> --}}
 
-<h2 class="label">Kontaktdaten</h2>
-<div id="contact">
-    <div id="phone">Telefon</div>
-    <div id="email">Email</div>
-    <div id="website">Website</div>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/clubs">Suche</a></li>
+    <li class="breadcrumb-item active" aria-current="page">{{ club.name }}</li>
+  </ol>
+</nav>
+
+<div class="container">
+
+<h1 id="name">{{ club.name }}</h1>
+<div class="rating">
+  <i class="material-icons md-18" id="clubNew">star</i>
+  <i class="material-icons md-18" id="clubNew">star</i>
+  <i class="material-icons md-18" id="clubNew">star</i>
+  <i class="material-icons md-18" id="clubNew">star_half</i>
+  <i class="material-icons md-18" id="clubNew">star_border</i>
+</div>
+
+<div class="row">
+  <div class="col-md-8">
+
+    <h2>Beschreibung</h2>
+    <div>
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    </div>
+
+  </div>
+  <div class="col-md-4">
+
+      <h2 class="label">Adresse</h2>
+      <div id="address">
+        {{ club.address.street }}<br>
+        {{ club.address.zip }} {{ club.address.city }}<br>
+        {{ club.address.country }}
+      </div>
+
+      <h2 class="label">Kontaktdaten</h2>
+      <div id="contact">
+          <div id="phone">{{ club.contact.phone }}</div>
+          <div id="email">{{ club.contact.email }}</div>
+          <div id="website">{{ club.contact.website }}</div>
+      </div>
+
+
+  </div>
 </div>
 
 
-{{!-- <img src="https://source.unsplash.com/xvNeUd5pHvI"> --}}
+
+</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -22,4 +60,3 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="/stylesheets/details.css" rel="stylesheet">
 
-<script src="/javascripts/details.js"></script>
