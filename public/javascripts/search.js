@@ -4,22 +4,23 @@ $(document).ready(function() {
     $("#search").on("keyup paste", function() {
     
         var searchText = $("#search").val();
-
-        $.ajax({
-            method: "GET",
-            url: "/api/clubs?search=" + searchText,
-        })
-        .done(function(clubs) {
-            $("#result-header").html("Gefundene Clubs: " +  clubs.length);
-            $("#result").html("");
-            $.each(clubs, (idx, club) => {
-                $("#result").append(createClubLine(club));
+        if (searchText.length >= 3) {
+            $.ajax({
+                method: "GET",
+                url: "/api/clubs?search=" + searchText,
+            })
+            .done(function(clubs) {
+                $("#result-header").html("Gefundene Clubs: " +  clubs.length);
+                $("#result").html("");
+                $.each(clubs, (idx, club) => {
+                    $("#result").append(createClubLine(club));
+                });
+            })
+            .fail(function(error) {
+                console.log(error);
+                alert("error");
             });
-        })
-        .fail(function(error) {
-            console.log(error);
-            alert("error");
-        });
+        }
     
     })
 
