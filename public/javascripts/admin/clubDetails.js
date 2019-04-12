@@ -27,6 +27,8 @@ $(document).ready(function() {
         var clubId = $("#club_id").val()
         var data = {
             name: $("#clubName").val(),
+            description: $("#description").val(),
+            rating: Number($("#rating").val()),
             address: {
                 street: $("#street").val(),
                 zip: $("#zip").val(),

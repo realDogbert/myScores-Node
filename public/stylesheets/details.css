@@ -4,6 +4,13 @@
 .material-icons.md-48 { font-size: 48px; }
 
 
+#map {
+ height: 400px; 
+ width: 100%;
+ background-color: grey;
+
+}
+
 #searchbar {
     margin-top: 100px;
 }

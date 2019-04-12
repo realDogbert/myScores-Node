@@ -57,10 +57,31 @@
                         {{/unless}}
 
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-10">
                                 <div class="form-group">
                                     <label for="clubName">Club Name</label>
                                     <input class="form-control" type="text" id="clubName" value="{{club.name}}">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="rating">Rating</label>
+                                        <select class="form-control" id="rating">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="description">Description</label>
+                                    <textarea class="form-control" type="textarea" id="description">{{club.description}}</textarea>
                                 </div>
                             </div>
                         </div>
@@ -119,7 +140,22 @@
                                     <input class="form-control" type="text" id="fax" value="{{club.contact.fax}}">
                                 </div>        
                             </div>
-                        </div>      
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="phone">Lattitude</label>
+                                    <input class="form-control" type="text" id="location_lat" value="{{club.geocode.geometry.location.lat}}">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="fax">Longitude</label>
+                                    <input class="form-control" type="text" id="location_lng" value="{{club.geocode.geometry.location.lng}}">
+                                </div>        
+                            </div>
+                        </div>       
 
                         <div class="buttons">
                             {{#if create}}
