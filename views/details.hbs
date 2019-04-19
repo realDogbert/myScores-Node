@@ -49,7 +49,7 @@
       <div id="contact">
           <div id="phone">{{ club.contact.phone }}</div>
           <div id="email">{{ club.contact.email }}</div>
-          <div id="website">{{ club.contact.website }}</div>
+          <div id="website"><a href="{{ club.contact.website }}">{{ club.contact.website }}</a></div>
       </div>
 
 
@@ -77,11 +77,12 @@ var service;
 var infowindow;
 
 function initMap() {
-  var sydney = new google.maps.LatLng({{ club.geocode.geometry.location.lat }}, {{ club.geocode.geometry.location.lng }});
 
+  var club = new google.maps.LatLng({{ club.geocode.geometry.location.lat }}, {{ club.geocode.geometry.location.lng }});
 
-  map = new google.maps.Map(
-      document.getElementById('map'), {center: sydney, zoom: 14});
+  var map = new google.maps.Map(document.getElementById('map'), {center: club, zoom: 14});
+  var marker = new google.maps.Marker({position: club, map: map});
+
 
 
 }

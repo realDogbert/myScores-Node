@@ -64,3 +64,4 @@ typings/
 test-results
 test_data/golfclubs_deutschland.csv
 test_data/getData.js
+test_data/getData_Leadingcourse.js
