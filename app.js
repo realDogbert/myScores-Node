@@ -73,7 +73,11 @@ app.use('/admin', adminRouter);
 
 // Enabling CORS Pre-Flight
 // include before other routes
-app.options('*', cors()) 
+app.options('*', cors());
+
+// Security: Disable x-powered-by header
+// With this option, attackers can't see that this application is buidl with express
+app.disable('x-powered-by');
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
