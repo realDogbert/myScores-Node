@@ -28,12 +28,19 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/clubs', (req, res, next) => {
-  res.render('clubs', { title: 'Suche'});
+  res.render('clubs', { title: 'Suche', apiKey: process.env.SCORES_API_KEY});
 });
 
 router.get('/clubs/:id', (req, res, next) => {
 
-  request.get(process.env.BASE_URL + "api/clubs/" + req.params.id, (error, response, body) => {
+  var options = {
+    url: process.env.BASE_URL + "api/clubs/" + req.params.id,
+    headers: {
+      'X-API-Key': process.env.SCORES_API_KEY
+    }
+  };
+
+  request.get(options, (error, response, body) => {
 
     var club = JSON.parse(body);
     var lastModified = new Date(club.dateLastModified).toLocaleString();

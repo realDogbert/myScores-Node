@@ -7,7 +7,8 @@ var router = express.Router();
 router.get('/', (req, res) => {
     res.render('user/dashboard', {
         title: "Dashboard",
-        user: req.user
+        user: req.user,
+        apiKey: process.env.SCORES_API_KEY
     })
 });
 

@@ -2,11 +2,25 @@ require('dotenv').config();
 
 var express = require('express');
 var router = express.Router();
+var jwt = require('jsonwebtoken');
 
 var clubController = require('../controllers/clubController');
 var userController = require('../controllers/userController');
 var roundsController = require('../controllers/roundsController');
 var dashboardController = require('../controllers/dashboardController');
+
+const apiKey = 'X-API-Key';
+
+
+router.use((req, res, next) => {
+
+  const token = req.header(apiKey); 
+  if (!token) {
+    res.status(401).json({ error: 'not allowed'});
+    return;
+  }
+  next();
+});
 
 router.get('/', function(req, res, next) {
   res.render('clubs', { title: 'myScores' });

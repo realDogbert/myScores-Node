@@ -6,8 +6,11 @@ $(document).ready(function() {
         var searchText = $("#search").val();
         if (searchText.length >= 3) {
             $.ajax({
+                headers: {
+                    'X-API-Key': apiKey
+                },
                 method: "GET",
-                url: "/api/clubs?search=" + searchText,
+                url: "/api/clubs?search=" + searchText
             })
             .done(function(clubs) {
                 $("#result-header").html("Gefundene Clubs: " +  clubs.length);

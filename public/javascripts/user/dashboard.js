@@ -1,6 +1,9 @@
 $(document).ready(function() {
 
     $.ajax({
+        headers: {
+            'X-API-Key': apiKey
+        },
         method: "GET",
         url: "/api/dashboard/statistics"
     })
@@ -17,9 +20,9 @@ $(document).ready(function() {
         });
 
     })
-    .fail(function() {
+    .fail(function(error) {
 
-        alert("error");
+        alert(error.status);
 
     }); 
 
