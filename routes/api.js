@@ -16,10 +16,18 @@ router.use((req, res, next) => {
 
   const token = req.header(apiKey); 
   if (!token) {
-    res.status(401).json({ error: 'not allowed'});
+    res.status(401).json({ error: 'not allowed' });
     return;
+  } else {
+    const decoded = jwt.verify(token, process.env.SECRET_APIKEY);
+    if (decoded.iss != 'scores.com') {
+      res.status(401).json({ error: 'not allowed' });
+      return;
+    }
   }
+
   next();
+  
 });
 
 router.get('/', function(req, res, next) {

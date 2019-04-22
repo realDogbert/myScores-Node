@@ -35,7 +35,14 @@ router.get('/users/:id', (req, res) => {
 
     if(req.isAuthenticated()) {
 
-        request.get(process.env.BASE_URL + "api/users/" + req.params.id, (error, response, body) => {
+        var options = {
+            url: process.env.BASE_URL + "api/users/" + req.params.id,
+            headers: {
+                'X-API-Key': process.env.SCORES_API_KEY
+            }
+        };
+
+        request.get(options, (error, response, body) => {
 
             if (error) {
               console.log(error);

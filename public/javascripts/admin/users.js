@@ -6,6 +6,9 @@ $(document).ready(function() {
         var searchText = $("#search").val();
 
         $.ajax({
+            headers: {
+                'X-API-Key': apiKey
+            },
             method: "GET",
             url: "/api/users?search=" + searchText,
         })
@@ -64,6 +67,9 @@ function createUserLine(user) {
                 .click(function() {
                     
                     $.ajax({
+                        headers: {
+                            'X-API-Key': apiKey
+                        },
                         method: "DELETE",
                         url: "/api/users/" + user._id
                     })
