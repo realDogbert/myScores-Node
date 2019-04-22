@@ -3,6 +3,9 @@ $(document).ready(function() {
     var clubId = $("#club_id").val()
 
     $.ajax({
+        headers: {
+            'X-API-Key': apiKey
+        },
         method: "GET",
         url: "/api/courses?club.id=" + clubId
     })
@@ -44,6 +47,9 @@ $(document).ready(function() {
         };
 
         $.ajax({
+            headers: {
+                'X-API-Key': apiKey
+            },
             method: "PUT",
             url: "/api/clubs/" + clubId,
             dataType: "json",

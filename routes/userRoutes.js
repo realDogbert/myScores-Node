@@ -18,7 +18,9 @@ router.get('/profile', (req, res) => {
     if(req.isAuthenticated()) {
         res.render('user/profile', { 
             title: 'User Profile', 
-            user: req.user});
+            user: req.user,
+            apiKey: process.env.SCORES_API_KEY
+        });
     }
     else {
         res.redirect('/login');
@@ -31,7 +33,8 @@ router.get('/round/:course_id', (req, res) => {
     res.render('user/round', { 
         title: 'User Round', 
         user: req.user,
-        course_id: req.params.course_id
+        course_id: req.params.course_id,
+        apiKey: process.env.SCORES_API_KEY
     });
 
 });

@@ -8,7 +8,8 @@ var controller = require('../controllers/adminController');
 router.get('/', (req, res) => {
     res.render('admin/dashboard', {
         title: "Admin Dashboard",
-        user: req.user
+        user: req.user,
+        apiKey: process.env.SCORES_API_KEY
     })
 });
 
@@ -19,7 +20,9 @@ router.get('/users', (req, res) => {
     // if(true) {
         res.render('admin/users', { 
             title: 'User Management', 
-            user: req.user});
+            user: req.user,
+            apiKey: process.env.SCORES_API_KEY
+        });
     }
     else {
         res.redirect('/login');
@@ -42,7 +45,8 @@ router.get('/users/:id', (req, res) => {
             res.render('admin/userprofile', { 
                 title: 'User Management', 
                 user: req.user,
-                profile: JSON.parse(body)
+                profile: JSON.parse(body),
+                apiKey: process.env.SCORES_API_KEY
             });
 
           });
@@ -62,21 +66,31 @@ router.get('/clubs', (req, res) => {
 
     request.get(process.env.BASE_URL + "api/clubs", (error, response, body) => {
   
-      if (error) {
-        console.log(error);
-      }
-      const json = JSON.parse(body);
-      res.render('admin/clubs', { 
-        title: 'Course Administration', 
-        clubs: json, 
-        user: req.user});
+        if (error) {
+            console.log(error);
+        }
+        const json = JSON.parse(body);
+        res.render('admin/clubs', {
+            title: 'Course Administration',
+            clubs: json,
+            user: req.user,
+            apiKey: process.env.SCORES_API_KEY
+        });
+
     });
   
 });
 
 router.get('/clubs/:id', (req, res) => {
 
-    request.get(process.env.BASE_URL + "api/clubs/" + req.params.id, (error, response, body) => {
+    var options = {
+        url: process.env.BASE_URL + "api/clubs/" + req.params.id,
+        headers: {
+            'X-API-Key': process.env.SCORES_API_KEY
+        }
+    };
+
+    request.get(options, (error, response, body) => {
 
         var club = JSON.parse(body);
         var lastModified = new Date(club.dateLastModified).toLocaleString();
@@ -87,7 +101,8 @@ router.get('/clubs/:id', (req, res) => {
             club: club,
             lastModified: lastModified,
             created: created,
-            user: req.user
+            user: req.user,
+            apiKey: process.env.SCORES_API_KEY
         });
 
     });
@@ -97,7 +112,8 @@ router.get('/addClub', (req, res) => {
     res.render('admin/clubDetails', {
         title: 'Add new Club',
         create: true,
-        user: req.user
+        user: req.user,
+        apiKey: process.env.SCORES_API_KEY
     });
 });
 
@@ -105,7 +121,8 @@ router.get('/addClub', (req, res) => {
 router.get('/courses/:id', (req, res) => {
     res.render('admin/courseDetails', {
         title: "Course Details",
-        courseId: req.params.id    
+        courseId: req.params.id,
+        apiKey: process.env.SCORES_API_KEY    
     })
 });
 
@@ -115,7 +132,8 @@ router.get('/addCourse', (req, res) => {
         create: true,
         clubId: req.query.clubId,
         clubName: req.query.clubName,
-        user: req.user
+        user: req.user,
+        apiKey: process.env.SCORES_API_KEY
     });
 });
 

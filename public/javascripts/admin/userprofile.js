@@ -11,6 +11,9 @@ $(document).ready(function() {
         event.preventDefault();
         var form = $(this);
         $.ajax({
+            headers: {
+                'X-API-Key': apiKey
+            },
             method: "PUT",
             url: "/api/users/" + userId,
             data: {

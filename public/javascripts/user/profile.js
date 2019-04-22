@@ -3,6 +3,9 @@ $(document).ready(function() {
     var userId = $('#_id').val();
 
     $.ajax({
+        headers: {
+            'X-API-Key': apiKey
+        },
         method: "GET",
         url: "/api/users/" + userId
     })
@@ -28,6 +31,9 @@ $(document).ready(function() {
         };
 
         $.ajax({
+            headers: {
+                'X-API-Key': apiKey
+            },
             method: "PUT",
             url: "/api/users/" + userId,
             dataType: "json",

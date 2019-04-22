@@ -3,6 +3,9 @@ $(document).ready(function() {
     var courseId = $("#course_id").val();
     
     $.ajax({
+        headers: {
+            'X-API-Key': apiKey
+        },
         method: "GET",
         url: "/api/courses/" + courseId
     })
@@ -77,6 +80,9 @@ $(document).ready(function() {
         };
 
         $.ajax({
+            headers: {
+                'X-API-Key': apiKey
+            },
             method: "PUT",
             url: "/api/courses/" + courseId,
             dataType: "json",

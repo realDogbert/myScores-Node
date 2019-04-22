@@ -47,6 +47,9 @@ $(document).ready(function() {
         };
 
         $.ajax({
+            headers: {
+                'X-API-Key': apiKey
+            },
             method: "POST",
             url: "/api/courses/",
             dataType: "json",

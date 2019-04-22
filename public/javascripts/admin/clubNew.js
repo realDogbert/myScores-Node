@@ -20,6 +20,9 @@ $(document).ready(function() {
         };
 
         $.ajax({
+            headers: {
+                'X-API-Key': apiKey
+            },
             method: "POST",
             url: "/api/clubs/",
             dataType: "json",

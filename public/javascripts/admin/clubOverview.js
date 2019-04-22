@@ -9,6 +9,9 @@ $(document).ready(function() {
         var searchText = $("#search").val();
 
         $.ajax({
+            headers: {
+                'X-API-Key': apiKey
+            },
             method: "GET",
             url: "/api/clubs?search=" + searchText,
         })

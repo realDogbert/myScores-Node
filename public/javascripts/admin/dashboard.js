@@ -1,6 +1,9 @@
 $(document).ready(function() {
 
     $.ajax({
+        headers: {
+            'X-API-Key': apiKey
+        },
         method: "GET",
         url: "/admin/statistics"
     })

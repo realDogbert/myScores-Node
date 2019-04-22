@@ -30,6 +30,9 @@ $(document).ready(function() {
 function showUserTable() {
 
     $.ajax({
+        headers: {
+            'X-API-Key': apiKey
+        },
         url: "/api/users"
     })
     .done(function(data) {

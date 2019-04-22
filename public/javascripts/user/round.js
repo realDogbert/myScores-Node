@@ -14,6 +14,9 @@ $(document).ready(function() {
     }
 
     $.ajax({
+        headers: {
+            'X-API-Key': apiKey
+        },
         url: "/api/scorecards/" + $("#course_id").val() + "?spielvorgabe=" + $('input[name="spielvorgabe"]').val()
     })
     .done(function(json) {
@@ -85,6 +88,9 @@ $(document).ready(function() {
         };
 
         $.ajax({
+            headers: {
+                'X-API-Key': apiKey
+            },
             method: "POST",
             url: "/api/rounds",
             dataType: "json",
