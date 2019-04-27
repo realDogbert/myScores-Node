@@ -4,7 +4,7 @@ var assert = require('assert');
 const rounds = "rounds";
 
 describe("Test mongo interface with promises", function(){
-    it("should get at least something", function(){
+    it.skip("should get at least something", function(){
 
         console.log("Start");
         var database = new db;
