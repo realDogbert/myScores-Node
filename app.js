@@ -9,11 +9,6 @@ var logger = require('morgan');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 
-var indexRouter = require('./routes/index');
-var apiRouter = require('./routes/api');
-var userRouter = require('./routes/userRoutes');
-var adminRouter = require('./routes/adminRoutes');
-
 var app = express();
 
 const MongoClient = require('mongodb').MongoClient;
@@ -66,10 +61,18 @@ passport.use(new LocalStrategy(
   }
 ));
 
-app.use('/', indexRouter);
-app.use('/api', apiRouter);
-app.use('/user', userRouter);
-app.use('/admin', adminRouter);
+
+// Routes for user GUIs
+app.use('/', require('./routes/index'));
+app.use('/user', require('./routes/userRoutes'));
+
+// Routes for Admin GUIs
+app.use('/admin', require('./routes/adminRoutes'));
+app.use('/admin/apiKey', require('./routes/apiKeyRoutes'));
+
+// Routes for API
+app.use('/api', require('./routes/api'));
+
 
 // Enabling CORS Pre-Flight
 // include before other routes

@@ -1,0 +1,29 @@
+<h1>API Key Index</h1>
+
+<h2>New Key</h2>
+<form action="/admin/apiKey/create" method="post">
+    <input type="text" name="aud">
+    <input type="submit">
+</form>
+
+{{ error }}
+
+<h2>Keys</h2>
+<div id="keys">
+
+<table>
+    <tr>
+        <th>ISS</th>
+        <th>AUD</th>
+    </tr>
+    {{#each token}}
+        <tr id="{{_id}}">
+            <td>{{ payload.iss }}</td>
+            <td>{{ payload.aud }}</td>
+            <td><a href="apiKey/verify?id={{ _id }}">Verify</a></td>
+            <td><a href="apiKey/delete?id={{ _id }}">Delete</a></td>
+        </tr>
+    {{/each}}
+</table>
+
+</div>
