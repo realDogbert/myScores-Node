@@ -14,20 +14,32 @@ const apiKey = 'X-API-Key';
 
 router.use((req, res, next) => {
 
+  console.log("Host : " + req.hostname);
+
   const token = req.header(apiKey); 
   if (!token) {
     res.status(401).json({ error: 'not allowed' });
     return;
   } else {
-    const decoded = jwt.verify(token, process.env.SECRET_APIKEY);
-    if (decoded.iss != 'scores.com') {
-      res.status(401).json({ error: 'not allowed' });
+
+    try {
+      const decoded = jwt.verify(token, process.env.SECRET_APIKEY);
+      if (decoded.iss != 'scores.com') {
+        res.status(401).json({ error: 'wrong issuer' });
+        return;
+      }
+    }
+    catch(err) {
+      console.log(err.message);
+      res.status(401).json({ error: err.message });
       return;
     }
+    
   }
 
+  // check are OK, go on to API
   next();
-  
+
 });
 
 router.get('/', function(req, res, next) {
