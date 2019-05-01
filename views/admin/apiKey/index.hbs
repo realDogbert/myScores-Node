@@ -43,8 +43,7 @@
                 <th>ISS</th>
                 <th>AUD</th>
                 <th>dateCreated</th>
-                <th></th>
-                <th></th>
+                <th colspan="2">Actions</th>
             </tr>
         </thead>
 
@@ -56,6 +55,11 @@
                 <td>{{ dateCreated }}</td>
                 <td><a href="/admin/apiKey/verify?id={{ _id }}">Verify</a></td>
                 <td><a href="/admin/apiKey/delete?id={{ _id }}">Delete</a></td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <textarea name="" id="" cols="100" rows="3">{{ token }}</textarea>
+                </td>
             </tr>
         {{/each}}
         </tbody>
