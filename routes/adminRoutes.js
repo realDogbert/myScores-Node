@@ -18,7 +18,7 @@ router.get('/users', (req, res) => {
 
     if(req.isAuthenticated()) {
     // if(true) {
-        res.render('admin/users', { 
+        res.render('admin/users/index', { 
             title: 'User Management', 
             user: req.user,
             apiKey: process.env.SCORES_API_KEY
@@ -49,7 +49,7 @@ router.get('/users/:id', (req, res) => {
             }
             json = JSON.parse(body);
             console.log(json);
-            res.render('admin/userprofile', { 
+            res.render('admin/users/detail', { 
                 title: 'User Management', 
                 user: req.user,
                 profile: JSON.parse(body),
@@ -57,10 +57,6 @@ router.get('/users/:id', (req, res) => {
             });
 
           });
-
-
-
-    // if(true) {
 
     }
     else {
@@ -77,7 +73,7 @@ router.get('/clubs', (req, res) => {
             console.log(error);
         }
         const json = JSON.parse(body);
-        res.render('admin/clubs', {
+        res.render('admin/clubs/index', {
             title: 'Course Administration',
             clubs: json,
             user: req.user,
@@ -103,7 +99,7 @@ router.get('/clubs/:id', (req, res) => {
         var lastModified = new Date(club.dateLastModified).toLocaleString();
         var created = new Date(club.dateCreated).toLocaleString();
 
-        res.render('admin/clubDetails', {
+        res.render('admin/clubs/detail', {
             title: 'Club Details',
             club: club,
             lastModified: lastModified,
@@ -116,7 +112,7 @@ router.get('/clubs/:id', (req, res) => {
 });
 
 router.get('/addClub', (req, res) => {
-    res.render('admin/clubDetails', {
+    res.render('admin/clubs/details', {
         title: 'Add new Club',
         create: true,
         user: req.user,
@@ -126,7 +122,7 @@ router.get('/addClub', (req, res) => {
 
 
 router.get('/courses/:id', (req, res) => {
-    res.render('admin/courseDetails', {
+    res.render('admin/courses/detail', {
         title: "Course Details",
         courseId: req.params.id,
         apiKey: process.env.SCORES_API_KEY    
@@ -134,7 +130,7 @@ router.get('/courses/:id', (req, res) => {
 });
 
 router.get('/addCourse', (req, res) => {
-    res.render('admin/courseDetails', {
+    res.render('admin/courses/detail', {
         title: 'Add new Course',
         create: true,
         clubId: req.query.clubId,
