@@ -59,12 +59,29 @@ router.post('/create', (req, res, next) => {
 });
 
 router.get('/verify', (req, res, next) => {
-    console.log(req.query.id);
 
     controller.getAPIKeyByID(req.query.id)
     .then(
         result => {
             console.log(jwt.verify(result.token, process.env.SECRET_APIKEY));
+            res.redirect('/admin/apiKey');
+        },
+        error => {
+            res.render( template, {
+                title: 'API Key Management',
+                error: error
+            } );
+        }
+    )
+
+});
+
+router.get('/delete', (req, res, next) => {
+
+    controller.deleteAPIKeyByID(req.query.id)
+    .then(
+        result => {
+            console.log('Deleted API Key ' + result);
             res.redirect('/admin/apiKey');
         },
         error => {
