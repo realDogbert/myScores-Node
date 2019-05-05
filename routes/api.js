@@ -24,10 +24,10 @@ router.use((req, res, next) => {
 
     try {
       const decoded = jwt.verify(token, process.env.SECRET_APIKEY);
-      // if (decoded.iss != process.env.ISSUER_APIKEY) {
-      //   res.status(401).json({ error: 'wrong issuer' });
-      //   return;
-      // }
+      if (decoded.iss != process.env.ISSUER_APIKEY) {
+        res.status(401).json({ error: 'wrong issuer' });
+        return;
+      }
     }
     catch(err) {
       console.log(err.message);

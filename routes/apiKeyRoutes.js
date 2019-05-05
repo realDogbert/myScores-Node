@@ -14,12 +14,14 @@ router.get('/', (req, res, next) => {
         result => {
             res.render('admin/apiKey/index', { 
                 title: 'API Key Management', 
+                user: req.user,
                 token: result
             });
         },
         error => {
             res.render( template, {
                 title: 'API Key Management',
+                user: req.user,
                 error: error
             } );
         }
@@ -50,6 +52,7 @@ router.post('/create', (req, res, next) => {
         error => {
             res.render( template, {
                 title: 'API Key Management',
+                user: req.user,
                 error: error
             } );
         }        
