@@ -9,6 +9,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
+var helper = require('./helper');
 
 var app = express();
 
@@ -23,9 +24,15 @@ MongoClient.connect(process.env.DB_CONN,
   }
 );
 
+// View engione setup with express-handlebars
+// default layout dir -> views/layout
+// default partials dir -> views/partials
 app.engine('.hbs', exphbs({
   defaultLayout: 'main',
-  extname: '.hbs'
+  extname: '.hbs',
+  helpers: {
+    admin: helper.adminNavigation
+  }
 }));
 app.set('view engine', '.hbs');
 
