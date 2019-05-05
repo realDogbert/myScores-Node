@@ -23,12 +23,6 @@ MongoClient.connect(process.env.DB_CONN,
   }
 );
 
-// view engine setup
-// var hbs = require('hbs');
-// hbs.registerPartials(__dirname + '/views/partials');
-// app.set('views', path.join(__dirname, 'views'));
-// app.set('view engine', 'hbs');
-
 app.engine('.hbs', exphbs({
   defaultLayout: 'main',
   extname: '.hbs'
