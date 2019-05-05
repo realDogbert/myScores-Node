@@ -5,12 +5,9 @@
     <ul class="navbar-nav ml-auto">
         {{#if user}}
 
-        {{#if user.isAdmin}}
-        <li class="nav-item">
-            <a class="nav-link" href="/admin">Admin</a>
-        </li>
-        {{/if}}
-
+        {{#admin user }}
+        {{/admin}}
+        
         <li class="nav-item">
             <a class="nav-link" href="/user/">Dashboard</a>
         </li>

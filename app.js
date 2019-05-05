@@ -1,5 +1,6 @@
 var createError = require('http-errors');
 var express = require('express');
+const exphbs  = require('express-handlebars');
 var cors = require('cors');
 var session = require('express-session');
 var path = require('path');
@@ -8,11 +9,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-
-var indexRouter = require('./routes/index');
-var apiRouter = require('./routes/api');
-var userRouter = require('./routes/userRoutes');
-var adminRouter = require('./routes/adminRoutes');
+var helper = require('./helper');
 
 var app = express();
 
@@ -27,11 +24,17 @@ MongoClient.connect(process.env.DB_CONN,
   }
 );
 
-// view engine setup
-var hbs = require('hbs');
-hbs.registerPartials(__dirname + '/views/partials');
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'hbs');
+// View engione setup with express-handlebars
+// default layout dir -> views/layout
+// default partials dir -> views/partials
+app.engine('.hbs', exphbs({
+  defaultLayout: 'main',
+  extname: '.hbs',
+  helpers: {
+    admin: helper.adminNavigation
+  }
+}));
+app.set('view engine', '.hbs');
 
 // configure app to use bodyParser()
 // this will let us get the data from a POST
@@ -66,10 +69,18 @@ passport.use(new LocalStrategy(
   }
 ));
 
-app.use('/', indexRouter);
-app.use('/api', apiRouter);
-app.use('/user', userRouter);
-app.use('/admin', adminRouter);
+
+// Routes for user GUIs
+app.use('/', require('./routes/index'));
+app.use('/user', require('./routes/userRoutes'));
+
+// Routes for Admin GUIs
+app.use('/admin', require('./routes/adminRoutes'));
+app.use('/admin/apiKey', require('./routes/apiKeyRoutes'));
+
+// Routes for API
+app.use('/api', require('./routes/api'));
+
 
 // Enabling CORS Pre-Flight
 // include before other routes
