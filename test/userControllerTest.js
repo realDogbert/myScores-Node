@@ -86,7 +86,7 @@ describe('Test user collection', () => {
 
     }),
 
-    it.skip('should delete test user', (done) => {
+    it('should delete test user', (done) => {
 
         controller.deleteById(userid)
         .then((user) => {
