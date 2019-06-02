@@ -9,7 +9,8 @@ const UserSchema = new mongoose.Schema(
         email: { type: String, required: true },
         password: { type: String, required: true },
         realName: { type: String, required: false },
-        handicap: { type: Number, required: false }
+        handicap: { type: Number, required: false },
+        isAdmin: { type: Boolean, default: false, required: true}
     },
     { 
         timestamps: { createdAt: 'dateCreated', updatedAt: 'dateLastModified' } 
