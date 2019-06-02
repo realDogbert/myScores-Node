@@ -10,6 +10,7 @@ var logger = require('morgan');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var helper = require('./helper');
+var mongoose = require('mongoose');
 
 var app = express();
 
@@ -23,6 +24,7 @@ MongoClient.connect(process.env.DB_CONN,
       db = client.db(process.env.DB_NAME);
   }
 );
+mongoose.connect(process.env.DB_CONN, { keepAlive: 1, useNewUrlParser: true });
 
 // View engione setup with express-handlebars
 // default layout dir -> views/layout

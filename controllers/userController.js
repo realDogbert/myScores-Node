@@ -1,75 +1,53 @@
-require('dotenv').config();
+const User = require('../models/userModel');
 
-var express = require('express');
-const MongoClient = require('mongodb').MongoClient;
-var ObjectID = require('mongodb').ObjectID; 
-var db;
-var controller = new Object();
 
-const collection = "users";
+// get implementation of original userController
+// controller.get = function(search, callback) {
 
-MongoClient.connect(process.env.DB_CONN, 
-    { useNewUrlParser: true }, 
-    (err, client) => {
-        if (err) return console.log(err);
-        db = client.db(process.env.DB_NAME);
+//     var query = null;
+//     if (search) {
+//         query = {
+//             name: { 
+//                 $regex: search ,
+//                 $options: "$i",
+//             }
+//         }
+//     }
+
+//     var options = {
+//         sort: ["name"]
+//     };
+
+//     db.collection(collection).find(query, options).toArray(callback);
+
+// }
+
+function find(id) {
+    
+    if (!id) {
+        return User.find();
     }
-);
+     
+}
 
+function findById(id) {
+    return User.findById(id);
+}
 
-controller.get = function(search, callback) {
+function create(newUser) {
+    const user = new User(newUser);
+    return user.save();
+}
 
-    var query = null;
-    if (search) {
-        query = {
-            name: { 
-                $regex: search ,
-                $options: "$i",
-            }
-        }
-    }
-
-    var options = {
-        sort: ["name"]
+function update(user) {
+    var query = {
+        _id: user._id
     };
-
-    db.collection(collection).find(query, options).toArray(callback);
-
+    return User.findOneAndUpdate(query, user, { new: true, useFindAndModify: false});
 }
 
-controller.getByID = function(id, callback) {
-
-    db.collection(collection).findOne(  
-        {"_id": new ObjectID(id)}, 
-        callback
-    );
-
+function deleteById(id) {
+    return User.findByIdAndDelete(id);
 }
 
-controller.create = function(req, res) {
-    db.collection(collection).insertOne(req.body, (err, result) => {
-        if (err) return console.log(err);
-    });
-    res.redirect('/clubs');
-}
-
-controller.delete = function(req, res) {
-    db.collection(collection).deleteOne(  {"_id": new ObjectID(req.params.id)}, function(err, document) {
-        res.json(document)
-    });
-}
-
-controller.update = function(id, data, callback) {
-
-    data.dateLastModified = new Date();
-
-    db.collection(collection).updateOne(
-        {"_id": new ObjectID(id)},
-        { $set: data},
-        callback
-    );
-}
-
-
-
-module.exports = controller;
+module.exports = { create, find, findById, update, deleteById };

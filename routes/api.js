@@ -9,6 +9,7 @@ var userController = require('../controllers/userController');
 var roundsController = require('../controllers/roundsController');
 var dashboardController = require('../controllers/dashboardController');
 
+
 const apiKey = 'X-API-Key';
 
 
@@ -110,32 +111,65 @@ router.get('/scorecards/:id', function(req,res,next) {
 });
 
 router.get('/users', (req, res) => {
-  userController.get(req.query.search, (err, result) => {
-      if (err) return console.log(err)
-      res.json(result)
-  });
+
+  userController.find(req.query.search)
+  .then( result => {
+    res.json(result)
+  })
+  .catch( error => {
+    res.status(401).json({ error });
+  })
+
 })
 
 router.get('/users/:id', (req,res,) => {
-  userController.getByID(req.params.id, function(err, result) {
-    if (err) return console.log(err)
-    res.json(result)
-  });
+
+  userController.findById(req.params.id)
+  .then( result => {
+    res.json(result);
+  })
+  .catch( error => {
+    res.status(401).json({ error });
+  })
+
 });
 
 router.post('/users', function(req, res, next) {
-  userController.create(req, res);
+
+  userController.create(req)
+  .then( result => {
+    res.redirect('/clubs');
+    //res.json(result);
+  })
+  .catch( error => {
+    res.status(401).json({ error });
+  })
+
 });
 
 router.put('/users/:id', (req, res) => {
-  userController.update(req.params.id, req.body, (error, result) => {
-    if (error) return console.log(error)
-    res.json(result)
-  });
+
+  req.body._id = req.params.id;
+  userController.update(req.body)
+  .then( result => {
+    res.json(result);
+  })
+  .catch( error => {
+    res.status(401).json({ error });
+  })
+
 });
 
 router.delete('/users/:id', (req, res) => {
-  userController.delete(req, res);
+
+  userController.deleteById(req.params.id)
+  .then( result => {
+    res.json(result);
+  })
+  .catch( error => {
+    res.status(401).json({ error });
+  })
+
 });
 
 router.get('/users/:id/dashboard/:course', (req, res) => {

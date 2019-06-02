@@ -1,0 +1,777 @@
+id,name,address_street,address_zip,address_city,address_country,contact_email,contact_phone,website,contact_fax
+,Golfpark Rosenhof,Rosenhof,63843,Niedernberg,Deutschland,info@golfparkrosenhof.de,06026-9771390,http://www.golfparkrosenhof.de,06026-9771391
+,Golfclub Gut Sansenhof e.V.,Gut Sansenhof,63916,Amorbach,Deutschland,info@golf-sansenhof.de,(0 93 73) 21 80,http://www.golf-sansenhof.de,(0 93 73) 90 25 80
+,Golf & Country Club Erftal e.V.,Ortsstraße,63928,Eichenbühl/Guggenberg,Deutschland,info@golfclub-erftal.de,(0 93 78) 7 89,http://www.golfclub-erftal.de,(0 93 78) 90 81 26
+,Miltenberg Golfclub e.V.,Ortstraße,63928,Eichenbühl,Deutschland,info@golfclub-miltenberg.de,(0 93 78) 7 89,http://www.golfclub-miltenberg.de,(0 93 78) 90 81 26
+,BMW Sportgemeinschaft e.V.,Petuelring 130,80788,München,Deutschland,andreas.erwied@bmw-motorsport.com,(0 89) 382 49595,http://www.bmw-sportgemeinschaft.de/sportabteilungen/golf,(0 89) 382 27168
+,Golfclub München-Riem e.V.,Graf-Lehndorff-Str. 36,81929,München,Deutschland,info@gcriem.de,(0 89) 94 500 800,http://www.gcriem.de,(0 89) 94 500 770
+,Münchener Golf-Club e.V.,Tölzer Straße 95,82064,Straßlach,Deutschland,strasslach@mgc-golf.de,(0 81 70) 9 29 18 11,http://www.mgc-golf.de,(0 81 70) 9 29 18 20
+,Golfclub Olching e.V.,Feursstrasse 89,82140,Olching,Deutschland,sportbuero@golfclub-olching.de,0 81 42 - 48 29-0,http://www.golfclub-olching.de,0 81 42 - 48 29 14
+,Golfclub Rottbach e.V.,Weiherhaus 5,82216,Rottbach,Deutschland,info@rottbach.de,08135-93290,http://www.golfanlage-rottbach.de,08135-932911
+,Golfclub Wörthsee e.V.,Gut Schluifeld,82237,Wörthsee,Deutschland,info@golfclub-woerthsee.de,08153/93477-0,http://www.golfclub-woerthsee.de,08153/93477-40
+,Golfclub Tegernbach e.V.,Kapellenweg 1,82293,Tegernbach,Deutschland,info@gc-tegernbach.de,08202 / 90 57 00,http://www.gc-tegernbach.de,08202  / 90 57 0-11
+,Golfclub Starnberg e.V.,Uneringer Straße 1,82319,Starnberg,Deutschland,club@gcstarnberg.de,08151-12157,http://www.gcstarnberg.de,08151-29115
+,Golf- und Landclub Gut Rieden e.V.,Rieden 1a,82319,Starnberg,Deutschland,info@gut-rieden.de,08151-90770,http://www.gut-rieden.de,08151-907711
+,Gut Rieden Sport- und Freizeit GmbH,Gut Rieden 1,82319,Starnberg,Deutschland,info@gut-rieden.de,08151 90 77-0,http://www.gut-rieden.de,08151 90 77-11
+,Golf-Club Tutzing e.V.,Deixlfurt Nr. 7,82327,Tutzing,Deutschland,info@golfclub-tutzing.de,0 81 58 - 36 00,http://www.golfclub-tutzing.de,0 81 58 - 72 34
+,Golf-Club Feldafing e.V.,Tutzinger Str. 15,82340,Feldafing,Deutschland,info@golfclub-feldafing.de,(0 81 57) 9 33 40,http://www.golfclub-feldafing.de,(0 81 57) 93 34 99
+,St. Eurach Land u. Golfclub e.V.,Eurach 8,82393,Iffeldorf,Deutschland,info@eurach.de,08801/1332,http://www.eurach.de,08801/2523
+,Golfclub Iffeldorf e.V.,Rettenberg,82393,Iffeldorf,Deutschland,sekretariat@golf-iffeldorf.de,(0 88 56) 92 55 55,http://www.golf-iffeldorf.de,(0 88 56) 92 55 59
+,Golfanlage Iffeldorf GmbH & Co. KG,Rettenberg,82393,Iffeldorf,Deutschland,sekretariat@golf-iffeldorf.de,0 88 56 - 9 25 50,http://www.golf-iffeldorf.de,0 88 56 - 92 55 59
+,Golf Club Hohenpähl e.V.,Hohenpähl,82396,Pähl,Deutschland,club@gchp.de,08808 92020,http://www.golfclub-hohenpaehl.de,08808 9202-22
+,Land- und Golf-Club Werdenfels e.V.,Schwaigwang,82467,Garmisch-Partenkirchen,Deutschland,info@golfclub-werdenfels.de,08821-945670,http://www.golfclub-werdenfels.de,08821-54777
+,Golfclub Garmisch-Partenkirchen e.V.,Gut Buchwies,82496,Oberau,Deutschland,kontakt@golfclub-garmisch-partenkirchen.de,08824/8344,http://www.golfclub-garmisch-partenkirchen.de,08824/944198
+,Golf- und Landclub Karwendel e.V.,Risserstraße 14,82499,Wallgau,Deutschland,info@golfclub-karwendel.de,0 88 25 - 21 83,http://www.golfclub-karwendel.de,0 88 25 - 92 06 51
+,Golf- und Landclub Bergkramerhof e.V.,Bergkramerhof,82515,Wolfratshausen,Deutschland,info@gc-bergkramerhof.de,08171-41910,http://www.gc-bergkramerhof.de,08171-419111
+,Golfclub München-Riedhof e.V.,Riedhof 16,82544,Egling,Deutschland,riedhof@golf.de,08171-21950,http://www.golf.de/riedhof,08171-219511
+,Golfclub Beuerberg e.V.,Gut Sterz 3,82547,Beuerberg,Deutschland,info@gc-beuerberg.de,08179 617,http://www.gc-beuerberg.de,08179 5234
+,Golfanlage Patting-Hochriesblick,Patting 1,83083,Riedering,Deutschland,info@golf-patting.de,08032-1030,http://www.golf-patting.de,08032-989780
+,Golfclub Schloss Maxlrain e.V.,Freiung 14,83104,Maxlrain,Deutschland,info@golfclub-maxlrain.de,0 80 61 - 14 03,http://www.golfclub-maxlrain.de,0 80 61 - 3 01 46
+,Der Golf Club am Obinger See,Kirchreitbergstr. 2,83119,Obing-Kleinornach,Deutschland,dergolfclub@t-online.de,08624-875623,http://www.dergolfclub.de,08624-875624
+,Golf-Club Höslwang im Chiemgau e.V.,Kronberg 3,83129,Höslwang,Deutschland,info@golfclub-hoeslwang.de,0 80 75 - 7 14,http://www.golfclub-hoeslwang.de,0 80 75 - 81 34
+,Chiemsee Golf-Club Prien e.V.,Bauernberg 5,83209,Prien,Deutschland,cgc-prien@t-online.de,08051 62215,http://www.cgc-prien.de/,08051 61987
+,Golfzentrum Sporthotel Achental,Mietenkamer Str. 65,83224,Grassau im Chiemgau,Deutschland,info@golf-resort-achental.com,08641 4010,http://www.golf-resort-achental.com,08641 1758
+,Golfclub Reit im Winkl e.V.,Postfach 1101,83237,Reit im Winkl,Deutschland,info@gcreit.de,08640/798250,http://www.gcreit.de,08640/798252
+,Golfclub Ruhpolding e.V.,Rauschbergstr. 1 a,83324,Ruhpolding,Deutschland,info@golfclub-ruhpolding.de,0 86 63 - 24 61,http://www.golfclub-ruhpolding.de,0 86 63 - 4 12 43
+,Golf-Club Chieming e.V.,Kötzing 1,83339,Chieming- Hart,Deutschland,info@golfchieming.de,0 86 69 - 8 73 30,http://www.golfchieming.de,0 86 69 - 87 33 33
+,Golf Club Gut Ising e.V.,Kirchberg 3,83339,Chieming/ Ising,Deutschland,golfclub@gut-ising.de,(0 86 67) 7 93 58,http://www.gut-ising.de,(0 86 67) 7 94 32
+,Golf Club Berchtesgadener Land e.V.,Weng 10,83404,Ainring,Deutschland,info@gcbgl.de,08654/6902-0,http://www.gcbgl.de,08654/6902-11
+,Golfclub Anthal-Waginger See e.V.,Anthal,83413,Fridolfing,Deutschland,info@anthal.de,(0 86 84) 8 88,http://www.anthal.de,(0 86 84) 8 58
+,Golfclub Bad Reichenhall e.V.,Schlossberg 5,83435,Bad Reichenhall,Deutschland,bgl-golf@bgl-net.de,(0 86 51) 7 00 50,http://www.schmidbauer-golf.com,(0 86 51) 70 05 48
+,Golfclub Berchtesgaden e.V.,Salzbergstrasse 33,83471,Berchtesgaden,Deutschland,info@golfclub-berchtesgaden.de,08652 2100,http://www.golfclub-berchtesgaden.de,08652 64843
+,GC Pfaffing Wasserburger Land e.V.,Köckmühle 132,83539,Pfaffing,Deutschland,club@gcpwl.de,08076/889187-0,http://www.gcpwl.de,08076/889187-91
+,Golf- und Landclub Mangfalltal e.V.,Oed 1,83620,Feldkirchen-Westerham,Deutschland,info@gc-mangfalltal.de,(0 80 63) 63 00,http://www.gc-mangfalltal.de,(0 80 63) 69 58
+,Golfclub München Valley e.V.,Am Golfplatz 1,83626,Valley,Deutschland,info@infovalley.de,08024 902790,http://www.golfvalley.de,08024 9027999
+,Tölzer Golfclub e.V.,Strass 124 1/2,83646,Wackersberg / Bad Tölz,Deutschland,golf@toelzer-golfclub.de,08041 8084944,http://www.tölzer-golfclub.de,08041 8084528
+,Golfclub Isarwinkel e.V.,Am Golfplatz 65,83646,Bad Tölz,Deutschland,info@gc-isarwinkel.de,(0 80 41) 77 8 77,http://www.gc-isarwinkel.de,(0 80 41) 77 8 79
+,GAT-Golf am Tegernsee GmbH & Co. Grundstücks KG,Gut Steinberg,83666,Waakirchen/Zf. üb .Marienstein,Deutschland,info@margarethenhof.com,(08022)75060,http://www.margarethenhof.com,(08022)74818
+,Golfplatz Tegernsee,Holzkirchner Str. 14,83679,Sachsenkam,Deutschland,info@golfplatz-tegernsee.de,08021 5520,http://www.golfplatz-tegernsee.de,
+,Tegernseer Golf-Club Bad Wiessee e.V.,Rohbognerhof,83707,Bad Wiessee,Deutschland,info@tegernseer-golf-club.de,08022/8769,http://www.tegernseer-golf-club.de,08022/82747
+,Golfplatz Leonhardshaun Betriebs GmbH & Co.KG,Leonhardshaun 104a,84061,Ergoldsbach,Deutschland,info@golfplatz-leonhardshaun.de,08771 4096380,http://www.golfplatz-leonhardshaun.de,08771 409335
+,Golfclub Landshut e.V.,Oberlippach 2,84095,Furth b. Landshut,Deutschland,GC.Landshut@t-online.de,08704/8378,http://www.golf-landshut.de,08704/8379
+,Golf und Landclub Holledau e.V.,Weihern 3,84104,Rudelzhausen,Deutschland,rezeption@golfclubholledau.de,(0 87 56) 96 01 0,http://www.golfclubholledau.de,(0 87 56) 96 01 44
+,Golfclub Vilsbiburg e.V.,Trauterfing 31,84137,Vilsbiburg-Trauterfing,Deutschland,info@gc-vilsbiburg.de,08741-968680,http://www.gc-vilsbiburg.de,08741-968686
+,Rottaler Golf- und Country-Club e.V.,Am Fischgartl 2,84332,Hebertsfelden,Deutschland,info@rottaler-gc.de,0 85 61 - 59 69,http://www.rottaler-gc.de,0 85 61 - 26 46
+,Golfpark Bella Vista,Bella Vista Allee 1,84364,Bad Birnbach,Deutschland,info@golfpark-bellavista.de,0 85 63 - 97740-0,http://www.golfpark-bellavista.de,0 85 63 - 97740-29
+,Golfclub Goldachtal e.V.,Chiemseering 1,84427,St. Wolfgang,Deutschland,info@golfclub-goldachtal.de,0170 9200 444,http://www.golfclub-goldachtal.de,
+,Golfclub Altötting-Burghausen e.V.,Piesing 4,84533,Haiming,Deutschland,office@gc-altoetting-burghausen.de,08678/ 986903,http://www.gc-altoetting-burghausen.de,08678/ 986905
+,Golfclub Schloß Guttenburg e.V.,Guttenburg 3,84559,Kraiburg / Inn,Deutschland,info@golfclub-guttenburg.de,(0 86 38) 88 74 88,http://www.golfclub-guttenburg.de,(0 86 38) 88 74 44
+,Golfclub Pleiskirchen e.V.,Am Golfplatz 1,84568,Pleiskirchen,Deutschland,Golfclub@Pleiskirchen.de,08635/708903,http://www.golfclub-pleiskirchen.de,08635/708904
+,Golfclub Ingolstadt e.V.,Bei der Spitzlmühle,85049,Ingolstadt,Deutschland,info@golf-ingolstadt.de,(08 41) 8 57 78,http://www.golf-ingolstadt.de/,(08 41) 8 52 20
+,Golf Club Dachau e.V.,An der Flosslände 3,85221,Dachau,Deutschland,info@gcdachau.de,08131 10879,http://www.gcdachau.de/,08131 26494
+,Golfclub Eschenried e.V.,Am Kurfürstenweg 10,85232,Eschenried,Deutschland,info@gceschenried.de,08131-56740,http://www.gceschenried.de,08131-567418
+,Golfclub München-West Odelzhausen e.V.,Hofgut Todtenried,85235,Odelzhausen,Deutschland,info@golfanlage-odelzhausen.de,08134-99 88 0,http://www.golfanlage-odelzhausen.de,08134-99 88 20
+,Golfclub Schloß Reichertshausen e.V.,Holzhof 2,85293,Reichertshausen,Deutschland,info@gcr.de,08137/5084,http://www.gcr.de,08137/808579
+,Golf Club Gerolsbach e.V.,Hof 1,85302,Gerolsbach,Deutschland,info@golfpark-gerolsbach.de,08445-799  oder 1404,http://www.golfpark-gerolsbach.de,08445-91059
+,Golfclub München Eichenried GmbH Co. KG,Münchner Straße 57,85452,Eichenried,Deutschland,info@gc-eichenried.de,08123/93080,http://www.gc-eichenried.de,08123/930893
+,Open Golf Eichenried,Schönstr. 45,85452,München,Deutschland,info@open9.de,0 89 / 167 57 81,http://www.open9.de,0 89 / 167 83 96 0
+,Golfclub Erding-Grünbach e.V.,Am Kellerberg,85461,Grünbach,Deutschland,info@golf-erding.de,08122-49650,http://www.golf-erding.de,08122-49684
+,Bavarian Golfclub München-Eicherloh e.V.,Vordere Moosstraße 20,85464,Eicherloh,Deutschland,info@bavariangc.de,0 1 75 - 3 89 08 00,http://www.bavariangc.de,01805-019800-19002
+,Golf-Club Schloss Elkofen e.V.,Hochreiterweg 14,85567,Grafing - Oberelkofen,Deutschland,info@gcschlosselkofen.de,08092-7494,http://www.gcschlosselkofen.de,08092-32722
+,Golfpark München Aschheim GmbH & Co. KG,Fasanenallee 10,85609,Aschheim,Deutschland,info@gc-muenchen-aschheim.de,(0 89) 9 90 24 20,http://www.gc-muenchen-aschheim.de,(0 89) 99 02 42 40
+,GolfRange Harthausen,Am Golfplatz 1,85630,Harthausen,Deutschland,info@golfanlage-harthausen.de,08106 / 3544-0,http://www.golfanlage-harthausen.de,08106 / 34038
+,Golf Club Ebersberg e.V.,Zaißing 6,85643,Steinhöring,Deutschland,info@gc-ebersberg.de,08094-8106,http://www.gc-ebersberg.de,08094-8386
+,Golfclub Gut Thailing e.V.,Thailing 4,85643,Steinhöring,Deutschland,info@thailing.de,0 80 94 - 9 05 50 88,http://www.thailing.de,0 80 94 - 9 05 50 38
+,Golfclub GolfRange Brunnthal e.V.,Am Golfplatz 1,85649,Brunnthal / Kr München,Deutschland,muenchen-brunnthal@golfrange.de,(0 81 02) 74 74 0,http://muenchen-brunnthal.golfrange.de,(0 81 02) 74 74 79
+,Golfclub Schloss Egmating e.V.,Schlossstraße 15,85658,Egmating,Deutschland,empfang@gc-egmating.de,(0 80 95) 9 08 60,http://www.golf.de/egmating,(0 80 95) 90 86 66
+,Bavaria Golfanlagen,Schlossstraße 15,85658,Egmating,Deutschland,empfang@gc-egmating.de,0 80 95 / 90 86-0,http://www.gc-egmating.de,0 80 95 / 90 86-66
+,Golf Club Gersthofen e.V.,Unterer Auweg 6,86169,Augsburg,Deutschland,info@golfclub-gersthofen.de,0821 / 241 37 99,http://www.golfclub-gersthofen.de,0821 / 71 71 35
+,Golfclub GolfRange Augsburg e.V.,Lindauer Str. 56,86199,Augsburg,Deutschland,augsburg@golfrange.de,0821 / 90 65 00,http://www.golfrange.de,0821 / 9 06 50 22
+,Golfclub Lechfeld e.V.,Föllstraße 32 a,86343,Königsbrunn,Deutschland,info@gclechfeld.de,08231 -32637,http://www.gclechfeld.de,08231-33449
+,Golfclub Königsbrunn e.V.,Benzstraße 23,86343,Königsbrunn,Deutschland,golfclub-koenigsbrunn@t-online.de,(0 82 31) 3 27 72,http://www.gc-koenigsbrunn.de,(0 82 31) 3 19 97
+,Golfclub Augsburg e.V.,Engelshofer Straße 2,86399,Bobingen-Burgwalden,Deutschland,info@golfclub-augsburg.de,08234/5621,http://www.golfclub-augsburg.de,08234/7855
+,Golfclub Leitershofen e.V.,Deuringer Straße 20,86391,Stadtbergen,Deutschland,gcl@golfclub-leitershofen.de,(08 21) 43 72 42,http://www.golfclub-leitershofen.de,(08 21) 43 74 60
+,Golfanlage Weiherhof,Weiherhof 4,86459,Weiherhof Gessertshausen,Deutschland,golfanlageweiherhof@yahoo.de,0 82 38 - 96 51 19,http://www.golfanlage-weiherhof.de,0 82 38 - 96 51 20
+,Golfpark Donauwörth,Lederstatt 1,86609,Donauwörth,Deutschland,info@gc-donauwoerth.de,(09 06) 40 44,http://www.gc-donauwoerth.de,(09 06) 99 98 16 4
+,Wittelsbacher Golfclub Rohrenfeld-Neuburg e.V.,Rohrenfeld,86633,Neuburg a.d.Donau,Deutschland,info@wittelsbacher-golf.de,08431-44118,http://www.wittelsbacher-golf.de,08431-41301
+,Golfclub Eggelstetten Gut Maierhof e.V.,Hauptstr. 4,86698,Eggelstetten-Oberndorf,Deutschland,GolfclubEggelstetten@t-online.de,(0 90 90) 9 02 50,http://www.golfclub-eggelstetten.de,(0 90 90) 9 02 51
+,Golfclub zu Gut Ludwigsberg e.V.,Augsburger Straße 51,86842,Türkheim,Deutschland,info@golfclub-tuerkheim.de,(0 82 45) 33 22,http://www.golfclub-tuerkheim.de,(0 82 45) 37 89
+,Golfanlage zu Gut Ludwigsberg,Augsburger Strasse 51,86842,Türkheim,Deutschland,info@golfclub-tuerkheim.de,08245-3322,http://www.golfclub-tuerkheim.de,08245-3789
+,Golfclub Schloß Igling e.V.,Schloß Igling,86859,Igling,Deutschland,info@golfclub-igling.de,08248-1893,http://www.golfclub-igling.de,08248-968601
+,Golfclub Stenz e.V.,Stenz 1,86975,Bernbeuren,Deutschland,golfplatz.stenz@t-online.de,08860/582,http://www.golfplatz-stenz.de,08860/922934
+,Golfclub auf der Gsteig Lechbruck am See e.V.,Gsteig 1,86983,Lechbruck,Deutschland,info@golf-gsteig.de,08862-8520,http://www.golf-gsteig.de,08862-8518
+,Golfpark Schloßgut Lenzfried GmbH & Co. KG,Friedensweg 4 D,87437,Kempten,Deutschland,info@golfparklenzfried.de,0831 5129550,http://www.golfparklenzfried.de,0831 5129551
+,Golfclub Hellengerst-Allgäuer Voralpen e. V.,Helinger Straße 5,87480,Hellengerst,Deutschland,info@golf-allgaeu.de,(0 83 78) 92 00 14,http://www.golf-allgaeu.de,(0 83 78) 92 00 19
+,Golfanlage Alpenseehof,Attlesee 14,87484,Nesselwang,Deutschland,info@alpenseehof.de,08361 925834,http://www.alpenseehof.de,08361 925835
+,Golfclub Waldegg-Wiggensbach e.V.,Hof Waldegg,87487,Wiggensbach,Deutschland,info@golf-wiggensbach.com,08370-93073,http://www.golf-wiggensbach.com,08370-93074
+,Golfclub Sonnenalp - Oberallgäu e.V.,Muderbolz 10,87527,Ofterschwang,Deutschland,info@golfresort-oberallgaeu.de,08321 / 272 185,http://www.golf-resort-oberallgaeu.de/,08321 / 272 186
+,Golfclub Oberstaufen-Steibis e.V.,In der Au 5,87534,Oberstaufen,Deutschland,info@golf-oberstaufen.de,08386 8529,http://www.golf-oberstaufen.de,08386 8657
+,Golfzentrum Oberstaufen,Buflings 1,87534,Oberstaufen,Deutschland,info@golfzentrum-oberstaufen.de,08386/939250,http://www.golfzentrum-oberstaufen.de,08386/939251
+,Golfplatz Scheidegg,Buflings 1,87534,Oberstaufen,Deutschland,info@golfclub-oberstaufen.de,08386/939250,http://www.golfclub-oberstaufen.de,08386/939251
+,Golfclub Oberstdorf e.V.,Gebrgoibe 2,87561,Oberstdorf,Deutschland,info@golfclub-oberstdorf.de,(0 83 22) 28 95,http://www.golfclub-oberstdorf.de,(0 83 22) 98 69 4
+,Golfclub an der Hammerschmiede e.V.,Lettensteige/B16,87666,Pforzen/Kaufbeuren,Deutschland,club@golf-hammerschmiede.de,0 83 46/ 98 27 80,http://www.golf-hammerschmiede.de,0 83 46/ 98 27 80
+,Golf-Club Bad Wörishofen e.V.,Schlingenerstr.27,87668,Rieden,Deutschland,golfclub@bad-woerishofen.de,08346/777,http://www.gc-bw.de,08346/1616
+,Allgäuer Golf- und Landclub e.V.,Hofgut Boschach,87724,Ottobeuren,Deutschland,info@aglc.de,08332-9251-0,http://www.aglc.de,08332-5161
+,Golfclub Memmingen Gut Westerhart e.V.,Westerhart 1 b,87740,Buxheim,Deutschland,GC-Memmingen@t-online.de,08331/71016,http://www.golfclub-memmingen.de,08331/71018
+,Golf-Club Lindau-Bad Schachen e.V.,Am Schönbühl 5,88131,Lindau,Deutschland,info@golflindau.de,08382-9617-0,http://www.golflindau.de,08382-9617-50
+,New Golfclub Neu-Ulm,Steinhäulesweg 9,89231,Neu-Ulm,Deutschland,info@newgolfclub.de,0731-7070111,http://www.newgolfclub.de,0731-7070113
+,Golf Club Schloß Klingenburg e.V.,Schloß Klingenburg,89343,Jettingen-Scheppach,Deutschland,info@golf-klingenburg.de,08225/3030,http://www.golf-klingenburg.de,08225/30350
+,Golfclub Dilligen Nusser-Alm GmbH,Holzheimerstraße 2,89407,Dillingen,Deutschland,info@gc-dillingen.de,0 90 71 - 70 59 58,http://www.gc-dillingen.de,0 90 71 - 70 59 68
+,Golfclub am Reichswald e.V.,Schiestlstraße 100,90427,Nürnberg,Deutschland,info@golfclub-nuernberg.de,0911/305730,http://www.golfclub-nuernberg.de,0911/301200
+,Golfanlage Puschendorf,Forstweg 2,90617,Puschendorf,Deutschland,buero@golfanlage-puschendorf.de,0 91 01 - 75 52,http://www.golfanlage-puschendorf.de,0 91 01 - 93 52
+,1. Golf Club Fürth e.V.,Am Golfplatz 10,90768,Fürth,Deutschland,info@golfclub-fuerth.de,0911 757522,http://www.golfclub-fuerth.de,0911 9732989
+,Golf-Club Herzogenaurach e.V.,Burgstall 1,91074,Herzogenaurach,Deutschland,info@golfclub-herzogenaurach.de,09132-40586,http://www.golfclub-herzogenaurach.de,09132-40581
+,Golfclub Erlangen e.V.,Am Schleinhof,91077,Kleinsendelbach,Deutschland,info@gc-erlangen.de,(0 91 26) 50 04,http://www.gc-erlangen.de/,(0 91 26) 50 40
+,GolfRange Nürnberg,Am Golfplatz 1,91189,Nemsdorf,Deutschland,nuernberg@golfrange.de,0911 / 98 80 68 0,http://www.golfrange.de,0911 / 98 80 68 22
+,Golfclub Abenberg e.V.,Am Golfplatz 19,91183,Abenberg,Deutschland,info@golfclub-abenberg.de,0 91 78 / 98 96 - 0,http://www.golfclub-abenberg.de,0 91 78 / 98 96 - 96
+,Golf Club Pottenstein Weidenloh e.V.,Weidenloh 40,91278,Pottenstein / Oberfr,Deutschland,info@gc-pottenstein.de,09243-929220,http://www.gc-pottenstein.de,09243-929222
+,Golfclub Fränkische Schweiz e.V.,Kanndorf 8,91320,Ebermannstadt,Deutschland,gcfraenkischeschweiz@t-online.de,09194-4827,http://www.gc-fs.de,09194-5410
+,Golfclub Reichsstadt Bad Windsheim e.V.,Otmar-Schaller-Allee 1,91438,Bad Windsheim,Deutschland,gc.badwindsheim@t-online.de,09841-5027,http://www.golf-bw.de,09841-3448
+,Golfclub Ansbach e.V.,Rothenburger Str. 48,91522,Ansbach,Deutschland,info@golf-ansbach.de,09 81 - 4 88 00 90,http://www.golf-ansbach.de,09 81 - 4 88 00 40
+,Golfclub Romantische Straße Dinkelsbühl e.V.,Seidelsdorf 65,91550,Dinkelsbühl,Deutschland,gc-dinkelsbuehl@t-online.de,09851-53009,http://www.gc-romantische-strasse.de,09851-554409
+,Golfanlage Dinkelsbühl GmbH & Co. KG,Feuchtwanger Str. 5 b,91550,Dinkelsbühl,Deutschland,gc-dinkelsbuehl@t-online.de,0 98 51 - 57 56 13,http://www.gc-romantische-strasse.de,0 98 51 - 57 56 33
+,Golf- und Landclub Lichtenau-Weickershof e.V.,Weickershof 1,91586,Lichtenau,Deutschland,info@gclichtenau.de,09827-92040,http://www.gclichtenau.de,09827-920444
+,Golfpark Rothenburg-Schönbronn,Schönbronn 1,91592,Buch am Wald,Deutschland,info@gp-rbg.de,09868 959530,http://www.golfpark-rothenburg.de,09868 959528
+,Golfclub Zollmühle e.V.,Zollmühle 1,91792,Ellingen,Deutschland,info@golfanlage-zollmuehle.de,(0 91 41) 39 76,http://www.golfanlage-zollmuehle.de/,(0 91 41) 92 34 93
+,Golf- und Landclub Königstein i. Opf. e.V.,Namsreuth 7,92281,Königstein,Deutschland,info@golf-koenigstein.de,09665/91440,http://www.golf-koenigstein.de,09665/914424
+,Golfclub Lauterhofen e. V.,Ruppertslohe 18,92283,Lauterhofen,Deutschland,info@gc-lauterhofen.de,09186-1574,http://www.gc-lauterhofen.de,09186-1527
+,Golf- und Landclub Schmidmühlen e.V.,Am Theilberg 1,92287,Schmidmühlen,Deutschland,golfclub-schmidmuehlen@t-online.de,(0/94/74)/7/01,http://www.golfclubschmidmuehlen.de,(0/94/74)/82/36
+,Golf-Club Herrnhof e.V.,Am Herrnhof 1,92318,Neumarkt,Deutschland,club@golfclub-herrnhof.de,0 91 88 - 39 79,http://www.golfclub-herrnhof.de,0 91 88 - 300452
+,Altmühlgolf Beilngries GmbH,Kevenhüllerstr. 1,92339,Beilngries,Deutschland,info@altmuehlgolf.de,08461/6063333,http://www.altmuehlgolf.de,08461/6063003
+,Golf Club Am Habsberg,Im Golfplatz 1,92355,Velburg-Unterwiesenacker,Deutschland,gcah@juragolf.de,(09182) 93191 0,http://www.gc-amhabsberg.de,(0911) 98806625
+,Jura Golfpark GmbH,Im Golfplatz 1,92355,Velburg-Unterwiesenacker,Deutschland,info@juragolf.de,(0 91 82) 93 95 55,http://www.juragolf.de,(0 91 82) 93 95 57
+,Jura Golf e.V. Hilzhofen,Hilzhofen 23,92367,Pilsach,Deutschland,info@juragolf.de,09182-931 91-40,http://www.juragolf.de,09182-931 91-41
+,Golf- und Landclub Oberpfälzer Wald e.V.,Kemnath bei Fuhrn,92431,Neunburg vorm Wald,Deutschland,info@glcoberpfaelzerwald.de,09439-466,http://www.glcoberpfaelzerwald.de,09439-1247
+,Golf Club am Eixendorfer See,Hillstett 40,92444,Rötz,Deutschland,info@golf-eixendorfer-see.de,09976 2017247,http://www.golf-eixendorfer-see.de,
+,Golfclub Schwanhof e.V.,Klaus-Conrad-Allee 1,92706,Luhe-Wildenau,Deutschland,schwanhof@golf.de,09607/9202-0,http://www.golfclub-schwanhof.de,09607/9202-48
+,Golfclub Bad Abbach-Deutenhof e.V.,Deutenhof 2,93077,Bad Abbach,Deutschland,info@golf-badabbach.de,09405/95 32-0,http://www.golf-badabbach.de,09405/95 32-19
+,Golf- und Land-Club Regensburg e.V.,,93093,Jagdschloß Thiergarten,Deutschland,sekretariat@golfclub-regensburg.de,0 94 03 - 5 05,http://www.golfclub-regensburg.de,0 94 03 - 43 91
+,Golfclub Regensburg-Sinzing am Minoritenhof e.V.,Minoritenhof 1,93161,Sinzing,Deutschland,welcome@golfsinzing.de,0941 3786100,http://www.golfsinzing.de,0941 3786107
+,Golf- und Landclub Bad Gögging e.V.,Heiligenstädter Str. 36,93333,Bad Gögging,Deutschland,info@marcaurel.de,(0 94 45) 95 80,http://www.marcaurel.de,(0 94 45) 95 84 44
+,Golf-Club Furth im Wald e.V.,Voithenberg 3,93437,Furth im Wald,Deutschland,info@gc-furth.de,09973-2089,http://www.gc-furth.de,09973-803305
+,Golf- und Landclub Bayerwald e.V.,Frauenwaldstraße 2,94065,Waldkirchen,Deutschland,info@gc-bayerwald.de,(08581)1040,http://www.gc-bayerwald.de,(08581)2386
+,Golfclub Dorn-Herzogstein e.V.,Frauenwaldstraße 2,94065,Waldkirchen-Dorn,Deutschland,office@dorngolf.de,08581 - 9875789,http://www.dorngolf.de,0043 (0) 732 - 66 99 42
+,Thermen Golf Bad Füssing-Kirchham e.V.,Thierham 3,94072,Bad Füssing,Deutschland,info@thermengolf.de,08537-91990,http://www.thermengolf.de,08537-919920
+,Panorama Golf Passau-Fürstenzell,Bromberg 1,94081,Fürstenzell,Deutschland,office@panorama-golf.info,0 85 02 / 917 160,http://www.panorama-golf.info,0 85 02 / 917 162
+,Golfclub Sagmühle e.V.,Golfplatz Sagmühle 1,94086,Bad Griesbach,Deutschland,info@golfclub-sagmuehle.de,0 85 32 - 20 38,http://www.sagmuehle.de,0 85 32 - 31 65
+,Golf-Resort Bad Griesbach e.V.,Holzhäuser 8,94086,Bad Griesbach,Deutschland,buchungszentrale.poyda@hartl.de,(0 85 32) 79 00,http://www.hartl.de,(0 85 32) 7 90 45
+,AIDA Golfclub Bad Griesbach e.V.,Holzhäuser 8,94086,Bad Griesbach,Deutschland,golf@aida.de,(0 85 32) 79 00,http://www.aida-golfclub.de,(0 85 32) 7 90 45
+,Donau-Golf-Club Passau-Raßbach e.V.,Raßbach 8,94136,Thyrnau,Deutschland,info@golf-passau.de,0 85 01 - 9 13 13,http://www.golf-passau.de,0 85 01 - 9 13 14
+,Golfpark Oberzwieselau e.V.,Schloß Oberzwieselau,94227,Lindberg,Deutschland,info@golfpark-oberzwieselau.de,(0 99 22) 23 67,http://www.golfpark-oberzwieselau.de,(0 99 22) 29 24
+,Golfclub Gäuboden e.V.,Fruhstorf 6,94330,Aiterhofen,Deutschland,kontakt@golfclub-gaeuboden.de,09421-72804,http://www.golfclub-gaeuboden.de,09421-183873
+,Golf-Club Straubing Stadt und  Land e.V.,Bachhof 9,94356,Kirchroth,Deutschland,info@golfclub-straubing.de,09428-7169,http://www.golfclub-straubing.de,09428-1044
+,Golfclub Landau/Isar e.V.,Rappach 2,94405,Landau/Isar,Deutschland,TaraH@t-online.de,09951-599111,http://www.golfpark-landau.de,09951-59226
+,Golfclub Schloßberg e.V.,Grünbach 8,94419,Reisbach,Deutschland,golfclub.schlossberg@t-online.de,08734-7035,http://www.golfclub-schlossberg.de,08734-7795
+,Deggendorfer Golfclub e.V.,Rusel 123,94571,Schaufling,Deutschland,deggendorfer.golfclub@t-online.de,09920-8911,http://www.deggendorfer-golfclub.de,09920-903910
+,Golfclub am Nationalpark Bayerischer Wald e.V.,Haslach 43,94588,Sankt Oswald,Deutschland,info@gcanp.de,08558-974980,http://www.gcanp.de,08558-974981
+,Golfclub Hof e.V.,Gumpertsreuth 25,95185,Gattendorf-Haidt,Deutschland,golfclub-hof@t-online.de,09281-470155,http://www.gc-hof.de,09281-470157
+,Golfclub Haidt e.V.,Gumpertsreuth 25,95185,Gattendorf,Deutschland,info@gc-haidt.de,09281-470155,http://www.gc-haidt.de,09281-470157
+,Golf-Club Oberfranken e.V.,Petershof 1,95349,Thurnau,Deutschland,info@gc-oberfranken.de,09228-319,http://www.gc-oberfranken.de,09228-7219
+,Golfclub Bayreuth e.V.,Rodersberg 43,95448,Bayreuth,Deutschland,info@golfclub-bayreuth.de,0921-970704,http://www.golfclub-bayreuth.de,0921-970705
+,Golfclub Laineck-Bayreuth e.V.,Rodersberg 43,95448,Bayreuth,Deutschland,info@golfclub-laineck.de,0921-970704,http://www.golfclub-laineck.de,0921-970705
+,Golfclub Stiftland e.V.,Ottengrün 50,95698,Neualbenreuth,Deutschland,info@gc-stiftland.de,09638-1271,http://www.gc-stiftland.de,09638-1227
+,Golf- und Landclub Schloß Fahrenbach e.V.,Fahrenbach 7,95709,Tröstau,Deutschland,info@golfclub-fahrenbach.de,(0 92 32) 88 22 51,http://www.golfclub-fahrenbach.de,(0 92 32) 88 23 45
+,European Golfclub Fichtelgebirge e.V.,Fahrenbach 1,95709,Tröstau,Deutschland,european-golfclub@freenet.de,(0 92 32) 88 20,http://www.golfclub-fahrenbach.de,(0 92 32) 88 23 45
+,Golfclub Hauptsmoorwald Bamberg e.V.,Äußere Zollnerstrasse,96052,Bamberg,Deutschland,gch.sekretariat@t-online.de,(09 51) 9 68 43 31,http://www.gc-hauptsmoorwald.de,(09 51) 9 68 43 31
+,Schloß Reichmannsdorf Golf Betriebsgesellsch. mbH,Schloßhof 4,96132,Schlüsselfeld,Deutschland,info@golfanlage-reichmannsdorf.de,(0 95 46) 9215-10,http://www.golfanlage-reichmannsdorf.de,(0 95 46) 9215-20
+,Leimershof Golfanlage GmbH & Co. KG,Leimershof 5,96149,Breitengüßbach,Deutschland,info@leimershof-golfanlage.de,(09 547) 87 099 39,http://www.leimershof-golfanlage.de,(09 547) 870 99 40
+,Golfclub Steigerwald in Geiselwind e.V.,Friedrichstraße 10,96160,Geiselwind,Deutschland,info@golfclub-steigerwald.de,(0 95 56) 14 84,http://www.golfclub-steigerwald.de,(0 95 56) 14 82
+,Golf-Club Kronach e.V.,Nagel,96324,Küps,Deutschland,Gc-Kronach@t-Online.de,09264-8812,http://www.gc-kronach.de,09264-915231
+,Golf-Club Coburg e.V. Schloß Tambach,Schlossallee,96479,Tambach,Deutschland,info@gc-coburg.de,09567/9811580,http://www.gc-coburg.de,09567 98115811
+,Golf Club Würzburg e.V.,Am Golfplatz 2,97084,Würzburg,Deutschland,info@golfclub-wuerzburg.de,0931-67890,http://www.golfclub-wuerzburg.de,0931-67880
+,Golf Club Kitzingen e.V.,Larson Barracks,97318,Kitzingen,Deutschland,golfkitzingen@aol.com,(0 93 21) 49 56,http://www.golfclub-kitzingen.de,(0 93 21) 2 19 36
+,Golfclub Schloß Mainsondheim e.V.,Schlossweg 3,97337,Mainsondheim,Deutschland,info@golf-mainsondheim.de,09324 4656,http://www.golf-mainsondheim.de,09324 4262
+,Golf Club Schweinfurt e.V.,Ebertshäuser Str. 17,97453,Löffelsterz,Deutschland,info@golfclub-schweinfurt.de,0 97 27 - 58 89,http://www.golfclub-schweinfurt.de,0 97 27 - 90 87 03
+,Golfclub Hassberge e.V.,Hainach - Neue Laube 1,97500,Ebelsbach (OT Steinbach),Deutschland,info@golfclub-hassberge.de,09522-7085500,http://www.golfclub-hassberge.de,09522-7085501
+,Golf-Club Bad Kissingen e.V,Euerdorfer Straße 11,97688,Bad Kissingen,Deutschland,GC-KG@t-online.de,09 71 - 36 08,http://www.golfclubbadkissingen.de,09 71 - 6 01 40
+,Golfclub Maria Bildhausen e.V.,Rindhof,97702,Münnerstadt,Deutschland,info@maria-bildhausen.de,09766-1601,http://www.maria-bildhausen.de,09766-1602
+,Golf-Club Münnerstadt e. V.,Rindhof 1,97702,Münnerstadt,Deutschland,info@gc-muennerstadt.de,09766-1601,http://www.gc-muennerstadt.de,09766-1602
+,Golfclub Main-Spessart-Eichenfürst e.V.,Eichenfürst,97828,Marktheidenfeld,Deutschland,info@main-spessart-golf.de,09391-8435,http://www.main-spessart-golf.de,09391-8816
+,Golfclub Mannheim e.V.,Rheingoldstraße 215,68199,Mannheim,Deutschland,info@golf-mannheim.de,0621 851720,http://www.golf-mannheim.de,0621 8415115
+,Rhein-Golf-Club Badenweiler e.V.,Ile du Rhin,68490,Chalampé - FRANKREICH,Deutschland,administration.golfdurhin@wanadoo.fr,(0033) 3 89 83 28 32,http://www.golf-rhin.com,(0033) 3 89 83 28 42
+,Golfclub Mannheim-Viernheim e.V.,Alte Mannheimer Straße 5,68519,Viernheim,Deutschland,info@gcmv.de,06204-60700,http://www.gcmv.de,06204-607044
+,Golfclub Heddesheim Gut Neuzenhof e.V.,Gut Neuzenhof,68542,Heddesheim,Deutschland,info@gc-heddesheim.de,(0 62 04) 9 76 90,http://www.gc-heddesheim.de,(0 62 04) 97 69 96
+,Golf Club Rheintal e.V.,An der Bundesstraße 291,68723,Oftersheim,Deutschland,info@golfclubrheintal.de,(0 62 02) 5 63 90,http://www.golfclubrheintal.de,(0 62 02) 5 63 93
+,Golf Club St. Leon-Rot Betriebs GmbH & Co. KG,Opelstraße 30,68789,St.Leon-Rot,Deutschland,info@gc-slr.de,06227-8608-0,http://www.gc-slr.de,06227-8608-88
+,Golfclub Wiesloch-Hohenhardter Hof 1983,Hohenhardter Hof,69168,Wiesloch-Baiertal,Deutschland,info@golfclub-wiesloch.de,(0 62 22) 7 88 11-0,http://www.golfclub-wiesloch.de,(0 62 22) 7 88 11-11
+,Golfanlage am Eselspfad,Hohenhardter Hof,69168,Wiesloch-Baiertal,Deutschland,info@golf-eselspfad.de,0 62 22 - 7 40 31,http://www.golf-eselspfad.de,0 62 22 - 77 25 93
+,Golfclub Mudau e.V.,Donebacher Str. 41,69427,Mudau,Deutschland,info@golfclub-mudau.de,(0 62 84) 84 08,http://www.golfclub-mudau.de,(0 62 84) 9 58 07
+,Citygolf e.V.,Wagrainstraße 136,70378,Stuttgart,Deutschland,info@citygolf-stuttgart.de,0176/61657447,http://www.citygolf-stuttgart.de,
+,Golfclub Neckartal e.V.,Aldinger Straße 975,70806,Kornwestheim,Deutschland,info@gc-neckartal.de,07141-871319,http://www.golf.de/gcneckartal,07141-81716
+,Golfclub Schönbuch e.V.,Schaichhof,71088,Holzgerlingen,Deutschland,info@gc-schoenbuch.de,07157/67966,http://www.gc-schoenbuch.de,07157/679679
+,Golfclub Domäne Niederreutin e.V.,Domäne Niederreutin,71149,Bondorf,Deutschland,info@golf-bondorf.de,07457-9449-0,http://www.golf-bondorf.de,07457-9449-30
+,Stuttgarter Golfclub Solitude e.V.,Schloßfeld,71297,Mönsheim,Deutschland,info@golfclub-stuttgart.com,07044-9110410,http://www.golfclub-stuttgart.com,07044-9110420
+,Golfclub Schloß Monrepos e.V.,Monrepos 21,71634,Ludwigsburg,Deutschland,gcmonrepos@t-online.de,07141/220030,http://www.golfclub-monrepos.de,07141/797497
+,Nippenburg Golfclub GmbH,Nippenburg 21,71701,Schwieberdingen,Deutschland,info@schlossnippenburg.de,(0 71 50) 3 95 30,http://www.schlossnippenburg.de,(0 71 50) 35 35 18
+,Golfclub Schloss Kressbach,Hofgut Kressbach 1,72072,Tübingen,Deutschland,info@gc-schloss-kressbach.de,0 70 71 - 97 09 06 0,http://www.gc-schloss-kressbach.de,0 70 71 - 97 09 06 6
+,Golfclub Schloß Weitenburg e.V.,Sommerhalde 9-11,72181,Starzach-Sulzau,Deutschland,info@gcsw.de,07472/15050,http://www.gcsw.de,07472/15051
+,Golfclub Schloss Weitenburg AG,Sommerhalde 11,72181,Starzach-Sulzau,Deutschland,info@gcsw.de,(0 74 72) 1 50 50,http://www.gcsw.de,(0 74 72) 1 50 51
+,Golfanlage unter der Weitenburg,Sommerhalde 9,72181,Starzach-Sulzau,Deutschland,info@gcsw.de,07472-15050,http://www.gcsw.de,07472-15051
+,Golfclub Freudenstadt e.V.,Hohenrieder Straße,72250,Freudenstadt,Deutschland,info@golfclub-freudenstadt.de,0 74 41 - 30 60,http://www.golfclub-freudenstadt.de,0 74 41 - 23 65
+,Golfclub Alpirsbach e.V.,Fluorner Str. 3,72275,Alpirsbach-Peterzell,Deutschland,info@gc-alpirsbach.de,0 74 44-46 65,http://www.gc-alpirsbach.de,0 74 44-15 11
+,Golf-ER Schwaben GmbH & Co KG,Am Golfpaltz 1,72361,Hausen am Tann,Deutschland,hausenat@golf-er.de,0 74 36 - 16 00,http://www.golf-er.de,0 71 28 - 92 60 66
+,Golf Club Hechingen-Hohenzollern e.V.,Hagelwasen,72379,Hechingen,Deutschland,info@golfclub-hechingen.de,0 74 71 - 64 78,http://www.golfclub-hechingen.de,0 74 71 - 1 47 76
+,Golf-Club Sigmaringen Zollern-Alb e.V.,Buwiesen 10,72514,Inzigkofen,Deutschland,info@gc-sigmaringen.de,07571/7442-0,http://www.gc-sigmaringen.de,07571/7442-35
+,Golf Club Hammetweil GmbH & Co KG,Hammetweil 10,72654,Neckartenzlingen,Deutschland,info@gc-hammetweil.de,07127 97430,http://www.gc-hammetweil.de,07127 974313
+,Golf-Club Reutlingen-Sonnenbühl e.V.,Im Zerg,72820,Sonnenbühl,Deutschland,info@albgolf.de,0 71 28 - 9 26 60,http://www.albgolf.de,0 71 28 - 92 66 92
+,Golfclub Göppingen e.V.,Fraunhoferstr. 2,73037,Göppingen,Deutschland,info@golf-gp.de,(0 71 61) 96 41 40,http://www.golf-gp.de,(0 71 61) 96 41 42
+,Golf-Club Hohenstaufen e.V.,Unter dem Ramsberg,73072,Donzdorf,Deutschland,gc-hohenstaufen@t-online.de,0 71 62 - 2 71 71,http://www.gc-hohenstaufen.de,0 71 62 - 2 57 44
+,Golfclub Kirchheim-Wendlingen e.V.,Schulerberg 1,73230,Kirchheim unter Teck,Deutschland,info@golf-kirchheim.de,0 70 24 - 92 08 20,http://www.golf-kirchheim.de,0 70 24 - 9 20 82 20
+,Golfclub Teck e.V.,Am Golfplatz,73275,Ohmden,Deutschland,sekretariat@golfclub-teck.de,0 70 23/74 26 63,http://www.golfclub-teck.de,0 70 23/74 26 88
+,Golfers Club Bad Überkingen e.V.,Beim Bildstöckle,73337,Bad Überkingen/Oberböhringen,Deutschland,info@gc-bad-ueberkingen.de,(0 73 31) 6 40 66,http://www.gc-bad-ueberkingen.de,(0 73 31) 6 40 69
+,Golf-Club Hochstatt Härtsfeld-Ries e.V.,Hofgut Hochstatt,73450,Neresheim,Deutschland,info@golfclub-hochstatt.de,0 73 26 - 56 49,http://www.golfclub-hochstatt.de,0 73 26 - 5 02 32
+,Golfclub Hetzenhof e.V.,Hetzenhof 7,73547,Lorch,Deutschland,info@golfclub-hetzenhof.de,07172-9180- 0,http://www.golfclub-hetzenhof.de,07172-9180- 30
+,Golf- und Landclub Haghof e.V.,Haghof 6,73553,Alfdorf-Haghof,Deutschland,Sekretariat@glc-haghof.de,0 71 82 - 9 27 60,http://www.glc-haghof.de,0 71 82 - 92 76 20
+,Golfanlage Pfullinger Hof,Pfullinger Hof 1,74193,Schwaigern - Stetten,Deutschland,golfoase@t-online.de,07138/67442,http://www.golfoase.de,07138/932910
+,Golf- und Landclub Schloß Liebenstein e.V.,Schloß Liebenstein,74382,Neckarwestheim,Deutschland,info@gc-sl.de,0 71 33 - 98 78 11,http://www.gc-sl.de,0 71 33 - 98 78 18
+,Public Golf Talheimer Hof,Talheimer Hof 1,74388,Talheim,Deutschland,welcome@talheimerhof.de,07131-6359911,http://www.talheimerhof.de,07131-6359909
+,Golf-Club Schloßgut Neumagenheim e.V.,Marktstraße 7,74389,Cleebronn,Deutschland,info@golfplatz-cleebronn.de,(0 71 35) 1 32 03,http://www.golfplatz-cleebronn.de/,(0 71 35) 1 43 56
+,Oberrot-Frankenberg GmbH & Co. KG,Höhenstraße 54,74420,Oberrot-Frankenberg,Deutschland,info@golfclub-oberrot-frankenberg.de,07977 / 8601,http://www.golfclub-oberrot-frankenberg.de,07977 / 8032
+,Golfclub Marhördt  Betriebsgesellschaft mbH & Co.,Marhördt 18,74420,Oberrot/Marhördt,Deutschland,info@golfclub-marhoerdt.de,0 79 77 / 91 02 77,http://www.golfclub-marhoerdt.de,0 79 77 / 91 02 79
+,Golf & Country Club Grafenhof e.V.,Hinterwald 4,74426,Bühlerzell,Deutschland,info@golfclub-grafenhof.de,(0 79 63) 4 38,http://www.golfclub-grafenhof.de,(0 79 63) 2 54
+,Golfclub Schwäbisch Hall e.V.,Am Golfplatz 1,74523,Schwäbisch Hall,Deutschland,info@gc-sha.de,07907-8190,http://www.gc-sha.de,07907-8180
+,Golf-Club Heilbronn-Hohenlohe e.V.,Neuer Garten 2,74639,Friedrichsruhe,Deutschland,golf@gc-heilbronn-hohenlohe.de,(0 79 41) 92 08 0,http://www.friedrichsruhe.de,(0 79 41) 92 08 19
+,Golfclub Glashofen-Neusaß e.V.,Mühlweg 7,74731,Walldürn-Neusaß,Deutschland,info@golfclub-glashofen-neusass.de,(0 62 82) 73 83,http://www.golfclub-glashofen-neusass.de,(0 62 82) 72 80
+,Neusasser Golfclub,Mühlweg 7,74731,Walldürn-Neusaß,Deutschland,info@golfclub-glashofen-neusass.de,06282 7383,http://www.neusasser-golfclub.de,06282 7280
+,Golfanlage Kaiserhöhe GmbH & Co. KG,Im Laber 4,74747,Ravenstein-Merchingen,Deutschland,info@golfclub-kaiserhoehe.de,(0 62 97) 3 99,http://www.golfclub-kaiserhoehe.de,(0 62 97) 5 99
+,Golfclub Sinsheim Buchenauerhof e.V.,Buchenauerhof 4,74889,Sinsheim,Deutschland,info@gc-sinsheim.de,(0 72 65) 72 58,http://www.gc-sinsheim.de,(0 72 65) 73 79
+,Golfclub Bad Rappenau e.V.,Ehrenbergstr.25 A,74906,Bad Rappenau,Deutschland,golfclubbadrappenau@t-online.de,07264-3666,http://www.golfclubbadrappenau.de,07264-3838
+,Golfclub Heidelberg-Lobenfeld e.V.,Am Biddersbacher Hof,74931,Lobbach / Baden,Deutschland,golf@gchl.de,0 62 26 - 95 21 10,http://www.gchl.de,0 62 26 - 95 21 11
+,Golfclub Johannesthal e.V.,Johannesthaler Hof,75203,Königsbach-Stein,Deutschland,info@johannesthal.de,07232/809860,http://www.johannesthal.de,07232/809888
+,Golfclub Pforzheim Karlshäuser Hof e.V.,Karlshäuser Weg,75248,Ölbronn-Dürrn,Deutschland,info@gc-pf.de,07237/9100,http://www.gc-pf.de,07237/5161
+,Golf you up GmbH,Karlshäuserhof,75248,Ölbronn-Dürrn,Deutschland,info@golfyouup.de,0 72 37 - 48 40 00,http://www.golfyouup.de,0 72 37 - 48 40 01
+,GOLFCLUB Bad Liebenzell e.V.,Golfplatz 1,75378,Bad Liebenzell,Deutschland,info@gcbl.de,07052/9325-0,http://www.gcbl.de,07052/9325-25
+,Golfclub Hofgut Scheibenhardt e.V.,Gut Scheibenhardt,76135,Karlsruhe,Deutschland,club@hofgut-scheibenhardt.de,0721 867463,http://www.hofgut-scheibenhardt.de,0721 867465
+,Golfclub Rheinstetten GmbH,Messering 20,76287,Rheinstetten,Deutschland,info@golfclub-rheinstetten.de,0721 516 4918,http://www.golfclub-rheinstetten.de,0721 516 4918
+,Golf-Club Bad Herrenalb e.V.,Bernbacherstraße 61,76332,Bad Herrenalb,Deutschland,gc.bad.herrenalb@t-online.de,07083-8898,http://www.gc-bad-herrenalb.de/,07083-3050
+,Golfclub Altrhein e.V.,Im Teilergrund 1,76437,Rastatt,Deutschland,info@gcaltrhein.de,(0 72 22) 15 42 09,http://www.GcAltrhein.de,(0 72 22) 15 42 08
+,Golf Club Baden-Baden e.V.,Fremersbergstr. 127,76530,Baden-Baden,Deutschland,info@golf-club-baden-baden.de,0 72 21 - 2 35 79,http://www.golf-club-baden-baden.de,07221/3025659
+,Golfclub Bruchsal e.V.,Langental 2,76646,Bruchsal,Deutschland,info@golfclub-bruchsal.de,0 72 51/30 227-0,http://www.golfclub-bruchsal.de,0 72 51/30 227-20
+,Baden Golf & Country Club e.V.,Birkenhof,76684,Östringen-Tiefenbach,Deutschland,info@heitlinger-golf-resort.de,(0 72 59) 86 83,http://www.heitlinger-golf-resort.de,(0 72 59) 86 84
+,Der Birkenhof,Birkenhof 1,77694,Kehl,Deutschland,info@birkenhof-kehl.de,07851 77497,http://www.birkenhof-kehl.de,07851 899344
+,Golfclub Gröbernhof e.V.,Gröbern 1,77736,Zell am Harmersbach,Deutschland,info@gc-groebernhof.de,(0 78 35) 63 49 09,http://www.golfclub-groebernhof.de,(0 78 35) 5 47 98 99
+,Golfclub Urloffen e.V.,Golfplatz 1,77767,Appenweier,Deutschland,sekretariat@golfclub-urloffen.de,07843-993240,http://www.golfclub-urloffen.de,07843-993242
+,Baden Hills Golf und Curling Club e.V.,Cabot Trail G208,77836,Rheinmünster,Deutschland,info@baden-hills.de,07229-661501,http://www.baden-hills.de/,07229-661509
+,Golf-Club Ortenau e.V.,Gereut 9.1,77933,Lahr-Reichenbach,Deutschland,kontakt@gc-ortenau.de,07821-77227,http://www.gc-ortenau.de,07821-77287
+,Golf & Country Club Königsfeld e.V.,Angelmoos 20,78126,Königsfeld-Martinsweiler,Deutschland,info@gc-k.de,07725/9396-0,http://www.golfclub-koenigsfeld.de,07725/9396-12
+,Land- und Golfclub Öschberghof,Golfplatz 1,78166,Donaueschingen,Deutschland,Golf@oeschberghof.Com,0771-84 525,http://www.oeschberghof.com,0771-84 540
+,Golfclub Steißlingen e.V.,Brunnenstr. 4b,78256,Steißlingen/Wiechs,Deutschland,info@golfclub-steisslingen.de,07738/7196,http://www.golfclub-steisslingen.de,07738/923297
+,Golf Club Schloss Langenstein e.V.,Schloss Langenstein,78359,Orsingen-Nenzingen,Deutschland,golf-sekretariat@schloss-langenstein.com,07774/50651,http://www.schloss-langenstein.com,07774/50699
+,Golf-Club Konstanz e. V.,Hofgut Kargegg 1,78476,Allensbach-Langenrain,Deutschland,info@golfclubkonstanz.de,07533/93030,http://www.golfclubkonstanz.de,07533/930330
+,Golfclub Tuniberg e.V.,Großer Brühl 1,79112,Freiburg,Deutschland,info@golfclub-tuniberg.de,07664-93060,http://www.golfclub-tuniberg.de,07664-95293
+,Freiburger Golfclub e.V.,Krüttweg 1,79199,Kirchzarten,Deutschland,info@fr-gc.de,(0 76 61) 9 84 70,http://www.fr-gc.de,(0 76 61) 98 47 47
+,Golfclub Gütermann Gutach e.V.,Golfstraße 16/1,79261,Gutach,Deutschland,G.G.G@t-online.de,07681 23151,http://www.golf.de/guetermann,07681 7343
+,Golfclub Breisgau e.V.,Am Golfpark 1,79336,Herbolzheim-Tutschfelden,Deutschland,info@gc-breisgau.de,07643 9369-0,http://www.gc-breisgau.de,07643 9369-13
+,Golfclub Markgräflerland Kandern e.V.,Feuerbacher Str. 35,79400,Kandern,Deutschland,info@gc-mk.com,(0 76 26) 97 79 90,http://www.gc-mk.com,(0 76 26) 9 77 99 22
+,Golfclub Bad Bellingen e.V.,Am Golfplatz 3,79415,Bad Bellingen,Deutschland,info@drei-thermen-golfresort.de,07635 / 82 44 90,http://www.gc-badbellingen.de,07635 / 823 889
+,Golfclub Quellenhof - Drei Thermen Golfresort e.V.,Am Golfplatz 3,79415,Bad Bellingen,Deutschland,info@drei-thermen-golfresort.de,(0 76 35) 82 44 90,http://www.drei-thermen-golfresort.de,(0 76 35) 82 44 9-22
+,Hapimag Golfclub e.V.,Am Golfplatz 3,79415,Bad Bellingen,Deutschland,golfclub@hapimag.com,0041 (0)41 767 80 10,http://www.hapimag-golfclub.com,0041 (0)41 767 80 90
+,Golfclub Schopfheim-Hausen e.V.,Ehner-Fahrnau 12,79650,Schopfheim,Deutschland,post@golfanlage-schopfheim.de,07622 67476 0,http://www.golfanlage-schopfheim.de,07622 67476 18
+,Golf-Club Schönau e.V.,Schönenberger Str. 17,79677,Schönau,Deutschland,golfschoenau@t-online.de,07673-888660,http://www.golfschoenau.de,07673-888670
+,Golfpark Bad Säckingen GmbH & Co. KG,Schaffhauserstr. 121,79713,Bad Säckingen,Deutschland,info@golfparkbs.de,0 77 61 - 9 38 09 90,http://www.golfparkbs.de,0 77 61 - 93 80 99 18
+,Golfclub Rickenbach e.V.,Hennematt 20,79736,Rickenbach,Deutschland,info@golfclub-rickenbach.de,0 7765 777,http://www.golfclub-rickenbach.de,0 7765 544
+,Golfclub Obere Alp e.V.,Am Golfplatz 1 - 3,79780,Stühlingen,Deutschland,sekretariat@golf-oberealp.de,07703/92030,http://www.golf-oberealp.de,07703/920318
+,Golfclub Rheinblick e.V.,Rheinstraße 4,79807,Lottstetten,Deutschland,info@golfclubrheinblick.de,(0 77 45) 9 29 60,http://www.golfclubrheinblick.de,(0 77 45) 92 96 13
+,Golfclub Hochschwarzwald e.V.,Oberaltenweg 7,79822,Titisee-Neustadt,Deutschland,info@gc-hsw.de,07651-935777,http://www.gc-hsw.de,07651-935778
+,Golfclub Bodensee Weissensberg e.V.,Lampertsweiler 51,88138,Weißensberg,Deutschland,info@gcbw.de,08389 8919-0,http://www.gcbw.de,08389 923907
+,Golfclub Ravensburg e.V.,Hofgut Okatreute,88213,Ravensburg,Deutschland,golfanlage-ravensburg@t-online.de,(07 51) 99 88,http://www.golfclub-ravensburg.de,(07 51) 99 84
+,Waldsee Golf Resort,Hopfenweiler 9,88339,Bad Waldsee,Deutschland,golf@waldsee-golf.de,07524/4017-200,http://www.waldsee-golf.de,07524/4017-100
+,Green-Golf Bad Saulgau GbR,Koppelweg 103,88348,Bad Saulgau,Deutschland,info@gc-bs.de,07581 / 527459,http://www.gc-bs.de,07581 / 527487
+,Golfclub Bad Saulgau e.V.,Koppelweg 103,88348,Bad Saulgau,Deutschland,info@gc-bs.de,07581 / 527459,http://www.gc-bs.de,07581 / 527487
+,Golfclub Reischenhof e.V.,Reischenhof 1,88489,Wain,Deutschland,info@golfclub-reischenhof.de,07353/1732,http://www.golfclub-reischenhof.de,07353/3824
+,Golfclub Rochushof Deggenhausertal e.V.,Unterhomberg 1,88693,Deggenhausertal,Deutschland,Rochushof@t-online.de,(0 75 55) 91 96 30,http://www.golfclub-rochushof.de,(0 75 55) 91 96 31
+,Golfclub Owingen Überlingen e.V.,Hofgut Lugenhof,88696,Owingen,Deutschland,welcome@golfclub-owingen.de,07551-83040,http://www.golfclub-owingen.de,07551-830422
+,Golf Club Ulm e.V.,Wochenauer Hof 2,89186,Illerrieden,Deutschland,golfclubulm@t-online.de,07306/929500,http://www.golfclubulm.de,07306/92950-25
+,Golfclub Donau-Riss e.V.,Herrschaftslüssen 1,89584,Ehingen-Rißtissen,Deutschland,info@golf-donau-riss.de,07392 / 7006995,http://www.golf-donau-riss.de,07392 / 9380847
+,Golf-Club Bad Mergentheim e.V.,Erlenbachtalstr. 36,97999,Igersheim,Deutschland,info@golfclub-badmergentheim.de,(0 79 31) 56 11 09,http://www.golfclub-badmergentheim.de,(0 79 31) 56 31 01
+,Golf- und Landclub  Bad Neuenahr-Ahrweiler GmbH &,Remagener Weg,53474,Bad Neuenahr,Deutschland,sekretariat@glc-badneuenahr.de,0 26 41/950 95-0,http://www.glc-badneuenahr.de,0 26 41/950 95-95
+,Golfclub Waldbrunnen im Siebengebirge e.V.,Brunnenstraße 11,53578,Windhagen,Deutschland,info@golfcourse-siebengebirge.de,02645-8041,http://www.golfcourse-siebengebirge.de,02645-8042
+,Golf Club Trier e.V.,Birkenheck,54340,Ensch,Deutschland,Info@golf-club-trier.de,06507-993255,http://www.golf-club-trier.de,06507-993257
+,Golf Club Eifel e.V.,Milanweg,54576,Hillesheim,Deutschland,info@golfclub-eifel.de,06593-1241,http://www.golfclub-eifel.de,06593-9421
+,Golfclub Kyllburger Waldeifel e.V.,Lietzenhof,54597,Burbach,Deutschland,info@golf-lietzenhof.de,(0 65 53) 96 10 39,http://www.golf-lietzenhof.de,(0 65 53) 32 82
+,Euro Golfclub 2000 e.V.,Talstraße 3,54597,Burbach,Deutschland,info@golf-lietzenhof.de,(0 65 53) 20 07,http://www.golf-lietzenhof.de,(0 65 53) 32 82
+,Golfclub Südeifel,Auf Kinnscheid 1,54636,Baustert,Deutschland,info@golfclub-suedeifel.de,06527-934977,http://www.golfclub-suedeifel.de,06527-934979
+,Golf-Resort Bitburger Land,Zur Weilersheck 1,54636,Wißmannsdorf,Deutschland,info@bitgolf.de,06527/9272-0,http://www.bitgolf.de,06527 / 9272-30
+,Mainzer Golfclub,Oberer Mombacher Weg 4,55257,Budenheim,Deutschland,info@mainzer-golfclub.de,0 61 39 - 29 30 0,http://www.mainzer-golfclub.de,0 61 39 - 29 30 29
+,Golfclub Domtal Mommenheim e.V.,Am Golfplatz 1,55278,Mommenheim,Deutschland,Sekretariat@golfanlage-domtal-mommenheim.de,0 61 38/92 02-0,http://www.golfanlage-domtal-mommenheim.de,0 61 38/92 02 31
+,Golfanlage Domtal Mommenheim GmbH & Co. KG,Golfplatz 1,55278,Mommenheim,Deutschland,sekretariat@golfanlage-domtal-mommenheim.de,(0 61 38) 9 20 20,http://www.golfanlage-domtal-mommenheim.de,(0 61 38) 92 02 31
+,Golf-Club Stromberg-Schindeldorf e.V.,Buchenring 1A,55442,Stromberg,Deutschland,kontakt@gc-stromberg.de,06724 - 600 700,http://www.golfclub-stromberg.de,06724 - 600 60 700
+,Golf-Club Hahn e.V.,Golfallee 1,55483,Hahn-Flughafen,Deutschland,info@gc-hahn.de,06543/509-560,http://www.gc-hahn.de,06543/509-566
+,Golf & Healthclub Maasberg e.V.,Am Maasberg,55566,Bad Sobernheim,Deutschland,info@golfclub-maasberg.de,(0 67 51) 87 60,http://www.golfclub-maasberg.de,(0 67 51) 87 62 01
+,Golfclub Rheinhessen Hofgut Wißberg St. Johann e.V,Hofgut Wißberg,55578,St. Johann,Deutschland,info@gc-rheinhessen.de,06701-20080,http://www.gc-rheinhessen.de,06701-200825
+,Golfclub Nahetal e.V.,Drei Buchen,55583,Bad Münster a. St./Ebg.,Deutschland,info@golfclub-nahetal.de,(0 67 08) 21 45,http://www.golfclub-nahetal.de,(0 67 08) 17 31
+,Golfclub Edelstein-Hunsrück e.V.,Am Golfplatz,55743,Kirschweiler,Deutschland,g.c.edelstein@t-online.de,06781 36615,http://www.gc-edelstein.de,06781 36548
+,Rolling Hills Golf Club Baumholder e.V.,Gebäude 8888,55774,Baumholder,Deutschland,usrolling@aol.com,(0 67 83) 87 88,http://www.golffuehrer.de/sqldb/club/frameset.php?CLUBNR=0138&src=home.php&VPS=ja,(0 67 83) 98 03 33
+,Mittelrheinischer Golfclub Bad Ems e.V.,Denzerheide,56130,Bad Ems,Deutschland,MGC.Bad.Ems@t-online.de,02603-6541,http://www.mgcbadems.de,02603-13995
+,Golfclub Jakobsberg e.V.,Im Tal der Loreley,56154,Boppard / Rhens,Deutschland,golf@jakobsberg.de,06742/808-491,http://www.jakobsberg.de,06742/808-493
+,Golf Club Wiesensee e.V.,Am Wiesensee,56457,Westerburg,Deutschland,golfclub.wiesensee@lindner.de,0 26 63 - 99 11 92,http://www.golfclub-wiesensee.de,0 26 63 - 99 11 93
+,Golf Club Rhein-Wied e.V.,Gut Burghof,56566,Neuwied,Deutschland,Gc-RW@t-online.de,02622 83523,http://www.lgolf.com,02622 81658
+,Golfclub Cochem/Mosel e. V.,Am Kellerborn 2,56814,Ediger-Eller,Deutschland,info@golfcochem.eu,02675 / 911511,http://www.golfcochem.eu,02675 / 911572
+,Golf-Club Westerwald e. V.,Steinebacher Straße,57629,Dreifelden,Deutschland,gcwesterwald@t-online.de,02666 8220,http://www.golfclub-westerwald.de,02666 8493
+,Faulenberg Golf Club e.V.,Lindenweg 2,66399,Mandelbachtal,Deutschland,info@golffaulenberg.de,(0 68 93) 7 00 41,http://www.golffaulenberg.de,(0 68 93) 34 12
+,Golf-Club Homburg/Saar Websweiler Hof e.V.,Websweiler Hof,66424,Homburg,Deutschland,info@golfsaar.de,0 68 41 77 77 60,http://www.golfsaar.de,0 68 41 77 77 666
+,Golf-Club Katharinenhof e.V.,Katharinenhof,66453,Gersheim-Rubenheim,Deutschland,verwaltung@golfclub-katharinenhof.de,06843-8797,http://www.golfclub-katharinenhof.de,06843-8959
+,Erster Golfclub Westpfalz Schwarzbachtal e.V.,Hitscherhof,66509,Rieschweiler,Deutschland,egw@golf.de,06336/6442,http://www.gc-westpfalz.de,06336/6408
+,Wendelinus Golfclub St. Wendel,Golfparkallee 1,66606,St. Wendel,Deutschland,info@golfclub-stwendel.de,(0 68 51) 97 98 00,http://www.golfclub-stwendel.de,(0 68 51) 9 79 20 19
+,Golfpark Bostalsee,Heidehof 3,66625,Nohfelden-Eisen,Deutschland,info@golfpark-bostalsee.de,(0 68 52) 99 14 70,http://www.golfpark-bostalsee.de,(0 68 52) 80 22 68
+,Golfpark Weiherhof GmbH,In den Weihern 21,66687,Wadern - Nunkirchen,Deutschland,info@golfpark-weiherhof.info,(0 68 74) 13 51,http://www.golfpark-weiherhof.info/,(0 68 74) 5 14
+,Golfclub Saarbrücken e.V.,Oberlimberger Weg,66798,Wallerfangen,Deutschland,info@golfclub-saarbruecken.de,06837/444800,http://www.golfclub-saarbruecken.de,06837/4448099
+,Golf-Club Kurpfalz e.V.,Kohlhof 9,67117,Limburgerhof,Deutschland,info@golfpark-kurpfalz.de,0 62 36 - 47 94 - 94,http://www.golfpark-kurpfalz.de,0 62 36 - 47 94 - 99
+,Golfplatz Kurpfalz GmbH & Co. KG,Kohlhof 9,67117,Limburgerhof,Deutschland,info@golfpark-kurpfalz.de,0 62 36 - 47 94 94,http://www.golfpark-kurpfalz.de,0 62 36 - 47 94 99
+,Golfclub Deutsche Weinstraße e.V.,Kirchheimer Str. 40,67273,Dackenheim,Deutschland,info@golfgarten.de,(0 63 53) 98 92 12,http://www.golfgarten.de,(0 63 53) 98 92 13
+,Golf-Club Pfalz Neustadt a.d. Weinstraße e.V.,Im Lochbusch,67435,Neustadt a.d. Weinstraße,Deutschland,info@gc-pfalz.de,06327-97420,http://www.gc-pfalz.de,06327 / 97 42 18
+,Golf-Club Worms e.V.,Gernsheimer Fahrt,67580,Hamm,Deutschland,info@gc-worms.de,06246-907226,http://www.gc-worms.de,06246-907290
+,Golfclub Barbarossa e.V. Kaiserslautern,Am Hebenhübel,67686,Mackenbach,Deutschland,info@golfclub-barbarossa.de,06374-994633,http://www.golfclub-barbarossa.de/,06374-994634
+,Golfclub Pfälzerwald e.V.,Auf dem Aspen 60,67714,Waldfischbach-Burgalben,Deutschland,info@gc-pfaelzerwald.de,(0 63 33) 27 96 03,http://www.gc-pfaelzerwald.de,(0 63 33) 27 96 05
+,Golfclub Am Donnersberg e.V.,Roederhof 3b,67725,Börrstadt,Deutschland,info@golfamdonnersberg.de,06357/96 0 94,http://www.golfamdonnersberg.de,06357/1430
+,Golfanlage Landgut Dreihof,Am Golfplatz 1,76879,Essingen,Deutschland,landau-essingen@golf-absolute.de,06348 – 4282,http://www.golf-absolute.de/landau-essingen,06348 – 4388
+,Golfclub Kassel-Wilhelmshöhe e.V.,Ehlener Straße 21,34131,Kassel,Deutschland,mail@golfclub-kassel.de,(05 61) 3 35 09,http://www.golfclub-kassel.de,(05 61) 3 77 29
+,GolfPark Gudensberg,Ziegelei 1,34281,Gudensberg,Deutschland,info@golfpark-gudensberg.de,05603-930730,http://www.golfpark-gudensberg.de,05603-930333
+,Golf Club Zierenberg-Gut Escheberg e.V.,Gut Escheberg,34289,Zierenberg,Deutschland,sekretariat@golfclub-escheberg.de,(0 56 06) 26 08,http://www.golfclub-escheberg.de,(0 56 06) 26 09
+,Golf- und Landclub Bad Arolsen e.V.,Zum Wiggenberg 33,34454,Bad Arolsen,Deutschland,info@golf-arolsen.de,05691-628444,http://www.golf-arolsen.de,05691-628445
+,Golfclub Waldeck am Edersee e.V.,Domänenweg 12,34513,Waldeck,Deutschland,info@golfeninwaldeck.de,0 56 23 - 9 98 90,http://www.gc-waldeck.de,0 56 23 - 99 89 15
+,Golfclub Bad Wildungen e.V.,Talquellenweg 33,34537,Bad Wildungen,Deutschland,gc-bad-wildungen@t-online.de,0 56 21 - 37 67,http://www.gc-bad-wildungen.de,0 56 21 - 96 03 63
+,Oberhessischer Golf-Club Marburg e.V.,Maximilianenhof,35091,Cölbe-Bernsdorf,Deutschland,info@golf-club-marburg.de,0 64 27 - 9 20 40,http://www.golf-club-marburg.de,0 64 27 - 9 20 41
+,Licher Golf-Club Fürstliches Hofgut Kolnhausen eV,Golfplatz Kolnhausen,35423,Lich,Deutschland,info@licher-golf-club.de,06404/91071,http://www.licher-golf-club.de,06404/91072
+,Golf-Club Winnerod e.V.,Parkstrasse  22,35447,Reiskirchen,Deutschland,info@golfpark.de,(0 64 08) 9 51 30,http://www.golfpark.de,(0 64 08) 95 13 13
+,Golf-Park Winnerod Betriebsgesellschaft mbH,Parkstraße 22,35447,Reiskirchen,Deutschland,ulrich.lischka@golfpark.de,(0 64 08) 9 51 30,http://www.golfpark.de,(0 64 08) 95 13 13
+,Golf-Club Schloß Braunfels e.V.,Homburger Hof,35619,Braunfels,Deutschland,info@golfclub-braunfels.de,0 64 42 - 45 30,http://www.golfclub-braunfels.de,0 64 42 - 66 83
+,Attighof Golf & Country Club e.V.,Attighof 1,35647,Waldsolms-Brandoberndorf,Deutschland,info@attighof.de,0 60 85 - 9 81 2 - 0,http://www.attighof.de,0 60 85 - 32 72
+,Golfclub Dillenburg e.V.,Auf dem Altscheid,35687,Dillenburg,Deutschland,info@gc-dillenburg.de,02771-5001,http://www.gc-dillenburg.de,02771-5002
+,Golfclub Hofgut Praforst e.V.,Dr.Detl. Rudelsd. Allee 3,36088,Hünfeld,Deutschland,info@praforst.de,06652-9970,http://www.praforst.de,06652-99755
+,Golf-Club Rhön e.V., Fulda,Am Golfplatz,36145,Hofbieber,Deutschland,info@golfclub-fulda.de,06657-1334,http://www.golfclub-fulda.de,06657-914809
+,Kurhessischer Golfclub Oberaula/Bad Hersfeld e.V.,Am Golfplatz,36280,Oberaula,Deutschland,Info@Golfclub-Oberaula.de,06628-91540,http://www.golfclub-oberaula.de,06628/915424
+,Golfclub Oberaula-Schloß Hausen e.V.,Am Golfplatz,36280,Oberaula,Deutschland,info@golfclub-oberaula.de,(0 66 28) 9 15 40,http://www.golfclub-oberaula.de,(0 66 28) 91 54 24
+,Golfclub Lauterbach e.V. - Schloss Sickendorf,Hofstr. 14,36341,Lauterbach/Sickendorf,Deutschland,sickendorf@sommerfeld-golf.de,06641/9613-0,http://www.gc-lauterbach.de,06641/9613-35
+,Golfclub Willershausen e.V.,Bergring 8,37293,Herleshausen-Willershausen,Deutschland,info@golf-gut-willershausen.de,(0 56 54) 9 20 40,http://www.golf-gut-willershausen.de,(0 56 54) 9 20 41
+,Sommerfeld Golf Sickendorf,Hofstr. 9-11,36341,Lauterbach,Deutschland,sickendorf@sommerfeld-golf.de,06641-96130,http://www.sommerfeld-golf-sickendorf.de,06641-961335
+,Golf Range - Frankfurt,Am Martinszehnten 6,60437,Frankfurt/Main,Deutschland,info@golfrange-ffm.de,0 69 - 95 09 27 - 44,http://www.golfrange-ffm.de,0 69 - 95 09 27 - 46
+,Frankfurter Golf Club e.V.,Golfstr. 41,60528,Frankfurt am Main,Deutschland,info@fgc.de,069/66623180,http://www.fgc.de,069/666231820
+,Bad Vilbeler Golfclub Lindenhof e.V.,Lindenhof,61118,Bad Vilbel,Deutschland,info@bvgc.de,0 61 01 - 5 24 52 00,http://www.bvgc.de,0 61 01 - 5 24 52 02
+,Golfclub Friedberg/H. e.V.,Am Golfplatz,61169,Friedberg,Deutschland,loewenhof@sommerfeld-golf.de,(0 60 31) 99 27,http://www.golfclub-friedberg.de,(0 60 31) 6928221
+,Sommerfeld Golf GmbH,Am Golfplatz,61169,Friedberg,Deutschland,verwaltung@sommerfeld-golf.de,(0 60 31) 99 27,http://www.sommerfeld-golf.de,(0 60 31) 6 92 82 21
+,Golf-Club Bad Nauheim e.V.,Nördlicher Park 21,61231,Bad Nauheim,Deutschland,GCBadNauheim@t-online.de,0 60 32 - 21 53,http://www.golfclub-badnauheim.de,0 60 32 - 7 27 20
+,Golfclub Taunus Weilrod e.V.,Merzhäuser Straße,61276,Weilrod,Deutschland,kontakt@gc-weilrod.de,06083 95050,http://www.gc-weilrod.de,06083 950515
+,Homburger Golf Club 1899 e.V.,Saalburgchaussee 2 a,61350,Bad Homburg,Deutschland,info@royal-hgc.de,(0 61 72) 30 68 08,http://www.homburger-gc.de,(0 61 72) 3 26 48
+,Golfclub Oberursel Skyline e.V.,Kleiststraße 22,61449,Oberursel,Deutschland,klaus.mehler@gco-skyline.de,0 61 71 - 63 80 10,http://www.gco-skyline.de,0 61 71 - 63 80 39
+,Golf- und Land-Club Kronberg e.V.,Hainstr.25,61476,Kronberg,Deutschland,info@gc-kronberg.de,(0 61 73) 14 26,http://www.gc-kronberg.de/,(0 61 73) 59 53
+,Golf-Club Neuhof e.V.,Hofgut Neuhof,63303,Dreieich,Deutschland,info@golfclubneuhof.de,(0 61 02) 32 70 10,http://www.golfclubneuhof.de,(0 61 02) 32 70 12
+,Golf Club Hanau-Wilhelmsbad e.V.,Franz-Ludwig-von-Cancrin-Weg 2,63454,Hanau,Deutschland,info@golfclub-hanau.de,(0 61 81) 180190,http://www.golfclub-hanau.de,(0 61 81) 1801910
+,Golfclub am Kortenbach e.V. Seligenstadt,An der Lache 1,63500,Seligenstadt,Deutschland,sommer@golf-seligenstadt.de,06182-828990,http://www.golf-seligenstadt.de/,06182-828992
+,Golfpark Trages,Hofgut Trages,63579,Freigericht,Deutschland,trages@golf-absolute.de,0 60 55 - 9138-0,http://http://www.golf-absolute.de/freigericht,0 60 55 - 91 38-38
+,Golfclub Gut Hühnerhof e.V.,Gut Hühnerhof,63584,Gründau/Gettenbach,Deutschland,golf@gut-huehnerhof.de,06058/916384-70,http://www.gut-huehnerhof.de,06058/916384-77
+,Golf-Club Spessart e.V.,Golfplatz Alsberg a. d. H.,63628,Bad Soden-Salmünster,Deutschland,golf.spessart@t-online.de,0 60 56 - 9 15 80,http://www.gc-spessart.de,0 60 56 - 91 58 20
+,Golf-Club Bad Orb Jossgrund e.V.,Hindenburgstraße 7,63637,Jossgrund,Deutschland,info@golfclub-badorb.de,(0 60 59) 90 55 0,http://www.golfclub-badorb.de,(0 60 59) 90 55 55
+,Golfplatz Altenstadt GmbH & Co.KG,Oppelshäuser Weg 5,63674,Altenstadt,Deutschland,mail@golfplatz-altenstadt.de,06047 / 988088,http://www.golfplatz-altenstadt.de,06047 / 988089
+,Golfclub Eschenrod e.V.,Lindenstr. 46,63679,Schotten-Eschenrod,Deutschland,info@gc-eschenrod.de,06044-8401,http://www.gc-eschenrod.de,069-951159
+,Golfclub am Schotten-Ring e.V.,Lindenstr. 46,63679,Schotten,Deutschland,info@gc-eschenrod.de,06044-951155,http://www.golf.de/golffuehrer/clubs/club_detail.cfm?clubnr=6662,06044-951159
+,Aschaffenburger Golfclub e.V.,Am Heigenberg 30,63768,Hösbach,Deutschland,info@gc-aschaffenburg.de,(0 60 24) 6340-0,http://www.gc-aschaffenburg.de,(0 60 24) 6340-11
+,Golf-Club Darmstadt Traisa e.V.,Am Dippelshof 19,64367,Mühltal,Deutschland,gc-dt@t-online.de,(06151)146543,http://www.gc-dt.de,(06151)148521
+,Kiawah Golf Club Landgut Hof Hayna Riedstadt e.V.,Hof Hayna,64560,Riedstadt,Deutschland,KiawahGolfPark@t-online.de,06158 - 74 73 85,http://www.KiawahGolf.de,06158 - 74 73 86
+,Golfpark Bachgrund e.V.,Im Bachgrund 1,64572,Büttelborn-Worfelden,Deutschland,info@golfpark-bachgrund.de,06152-80790-0,http://www.golfpark-bachgrund.de,06152-80790-72
+,Golf-Club Gernsheim Hof Gräbenbruch e.V.,Golfparkallee 1,64579,Gernsheim-Allmendfeld,Deutschland,gernsheim@golf-absolute.de,(0 61 57) 99 16 16,http://www.gc-gernsheim.de,(0 61 57) 99 17 16
+,Golf Club Bensheim e.V.,Außerhalb 56,64625,Bensheim,Deutschland,info@golfclub-bensheim.de,(0 62 51) 6 77 32,http://www.golfclub-bensheim.de,(0 62 51) 3 92 92
+,Golf-Club Geierstal e.V.,Ohrnbachtalstraße 7,64720,Vielbrunn,Deutschland,golfclub-geierstal@t-online.de,(0 60 66) 2 58,http://www.golfclub-geierstal.de,(0 60 66) 2 48
+,Golf- und Land-Club Buchenhof Hetzbach e.V.,Ritterstraße 8,64743,Beerfelden-Hetzbach,Deutschland,info@golfclub-buchenhof.de,(0 60 68) 91 20 50,http://www.golfclub-buchenhof.de,(0 60 68) 91 20 53
+,Golfclub Odenwald e.V.,Am Golfplatz 1,64753,Brombachtal,Deutschland,mail@golfclub-odenwald.de,0 60 63 - 5 74 47,http://www.golfclub-odenwald.de,0 60 63 - 5 74 48
+,Zimmerner Golfclub 1995 e.V.,Darmstädter Straße 111,64846,Groß-Zimmern,Deutschland,info@gc-zimmern.de,06071 - 9221-0,http://www.gc-zimmern.de,06071 - 9221-20
+,Golf Sport Park Groß-Zimmern,Darmstädter Str. 111,64846,Groß-Zimmern,Deutschland,info@gc-zimmern.de,06071/92210,http://www.gc-zimmern.de,06071/922120
+,Deutsche Medien Golf Gesellschaft e.V.,Postfach 420126,65102,Wiesbaden,Deutschland,dmgg@mediengolfer.de,(0 61 22) 704610,http://www.mediengolfer.de,(0 61 22) 704611
+,Wiesbadener Golf-Club e.V.,Chausseehaus 17,65199,Wiesbaden,Deutschland,info@wiesbadener-golfclub.de,(06 11) 46 02 38,http://www.wiesbadener-golfclub.de,(06 11) 46 32 51
+,Golf Club Rhein-Main e.V.,Weißer Weg,65201,Wiesbaden,Deutschland,golfc@golfclubrheinmain.de,0611 - 184 24 16,http://www.golfclubrheinmain.de,0611 - 184 24 18
+,Golf-Club Main-Taunus e.V.,Lange Seegewann 2,65205,Wiesbaden-Delkenheim,Deutschland,clubinfo@golfclub-maintaunus.de,06122-588680,http://www.golfclub-maintaunus.de,06122-936099
+,Hofgut Georgenthal GmbH & Co.KG,Georgenthal 1,65329,Hohenstein,Deutschland,info@hofgut-georgenthal.de,06128 943-0,http://www.hofgut-georgenthal.de,06128 943-333
+,Golfclub Idstein-Wörsdorf Gut Henriettenthal e.V.,Am Nassen Berg,65510,Idstein-Wörsdorf,Deutschland,suedkurs@golfpark-idstein.de,06126 93220,http://www.golfpark-idstein.de,06126 932222
+,Golfpark Idstein e.V.,Am Nassen Berg,65510,Idstein-Wörsdorf,Deutschland,nordkurs@golfpark-idstein.de,06126/932213,http://www.golfpark-idstein.de,06126/932233
+,Golfclub Eschhofen e.V.,Im Langen Rain 10,65552,Limburg-Eschhofen,Deutschland,info@gc-eschhofen.de,0160 974 57226,http://www.gc-eschhofen.de,0171 1220296
+,Golfclub Hof Hausen vor der Sonne e.V.,Reifenberger Straße,65719,Hofheim/Ts.,Deutschland,info@hofhausengolf.de,06192/209903,http://www.hofhausengolf.de,06192/209921
+,Lufthansa Golfclub Frankfurt e.V.,Golfparkallee 2,68647,Biblis-Wattenheim,Deutschland,golfpark@golfpark-biblis.de,(0 62 45) 9 06 00,http://www.lhgcfra.de,(0 62 45) 90 60 60
+,Golf-Club Biblis-Wattenheim e.V.,Golfparkallee 2,68647,Biblis-Wattenheim,Deutschland,golfpark@golfpark-biblis.de,(0 62 45) 90 60-0,http://www.golfpark-biblis.de/,(0 62 45) 90 60 60
+,Golfclub Dresden Ullersdorf e.V.,Am Golfplatz 1,01454,Ullersdorf,Deutschland,info@golfanlage-ullersdorf.de,(0 35 28) 4 80 60,http://www.golfanlage-ullersdorf.de,(0 35 28) 48 06 11
+,Golfclub Herzogswalde GmbH,Landbergweg 11a,01723,Wilsdruff/OT Herzogswalde,Deutschland,info@golfclub-herzogswalde.de,0179 517 33 55,http://www.golfclub-herzogswalde.de,0351 840 80 99
+,Golfclub Dresden Elbflorenz e.V.,Ferdinand-von-Schill-Straße 4a,01728,Possendorf,Deutschland,info@golfclub-dresden.de,(03 52 06) 24 30,http://www.golfclub-dresden.de,(03 52 06) 2 43 17
+,Golfpark Elbflorenz Betriebs-Gesellsch. Possendorf,Ferdinand-von-Schill-Str. 4a,01728,Possendorf,Deutschland,info@golfclub-dresden.de,(03 52 06) 24 30,http://www.golfclub-dresden.de,(03 52 06) 2 43 17
+,Golfplatz Noitzscher Heide,Am Sportforum 3,04105,Leipzig,Deutschland,info@golfclub-leipzig.de,03 41 - 7 11 64 40,http://www.golfclub-leipzig.de,03 41 - 7 11 64 19
+,Golf & Country Club Leipzig GmbH,Springerstraße 2,04105,Leipzig,Deutschland,info@gcc-leipzig.de,03412 308647,http://www.gcc-leipzig.de,03412 310981
+,GolfPark Leipzig-Seehausen GmbH & Co.,Bergweg 10,04356,Leipzig,Deutschland,golfclub-seehausen@t-online.de,0341-5217442,http://www.golfclub-seehausen.de,0341-5217486
+,Golfclub Markkleeberg e.V.,Mühlweg,04416,Markkleeberg/Zöbigker,Deutschland,kontakt@golfclub-markkleeberg.de,0341/3582686,http://www.golfclub-markkleeberg.de,0341/3582685
+,Golfclub Leipzig-Schloßpark Machern e.V.,Peritscher Weg,04827,Machern,Deutschland,info@golfclub-machern.de,(03 42 92) 6 80 32,http://www.golfclub-machern.de,(03 42 92) 6 80 39
+,1. Golfclub Leipzig e.V.,Noitzscher Straße,04838,Noitzsch / Hohenprießnitz,Deutschland,info@golfclub-leipzig.de,034242-50302,http://www.golfclub-leipzig.de,034242-50304
+,Golfclub Gera e.V.,Am Schafteich 3,07570,Burkersdorf,Deutschland,info@golfclub-gera.de,036603-6161-0,http://www.golfclub-gera.de,036603-6161-16
+,Golf Club Weimar-Jena 1994 e.V.,Münchenroda 29,07751,Jena,Deutschland,GcWeimar-Jena@t-online.de,03641-424651,http://www.golfclub-jena.de,03641-424652
+,Golfclub Zwickau e.V.,Reinsdorfer-Str. 29,08066,Zwickau,Deutschland,info@golfplatz-zwickau.de,0375/2040400,http://www.golfplatz-zwickau.de,0375/2040402
+,Golfclub Bad Schlema e.V.,Grubenstraße 24,08301,Bad Schlema,Deutschland,info@golfclub-bad-schlema.de,0 37 31 - 21 55 15,http://www.golfclub-bad-schlema.de,0 37 21 - 21 55 01
+,Golfclub Plauen-Steinsdorf e.V.,Julius-Fucik-Straße 16,08523,Plauen (OT Jößnitz/Steindorf),Deutschland,info@golfclub-plauen.de,(03741) 20 15 33,http://www.golfclub-plauen.de,(03741) 22 15 32
+,Golfanlage Talsperre Pöhl GmbH,Voigstgrüner Straße 20,08543,Pöhl/Möschwitz,Deutschland,info@golfanlage-talsperre-poehl.de,0 37 43 - 94 45 35,http://www.golfclub-talsperre-poehl.de,0 37 43 - 94 45 37
+,Golfclub Bad Elster - Bad Brambach,Badstr. 45,08648,Bad Brambach,Deutschland,golf-elsterbram@online.de,03743 7517857,http://www.golfclub-bad-elster.de,03743 7517858
+,Golfclub Chemnitz e.V. Wasserschloß Klaffenbach,Wasserschloßweg 6,09123,Chemnitz,Deutschland,mail@golfclub-chemnitz.de,0371/2621840,http://www.gc-chemnitz.de,0371/2621841
+,Golfclub ERZGEBIRGE e.V.,Thumer Str. 430,09405,Zschopau,Deutschland,golfanlage.zschopau@gmail.com,03725 459818,http://www.golfplatz-zschopau.de,03725 459818
+,Golf Sport Gahlenz e.V.,Am Golfplatz 1,09569,Oederan/OT Gahlenz,Deutschland,golfclub-gahlenz@t-online.de,037292/60666,http://www.birdiepage.de,037292/60667
+,Golf Club Erfurt e.V.,Schaderoder Grund,99100,Erfurt-Schaderode,Deutschland,info@golfclub-erfurt.com,(036208) 80712,http://www.golfclub-erfurt.com,(036208) 80713
+,Golfpark Neustadt/Harz e.V.,Stieger Straße 18,99762,Neustadt,Deutschland,info@golfpark-neustadt.de,03631 47171 -0,http://www.golfpark-neustadt.de,03631 47171 -10
+,Golfclub Eisenach im Wartburgkreis e.V.,Am Röderweg 3,99820,Hörselberg-Hainich OTWenigenlupnitz,Deutschland,info@golf-eisenach.de,036920-71871,http://www.golf-eisenach.de,036920-71919
+,Thüringer Golfclub  Drei Gleichen  Mühlberg e.V,Gut Ringhofen,99869,Mühlberg,Deutschland,thueringergcmuehlberg@t-online.de,036256/86983,http://www.thueringer-golfclub.de,036256/86985
+,Golfresort Gut Ringhofen GmbH,Gut Ringhofen,99896,Mühlberg,Deutschland,info@golfresort-gut-ringhofen.de,036256-21741,http://www.golfresort-gut-ringhofen.de,036256-21742
+,Golfclub Halle e.V.,Leipziger Chaussee 191f,06112,Halle/Saale,Deutschland,info@golfclub-halle.de,03 45 / 580 61 16,http://www.golfclub-halle.de,03 45 / 580 61 10
+,ACAMED Golf Club e.V.,Brumbyer Straße 5,06429,Neugattersleben,Deutschland,info@acamed-golfclub.de,03 47 21 - 50 155,http://www.acamed-golfclub.de,03 47 21 - 50 112
+,Golfclub Schloß Meisdorf e.V.,Petersberger Trift 33,06463,Meisdorf,Deutschland,info@golfclub-schloss-meisdorf.de,(03 47 43) 9 84 50,http://www.golfclub-schloss-meisdorf.de,(03 47 43) 9 84 99
+,Golfpark Dessau e.V.,Junkersstr. 52,06847,Dessau-Roßlau,Deutschland,info@golfpark-dessau.de,0340-5025664,http://www.golfpark-dessau.de,0340-5025664
+,Golf-Club Magdeburg e.V.,Herrenkrug 4,39114,Magdeburg,Deutschland,info@golfclub-magdeburg.de,0391/8868846,http://www.golfclub-magdeburg.de,0391/8868865
+,Golf Resort Adendorf KG,Moorchaussee 3,21365,Adendorf,Deutschland,info@golf-adendorf.de,04131 22332660,http://www.golf-adendorf.de,04131 22332665
+,Golf- und Landclub Schloß Lüdersburg e.V.,Lüdersburger Straße 21,21379,Lüdersburg,Deutschland,info@schloss-luedersburg.de,(0 41 39) 6 97 00,http://www.schloss-luedersburg.de,(0 41 39) 69 70 700
+,GSL - Golfanlage Schloß Lüdersburg GmbH & Co. KG,Lüdersburger Straße 21,21379,Lüdersburg,Deutschland,info@schloss-luedersburg.de,(0 41 39) 6 97 00,http://www.schloss-luedersburg.de,(0 41 39) 69 70 700
+,Golfanlage Green Eagle e.V.,Radbrucher Str. 200,21423,Winsen (Luhe),Deutschland,info@greeneagle.de,(0 41 71) 78 22 41,http://www.greeneagle.de,(0 41 71) 78 22 42
+,Gut Deinster Mühle Golfpark OHG,Im Mühlenfeld 30,21717,Deinste,Deutschland,golfpark@allesistgdm.de,04149/925112,http://www.allesistgdm.de,04149/925111
+,Golfclub Am Meer e.V.,Ebereschenstr. 10,26160,Bad Zwischenahn,Deutschland,sekretariat@golfclub-am-meer.de,(0 44 03) 6 38 66,http://www.golfclub-am-meer.de/,(0 44 03) 6 38 67
+,Oldenburgischer Golfclub e. V.,Am Golfplatz 1,26180,Rastede,Deutschland,info@oldenburgischer-golfclub.de,04402 - 7240,http://www.oldenburgischer-golfclub.de,04402 - 70417
+,Golfclub Hatten e.V.,Hatter Landstraße 34,26209,Tweelbäke-Ost,Deutschland,golfclub.hatten@t-online.de,04481 8855,http://www.golfclub-hatten.de,04481 920753
+,Golfclub Oldenburger Land e.V.,Hatter Str. 14,26209,Hatten-Dingstede,Deutschland,info@gcol.de,04482-8280,http://www.gcol.de,04482-8290
+,Golfclub Wilhelmshaven-Friesland e.V.,Mennhausen 5,26419,Schortens,Deutschland,info@golfclub-wilhelmshaven.de,04423 985918,http://www.golfclub-wilhelmshaven.de,04423 985917
+,Golfclub Insel Langeoog e.V.,Warmbadweg 4,26465,Langeoog,Deutschland,anselm@atelier-am-meer-langeoog.de,(0 49 72) 63 71,http://www.golfclub-insel-langeoog.de,(0 49 72) 16 46
+,Golfclub Insel Wangerooge e.V.,Str. zum Westen 23,26486,Wangerooge,Deutschland,post@golf-wangerooge.de,04469-942171,http://www.golf-wangerooge.de,04469-942172
+,Golf-Club Norderney e.V.,Am Golfplatz 2,26548,Norderney,Deutschland,info@gc-norderney.de,04932/927156,http://www.gc-norderney.de,04932/927159
+,Golf-Club Ostfriesland e. V.,Am Golfplatz 4,26639,Wiesmoor,Deutschland,golf@golfclubostfriesland.de,04944-6440,http://www.golfclub-ostfriesland.de,04944-6441
+,Golf-Club Gutshof e.V. Papenburg-Aschendorf,Gutshofstrasse 141,26871,Papenburg,Deutschland,gc@papenburg-gutshof.de,04961-99800,http://www.papenburg-gutshof.de,04961-998020
+,Golf-Club Verden e.V.,Holtumer Straße 24,27283,Verden-Walle,Deutschland,golf@gc-verden.de,(0 42 30) 14 70,http://www.gc-verden.de,(0 42 30) 15 50
+,Golf-Club Wümme e.V.,Hof Emmen/Westerholz,27383,Scheeßel,Deutschland,info@golfclub-wuemme.de,(0 42 63) 9 30 10,http://www.golfclub-wuemme.de,(0 42 63) 93 01 16
+,Golfclub Königshof Sittensen e.V.,Alpershausener Weg 60,27419,Sittensen,Deutschland,golf.club.koenigshof@ewetel.net,04282/3266,http://www.golf-sittensen.de,04282/95470
+,Küsten-Golfclub   Hohe Klint   Cuxhaven e.V.,Hohe Klint 32,27478,Cuxhaven,Deutschland,info@golf-cuxhaven.de,04723-2737,http://www.golf-cuxhaven.de,04723-5022
+,Golfclub Bremerhaven Bürgerpark GmbH & Co KG,Georg-Büchner-Str. 19,27574,Bremerhafen,Deutschland,info@golf-bhv.de,0471-30998940,http://www.golf-bhv.de,0471-30998944
+,Golfclub Gut Hainmühlen im Moorheilbad e.V.,,27624,Ringstedt,Deutschland,info@gut-hainmuehlen.de,04708 920036,http://www.gut-hainmuehlen.de,04708 920038
+,Golfanlage,Hainmühlenweg,27624,Rindstedt/Hainmühlen,Deutschland,info@golfhm.de,0 47 08 - 92 00 36,http://www.golfhm.de,0 47 08 - 92 00 38
+,Golfclub Worpswede e.V.,Paddewischer Weg,27729,Vollersode,Deutschland,info@golfclub-worpswede.de,04763-7313,http://www.golfclub-worpswede.de,04763-6193
+,Golf Club Wildeshauser Geest e.V.,Spasche 5,27793,Wildeshausen,Deutschland,golfplatz@golfclub-wildeshausen.de,(0 44 31) 12 32,http://www.golfclub-wildeshausen.de,(0 44 31) 91 85 23
+,Golf in Hude e. V.,Lehmweg 1,27798,Hude,Deutschland,info@golf-in-hude.de,04408/92 90 90,http://www.golf-in-hude.de,04408/92 90 920
+,Club zur Vahr e.V.,Bgm.-Spitta-Allee 34,28329,Bremen,Deutschland,info@club-zur-vahr-bremen.de,0421/20 44 80,http://www.club-zur-vahr-bremen.de,0421/2 44 92 48
+,GolfRange Bremen GmbH,Ludwig-Roselius-Allee 2,28329,Bremen,Deutschland,bremen@golfrange.de,04 21 - 52 07 30,http://www.golfrange.de,04 21 - 5 20 73 22
+,Golf-Club Oberneuland e.V.,Heinrich-Baden-Weg 25,28355,Bremen,Deutschland,info@gc-oberneuland.de,0421 - 25 92 21,http://www.gc-oberneuland.de,0421 - 257 5390
+,Bremer Golfclub "Lesmona",Lesumbroker Landstr. 70,28719,Bremen,Deutschland,info@bremer-golfclub-lesmona.de,04 21 / 94 93 40,http://www.bremer-golfclub-lesmona.de,04 21 / 94 93 490
+,Golfclub Bremer Schweiz e.V.,Wölpscher Str. 4,28779,Bremen,Deutschland,info@golfclub-bremerschweiz.de,0421/6095331,http://www.golfclub-bremerschweiz.de,0421/6095333
+,Achimer Golfclub e.V.,Roedenbeckstr. 55,28832,Achim,Deutschland,info@golf-in-achim.de,(0 42 02) 9 74 00,http://www.golf-in-achim.de,(0 42 02) 97 40 10
+,Golfclub Syke e.V.,Schultenweg 1,28857,Syke,Deutschland,info@golfclub-syke.de,(0 42 42) 82 30,http://www.golfclub-syke.de,(0 42 42) 82 55
+,Golfclub Lilienthal e.V.,Erste Landwehr 20,28865,Lilienthal,Deutschland,clubhaus@golfclub-lilienthal.de,04298-8401,http://www.golfclub-lilienthal.de,04298-8401
+,Golfclub Herzogstadt Celle e.V.,Beukenbusch 1,29229,Celle-Garßen,Deutschland,golfclub-celle@t-online.de,05086-395,http://www.golf-celle.de,05086-8288
+,Bergen-Hohne Golfclub e.V,Panzerstrasse 1,29303,Bergen-Lohheide,Deutschland,info@bergen-hohne-golfclub.de,0 50 51 - 43 93,http://www.bergen-hohne-golfclub.de,0 50 51 - 91 17 64
+,Golf-Club an der Göhrde e.V.,Braasche 2,29499,Zernien,Deutschland,Golfclub.Goehrde@t-online.de,(0 58 63) 5 56,http://www.golfclubgoehrde.de,(0 58 63) 14 04
+,Golf-Club Bad Bevensen e. V.,Zur Amtsheide 5,29549,Bad Bevensen,Deutschland,sekretariat@gc-badbevensen.de,(0 58 21) 98 250,http://www.gc-badbevensen.de,(0 58 21) 8 53 38
+,Golfpark Soltau,Hof Loh,29614,Soltau,Deutschland,info@golf-soltau.de,(0 51 91) 9 67 63 33,http://www.golf-soltau.de,(0 51 91) 9 67 63 34
+,Golfclub Hof Loh in der Lüneburger Heide e.V.,Hof Loh,29614,Soltau,Deutschland,info@golf-soltau.de,(0 51 91) 9 67 63 33,http://www.golf-soltau.de,(0 51 91) 9 67 63 34
+,Golf-Club Munster e.V.,Kohlenbissen 55,29633,Munster,Deutschland,info@golfclubmunster.de,05192-887059,http://www.golfclubmunster.de,05192-2109
+,Golfclub Tietlingen e.V.,Tietlingen 6 c,29683,Bad Fallingbostel,Deutschland,info@golfclub-tietlingen.de,(0 51 62) 38 89,http://www.golfclub-tietlingen.de,(0 51 62) 75 64
+,Golfclub Hannover e.V.,Am Blauen See 120,30823,Garbsen,Deutschland,info@golfclub-hannover.de,05137-73068,http://www.golfclub-hannover.de,05137-75851
+,Golfclub Langenhagen e.V.,Hainhaus 22,30855,Langenhagen,Deutschland,golfclub-langenhagen@t-online.de,(05 11) 73 68 32,http://www.golfclublangenhagen.de,(05 11) 7 26 19 90
+,Golfclub Gleidingen e.V.,Am Golfplatz 1,30880,Laatzen-Gleidingen,Deutschland,info@golf-gleidingen.de,05102-3011,http://www.golf-gleidingen.de,05102-3099
+,Leine Golf Hannover,Am Golfplatz 1,30880,Laatzen-Gleidingen,Deutschland,empfang@golfgleidingen.de,0 51 02 - 28 80,http://www.golfgleidingen.de,0 51 02 - 4325
+,Golfclub Isernhagen e.V.,Auf Gut Lohne 22,30916,Isernhagen,Deutschland,info@golfclub-isernhagen.de,05139 893185,http://www.golfclub-isernhagen.de,05139 27033
+,Golf-Club Burgwedel e.V.,Wettmarer Str. 13,30938,Burgwedel,Deutschland,info@gc-burgwedel.de,05139-894494,http://www.gc-burgwedel.de,05139-894357
+,Golf-Club Sieben-Berge e. V.,Schlossstraße 1a,31039,Rheden,Deutschland,gc7berge@gmx.de,05182  52336,http://www.gc7berge.de,05182  923350
+,Golf-Club Bad Salzdetfurth-Hildesheim e.V.,Dr.-Jochen-Schneider-Weg 1,31162,Bad Salzdetfurth,Deutschland,info@golfclub-hildesheim.de,05063/1516,http://www.golfclub-hildesheim.de,05063/1561
+,Golfclub Peine-Edemissen e.V.,Dahlhampsweg 2,31234,Edemissen,Deutschland,info@gcpe.de,(0 51 76) 9 01 12,http://www.gcpe.de,(0 51 76) 92 30 74
+,Burgdorfer Golfclub e.V.,Waldstraße 27,31303,Burgdorf-Ehlershausen,Deutschland,info@burgdorfergolfclub.de,05085-7628,http://www.burgdorfergolfclub.de,05085-6617
+,Rethmar Golf,Seufzeralle 10,31319,Sehnde,Deutschland,info@rethmargolf.de,(05138) 700 530,http://www.rethmargolf.de,(05138) 700 550
+,Golf Park Steinhuder Meer e.V.,Vor der Mühle 10 a,31535,Neustadt,Deutschland,info@gpsm.de,0 50 36 - 27 78,http://www.gpsm.de,0 50 36 - 98 84 41
+,Golfclub Rehburg-Loccum GmbH & Co. KG,Hormannshausen 2a,31547,Rehburg-Loccum,Deutschland,info@gcrl.de,05766-93017,http://www.gcrl.de,05766-93019
+,Golfclub Schaumburg e.V.,Röserheide 2,31683,Obernkirchen,Deutschland,gcschaumburg@online.de,(0 57 24) 46 70,http://www.golfclub-schaumburg.de,(0 57 24) 90 29 10
+,Golfclub am Harrl e.V.,Am Bruch 12,31707,Bad Eilsen,Deutschland,info@golfclub-am-harrl.de,05722 9054900,http://www.golfclub-am-harrl.de,05722 9054908
+,Golfclub am Deister in Bad Münder e.V.,Am Osterberg 2,31848,Bad Münder am Deister,Deutschland,info@golfclub-deister.de,(0 50 42) 50 32 76,http://www.gc-am-deister.de,(0 50 42) 50 32 78
+,Hamelner Golfclub e.V.,Schwöbber 8,31855,Aerzen,Deutschland,info@hamelner-golfclub.de,05154/9870,http://www.hamelner-golfclub.de,05154/987111
+,Golf-Club Bad Pyrmont e.V.,Am Golfplatz 2,32676,Lügde,Deutschland,pyrmonter.golf.club@t-online.de,0 52 81 - 93 20 90,http://www.gc-bp.de,0 52 81 - 93 20 99
+,Sport- & Golf-Resort Gut Wissmannshof,Gut Wißmannshof,34355,Staufenberg-Speele,Deutschland,info@wissmannshof.de,05543 999 335,http://www.wissmannshof.de,05543 910 779
+,Sport- und Golfres. Gut Wissmannshof,Wissmannshof 1,34555,Staufenberg,Deutschland,info@wissmannshof.de,05543 - 910330,http://www.wissmannshof.de,05543 - 910350
+,Golfclub Rittergut Rothenberger Haus e.V.,Rothenberger Haus,37115,Duderstadt,Deutschland,club@golf-ohne-grenzen.de,0 55 29 - 89 92,http://www.golf-ohne-grenzen.de,0 55 29 - 999707
+,Golf Club Hardenberg e.V.,Gut Levershausen,37154,Northeim,Deutschland,info@gchardenberg.de,05551 90838-0,http://www.gchardenberg.de,05551 90838-20
+,Behinderten Golf Club Deutschland e.V.,Hauptstr. 3c,37434,Bodensee,Deutschland,info@bgc-golf.de,(0 55 07)  25 27,http://www.bgc-golf.de,(0 55 07) 97 91 44
+,Golf und Country Club Leinetal Einbeck e.V.,Am Holzgrund,37574,Einbeck,Deutschland,info@golfclub-einbeck.de,0 55 61 - 98 23 05,http://www.golfclub-einbeck.de,0 55 61 - 98 23 06
+,Golfclub Weserbergland e.V.,Weißenfelder Mühle 2,37647,Polle,Deutschland,info@golfclub-weserbergland.de,05535-8842,http://www.golfclub-weserbergland.de,05535-1225
+,Golf-Klub Braunschweig e.V.,Schwartzkopffstrasse 10,38126,Braunschweig,Deutschland,info@golf-klub-braunschweig.de,0531-26424-0,http://www.golf-klub-braunschweig.de,0531-26424-13
+,Golf Club Salzgitter e.V.,Mahner Berg,38259,Salzgitter-Bad,Deutschland,gc-salzgitter@t-online.de,05341 37376,http://www.golfclub-salzgitter.de,05341 905170
+,Golfclub Rittergut Hedwigsburg e.V.,Golfplatz,38324,Kissenbrück,Deutschland,sekretariat@golfclub-hedwigsburg.de,05337 / 90 70 3,http://www.golfclub-hedwigsburg.de,05337 / 90 70 4
+,Golf- und Land-Club St. Lorenz e.V.,Klostergut St. Lorenz,38364,Schöningen,Deutschland,Elm-Golf@t-online.de,(0 53 52) 16 97,http://www.stlorenz-golf.de,(0 53 52) 16 97
+,Golfclub Gifhorn e.V.,Wilscher Weg 69,38518,Gifhorn,Deutschland,Golfclub-Gifhorn@t-online.de,(0 53 71) 1 67 37,http://www.golfclub-gifhorn.de,(0 53 71) 5 10 92
+,Golfclub Wolfsburg Boldecker Land e.V.,Oslosser Weg 20,38556,Bokensdorf,Deutschland,verwaltung@golfclub-wolfsburg.de,(0 53 66) 12 23,http://www.golfclub-wolfsburg.de/,(0 53 66) 14 17
+,Golfclub Harz e.V.,Am Breitenberg 107,38667,Bad Harzburg,Deutschland,info@golfclubharz.de,(0 53 22) 67 37,http://www.golfclubharz.de,(0 53 22) 24 98
+,Golfclub EUREGIO Bad Bentheim e.V.,Am Hauptdiek 8,48455,Bad Bentheim,Deutschland,info@golfclub-euregio.de,(0 59 22) 77 76-0,http://www.golfclub-euregio.de,(0 59 22) 77 76-18
+,Osnabrücker Golf Club e.V.,Am Golfplatz 3,49143,Bissendorf,Deutschland,info@ogc.de,05402/5636,http://www.ogc.de,05402/5257
+,Golfclub Ahrenshorst GmbH & Co KG,Am Leckermühlbach 2,49163,Bohmte,Deutschland,info@gc-arenshorst.de,(0 54 71) 95 25 20,http://www.gc-arenshorst.de,(0 54 71) 9 52 5219
+,Golfclub Varus e.V.,Im Schlingerort 5,49179,Ostercappeln-Venne,Deutschland,Golfclub.Varus@t-online.de,05476-200,http://www.golfclub-varus.de,05476-911400
+,Hof Düsterberg Golfplatz GmbH & Co. KG,Im Schlingerort 5,49179,Ostercappeln,Deutschland,golfclub.varus@t-online.de,(0 54 76) 2 00,http://www.golfclub-varus.de,(0 54 76) 91 14 00
+,Golfclub Vechta-Welpe e.V.,Welpe 2,49377,Vechta,Deutschland,info@golfclub-vechta.de,04441 82168,http://www.golfclub-vechta.de,04441 852480
+,Golfclub Gut Brettberg Lohne e.V.,Brettberger Weg,49393,Lohne,Deutschland,info@gc-lohne.de,04442/730873,http://www.gc-lohne.de,04442/730876
+,Golfpark Wagenfeld,Oppenweher Str. 83-85,49419,Wagenfeld,Deutschland,info@golfpark-wagenfeld.de,05444 - 980169-0,http://www.golfpark-wagenfeld.de,05444 - 980169-2
+,Artland Golfclub e.V.,Westerholte 23,49577,Ankum,Deutschland,info@artlandgolf.de,0 54 66 - 3 01,http://www.artlandgolf.de,0 54 66 - 9 10 81
+,Golf Club Thülsfelder Talsperre e.V.,Mühlenweg 9,49696,Resthausen,Deutschland,info@gc-thuelsfelde.de,0 44 74 - 79 95,http://www.gc-thuelsfelde.de,0 44 74 - 79 97
+,Golfclub Gut Düneburg e.V.,Düneburg 1,49733,Haren (Ems),Deutschland,golf@gut-dueneburg.de,05932 72740,http://www.gcgd.de,05932 6686
+,Golfclub Emstal e.V.,Beversundern 3,49808,Lingen,Deutschland,info@gc-emstal.de,(05 91) 6 38 37,http://www.gc-emstal.de,(05 91) 9 66 26 16
+,Golfcity Puchheim,Lüdersburger Straße 21,21379,Lüdersburg,Deutschland,info@golfcity.de,0 41 39 - 69 70 0,http://www.golfcity.de,0 41 39 - 69 70 600
+,Golfclub Heerhof e.V.,Finnebachstr. 31,32049,Herford,Deutschland,info@heerhof.de,05228/7507,http://www.heerhof.de,05228/1220
+,Golf- und Landclub Bad Salzuflen e.V.,Schwaghof 4,32108,Bad Salzuflen,Deutschland,info@golfclub-bad-salzuflen.de,05222/10773,http://www.golfclub-bad-salzuflen.de,05222/13954
+,Golfclub Ravensberger Land e.V.,Südstrasse  96,32130,Enger-Pödinghausen,Deutschland,golfclub-ravensberger-land@teleos-web.de,052 24 - 7 97 51,http://www.golfclub-ravensberger-land.de,052 24 - 69 94 46
+,Golf-Club Widukind-Land e.V.,Auf dem Stickdorn 63,32584,Löhne,Deutschland,widukindland@t-online.de,0 52 28 - 70 50,http://www.gc-widukindland.de,0 52 28 - 10 39
+,Golfclub Herford e.V.,Heideholz 8,32602,Vlotho-Exter,Deutschland,info@golfclubherford.de,(0 52 28) 74 34,http://www.golfclubherford.de,(0 52 28) 98 93 66
+,Golfanlage Gut Ottenhausen GmbH,Ottenhauser Straße 102,32791,Lage/Lippe,Deutschland,info@golf-gut-ottenhausen.de,05232 9738500,http://www.golf-gut-ottenhausen.de,
+,Lippischer Golfclub e.V.,Huxoll 14,32825,Blomberg,Deutschland,sekretariat@lippischergolfclub.de,(0 52 36) 4 59,http://www.lippischergolfclub.de,(0 52 36) 81 02
+,Bad Driburger Golfclub e.V.,Georg-Nave-Str. 24 a,33014,Bad Driburg,Deutschland,info@bad-driburger-golfclub.de,(0 52 53) 71 04,http://www.bad-driburger-golfclub.de,(0 52 53) 71 46
+,Universitäts-Golfclub-Paderborn e.V.,Harsewinkelweg 10 / Ecke Pohlweg,33100,Paderborn,Deutschland,golf@sportmed.upb.de,0 52 51/60 42 48,http://www.uni-gc.de,0 52 51/60 42 41
+,Fair-Way Golf- und Sportclub Paderborn e.V.,Haxterhöhe 2,33100,Paderborn,Deutschland,info@haxterpark.de,05251 60424-2,http://www.haxterpark.de,05251 60424-1
+,Golfclub Paderborner Land e.V.,Im Nordfeld 25,33154,Salzkotten-Thüle,Deutschland,info@gcpaderbornerland.de,0 52 58 - 93 73 0,http://www.gcpaderbornerland.de,0 52 58 - 93 73 20
+,B.A. Golfclub Sennelager e.V.,Senne 1,33175,Bad Lippspringe,Deutschland,info@sennelagergolfclub.de,0 52 52 - 93 23 08,http://www.sennelagergolfclub.de,0 52 52 - 5 38 11
+,Westfälischer Golf-Club Gütersloh e.V.,Gütersloher Str. 127,33397,Rietberg,Deutschland,golf-club@golf-gt.de,(0 52 44) 23 40,http://www.golf-gt.de,(0 52 44) 13 88
+,Golf-Club Marienfeld e.V.,Remse 27,33428,Marienfeld,Deutschland,gc-marienfeld@t-online.de,(0 52 47) 88 80,http://www.gc-marienfeld.de,(0 52 47) 8 03 86
+,Bielefelder Golfclub e.V.,Dornberger Str. 377,33619,Bielefeld,Deutschland,info@bielefelder-golfclub.de,(05 21) 10 51 03,http://www.bielefelder-golfclub.de,(05 21) 10 95 79
+,Senne Golfclub Gut Welschof e.V.,Augustdorfer Str. 72,33758,Schloß Holte - Stukenbrock,Deutschland,info@sennegolfclub.de,05207 920936,http://www.sennegolfclub.de,05207 88788
+,Golf-Club Schulten-Hof Peckeloh e.V.,Schultenallee 1,33775,Versmold,Deutschland,info@schultenhof-peckeloh.de,05423-42872,http://www.schultenhof-peckeloh.de,05423-42962
+,Golf Club Teutoburger Wald Halle/Westfalen e.V.,Eggeberger Str.13,33790,Halle/Westfalen,Deutschland,post@gctw.de,0 52 01 - 6279,http://www.gctw.de,0 52 01 - 6222
+,TuS Westheim Golfclub,Kastanienweg,34431,Marsberg-Westheim,Deutschland,bazotto@t-online.de,0 29 94 - 90 88 54,http://www.golfclub-westheim.de,0 29 94 - 90 88 59
+,GSV Golf-Sport-Verein Düsseldorf e.V.,Auf der Lausward 51,40221,Düsseldorf,Deutschland,info@gsvgolf.de,0211-410529,http://www.gsvgolf.de/,0211-412007
+,Golf Club Hubbelrath e.V.,Bergische Landstr. 700,40629,Düsseldorf,Deutschland,info@gc-hubbelrath.de,02104 - 72178,http://www.gc-hubbelrath.de,02104 - 75685
+,KOSAIDO Internationaler Golfclub Düsseldorf e.V.,Am Schmidtberg 11,40629,Düsseldorf,Deutschland,info@kosaido.de,02104-7706-0,http://www.kosaido.de,02104-7706-11
+,Golfclub Düsseldorf Grafenberg e.V.,Rennbahnstr.24-26,40629,Duesseldorf,Deutschland,info@golfclub-duesseldorf.de,0211-9649511,http://www.golf-duesseldorf.de,0211-9649537
+,Golfclub Meerbusch e.V.,Badendonker Straße 15,40667,Meerbusch,Deutschland,info@golfpark-meerbusch.de,02132/93250,http://www.golfpark-meerbusch.de,02132/932513
+,Golfclub am Katzberg e.V.,Katzbergstr. 21,40764,Langenfeld,Deutschland,gcamkatzberg@t-online.de,02173-919741,http://www.golf.de/amkatzberg,02173-919743
+,Golfclub Mettmann e. V.,Obschwarzbach 4a,40822,Mettmann,Deutschland,info@gc-mettmann.de,02058-92240,http://www.gc-mettmann.de,02058-922449
+,Düsseldorfer Golf-Club e.V.,Rommeljansweg 12,40882,Ratingen,Deutschland,info@duesseldorfer-golf-club.de,02102 / 81092,http://www.duesseldorfer-golf-club.de,02102 / 81782
+,Golfclub Grevenmühle e.V.,Grevenmühle,40882,Ratingen,Deutschland,info@grevenmuehle.de,02102-9595 0,http://www.grevenmuehle.de,02102-9595-15
+,Golfclub Mönchengladbach Wanlo e.V.,Kuckumer Str. 61,41189,Mönchengladbach,Deutschland,golfclubmg-wanlo@t-online.de,02166-145722,http://www.golffuehrer.de/sqldb/club/frameset.php?CLUBNR=5271&src=home.php&VPS=ja,02166-145725
+,Mönchengladbacher Golfsportanlage GmbH,Kuckumer Straße 61,41189,Mönchengladbach-Wanlo,Deutschland,info@mg-golfsport.de,0 21 66 - 95 49 54,http://www.mg-golfsport.de,0 21 66 - 9 54 95 33
+,Golfclub Haus Bey e.V.,An Haus Bey 16,41334,Nettetal,Deutschland,info@hausbey.de,02153/9197-0,http://www.hausbey.de,02153/919750
+,Golfclub Schloß Myllendonk e.V.,Myllendonker Strasse 113,41352,Korschenbroich,Deutschland,info@gcsm.de,02161 641049,http://www.gcsm.de,02161 648806
+,Golf Club Rittergut Birkhof e.V.,Rittergut Birkhof,41352,Korschenbroich,Deutschland,info@gc-rittergutbirkhof.de,02131/510660,http://www.gc-rittergutbirkhof.de,02131/510621
+,Golfclub Am Römerweg e.V.,Rittergut Birkhof,41352,Korschenbroich,Deutschland,Golfpark@Birkhof.de,02131 51 06 60,http://www.birkhof.de,02131-15 32 25
+,Golfclub Hummelbachaue e. V.,Am Golfplatz,41469,Neuss,Deutschland,service@hummelbachaue.de,02137/91910,http://www.hummelbachaue.de,02137/919191
+,Golf + Sport GmbH & Co. KG,Am Golfplatz,41469,Neuss,Deutschland,info@hummelbachaue.de,0 21 37 - 9 19 10,http://www.hummelbachaue.de,0 21 37 - 91 91 91
+,Golfclub Erftaue e.V.,Zur Mühlenerft 1,41517,Grevenbroich,Deutschland,gc.erftaue@t-online.de,(0 21 81) 28 06 37,http://www.golf-erftaue.de,(0 21 81) 28 06 39
+,Golf- und Landclub Schmitzhof e.V.,Arsbecker Straße 160,41844,Wegberg,Deutschland,info@golfclubschmitzhof.de,(0 24 36) 3 90 90,http://www.golfclubschmitzhof.de,(0 24 36) 39 09 15
+,Golfclub Wildenrath e.V.,Friedrich-List-Allee,41844,Wegberg,Deutschland,info@golfclub-wildenrath.de,02432/81500,http://www.golfclub-wildenrath.de,02432/8508
+,Golfclub Residenz Rothenbach e.V.,Rothenbach 10,41849,Wassenberg,Deutschland,info@gc-rothenbach.de,(0 24 32) 90 22 09,http://www.gc-rothenbach.de,(0 24 32) 90 23 06
+,Golfclub Bergisch Land e.V.,Siebeneicker Str. 386,42111,Wuppertal,Deutschland,info@golfclub-bergischland.de,02053-7077,http://www.golfclub-bergischland.de,02053-7303
+,Golfclub Dreibäumen e.V.,Stoote 1,42499,Hückeswagen,Deutschland,info@dreibaeumen.de,02192 854720,http://www.gcdreibaeumen.de,02192 854719
+,Golfclub Velbert-Gut Kuhlendahl e.V.,Kuhlendahler Str. 283,42553,Velbert,Deutschland,Golfclub-Velbert@t-online.de,0 2053 92 32 90,http://www.gcvelbert.de,0 2053 92 32 91
+,Golfclub Hösel e.V.,Höseler Straße 147,42579,Heiligenhaus,Deutschland,info@golfclubhoesel.de,(0 20 56) 93 37 0,http://www.golfclubhoesel.de,(0 20 56) 93 37 33
+,Golfclub Haan-Düsseltal e.V.,Pannschoppen 2,42781,Haan,Deutschland,info@golfclub-haan-duesseltal.de,02104/170307,http://www.golfclub-haan-duesseltal.de,02104/809838
+,Golf Club GolfRange Dortmund e.V.,Rennweg 70,44143,Dortmund,Deutschland,dortmund@golfrange.de,0231/981295-0,http://www.golfrange.de/,0231/981295-22
+,Dortmunder Golfclub e. V.,Reichsmarkstr. 12,44265,Dortmund,Deutschland,info@dortmunder-golfclub.de,0231 774133,http://www.dortmunder-golfclub.de,0231 774403
+,Royal St. Barbara´s Dortmund e.V.,Heßlingsweg,44309,Dortmund,Deutschland,info@golfclub-dortmund.de,0231/ 2 00 80 21,http://www.golfclub-dortmund.de,0231/25 91 83
+,Golfclub Castrop-Rauxel e.V. in Frohlinde,Dortmunder Str. 383,44577,Castrop-Rauxel,Deutschland,golfclub-castrop@t-online.de,(0 23 05) 6 20 27,http://www.gc-castroprauxel.de,(0 23 05) 6 14 10
+,Bochumer Golfclub e.V.,Im Mailand 127,44797,Bochum,Deutschland,bochumer.golfclub@t-online.de,0234 - 79 98 32,http://www.bochumer-golfclub.de,0234 - 79 57 75
+,Golf am Ruhrpark GmbH,Harpener Hellweg 400,44894,Bochum,Deutschland,info@golfamruhrpark.de,0172 2452087,http://www.golf-am-ruhrpark.de,
+,Golfriege ETUF e.V.,Freiherr-vom-Stein-Str.  92,45133,Essen,Deutschland,hawi@cneweb.de,(02 01) 44 46 00,http://www.etuf.de,(02 01) 4 30 96 98
+,Essener Golfclub Haus Oefte e.V.,Laupendahler Landstraße,45219,Essen,Deutschland,info@golfclub-oefte.de,(0 20 54) 8 39 11,http://www.golfclub-oefte.de,(0 20 54) 8 38 50
+,Golfclub Essen-Heidhausen e.V.,Preutenborbeckstr. 36,45239,Essen,Deutschland,info@gceh.de,0201/404111,http://www.gceh.de,0201/402767
+,Golf Club Mülheim an der Ruhr Raffelberg e.V.,Akazienallee 84,45478,Mülheim an der Ruhr,Deutschland,info@srs-enterprise.com,0208/58 05 690,http://www.golfplatz-raffelberg.de,0208/5805699
+,Golfclub Mülheim an der Ruhr e.V.,Am Golfplatz 1,45481,Mülheim,Deutschland,info@gcmuelheim.de,(02 08) 48 36 07,http://www.gcmuelheim.de,(02 08) 48 11 53
+,Golfclub Felderbach Sprockhövel e.V.,Frielinghausen 1,45549,Sprockhövel,Deutschland,info@golfclub-felderbach.de,0202-64822 222,http://www.golfclub-felderbach.de,0202-264 02 92
+,Golfclub Gut Frielinghausen,Frielinghausen 1,45549,Sprockhövel,Deutschland,info@golfclub-gutfrielinghausen.de,0202-64822 222,http://www.golfclub-gutfrielinghausen.de,0202-264 02 92
+,Vestischer Golfclub Recklinghausen e.V.,Bockholter Straße 475,45659,Recklinghausen,Deutschland,vest.golfclub@t-online.de,02361-93420,http://www.gc-recklinghausen.de,02361-934240
+,Golfclub Schloß Westerholt e.V.,Schloßstraße 1,45701,Herten-Westerholt,Deutschland,info@gc-westerholt.de,0209 / 165840,http://www.gc-westerholt.de,0209 / 1658415
+,Alfons Schnieder (Landhotel Jammertal),Redder Str. 421,45711,Datteln,Deutschland,info@jammertal.de,0 23 63 - 37 70,http://www.jammertal.de,0 23 63 - 37 71 00
+,Gelsenkirchener Golfclub Haus Leythe e.V.,Middelicher Str. 72,45891,Gelsenkirchen,Deutschland,info@haus-leythe.de,0209/701100,http://www.haus-leythe.de,0209/7011025
+,Golfpark Schloß Horst e.V.,An der Rennbahn 11,45899,Gelsenkirchen,Deutschland,gelsenkirchen@redgolf.de,0209/503020,http://www.redgolf.de,0209/ 5030222
+,Golfclub Oberhausen e.V.,Jacobistraße 35,46119,Oberhausen,Deutschland,info@gcob.de,0208/6090405,http://www.gcob.de,0208/6090408
+,Golfclub Schwarze Heide Bottrop-Kirchhellen e.V.,Gahlener Straße 44,46244,Kirchhellen,Deutschland,info@gc-schwarze-heide.de,02045/82488,http://www.gc-schwarze-heide.de,02045/83077
+,Golfclub Wasserburg Anholt e.V.,Schloss 3,46419,Isselburg-Anholt,Deutschland,sekretariat@golfclub-anholt.de,0 28 74 - 91 51 20,http://www.golfclub-anholt.de,0 28 74 - 91 51 28
+,Golfclub Borghees e.V.,Abergsweg 30,46446,Emmerich,Deutschland,GolfclubBorghees@aol.com,02822 - 92710,http://www.Golfclub-Borghees.de,02822 - 10804
+,Golf Club Weselerwald e.V.,Steenbecksweg 12,46514,Schermbeck,Deutschland,info@golfclub-weselerwald.de,02856/9137-0,http://www.gcww.de,02856/913715
+,Golfclub Hünxerwald e.V.,Hardtbergweg 16,46569,Hünxe,Deutschland,info@gc-huenxerwald.de,(0 28 58) 64 80,http://www.gc-huenxerwald.de,(0 28 58) 8 21 20
+,Golfclub Bruckmannshof e.V.,An den Höfen 7,46569,Hünxe-Bruckhausen,Deutschland,gc-bruckmannshof@t-online.de,04920 6433043,http://www.gcbruckmannshof.de,04920 6432011
+,Golfclub Röttgersbach e.V.,Ardesstraße 76,47167,Duisburg,Deutschland,info@gc-roettgersbach.de,02 03 - 4 84 67 25,http://www.gcroettgersbach.de,02 03 - 4 84 67 26
+,Niederrheinischer Golfclub e.V. Duisburg,Grossenbaumer Allee 240,47249,Duisburg,Deutschland,info@ngcd.de,02037 21469,http://www.ngcd.de,02037 19230
+,Golf & More Huckingen GmbH & Co. KG,Altenbrucher Damm 92 a,47269,Duisburg,Deutschland,info@golfandmore.net,(02 03) 7 38 62 86,http://www.golfandmore.net,(02 03) 7 38 54 83
+,Golfclub Am Kloster Kamp e.V.,Kirchstraße 164,47475,Kamp-Lintfort,Deutschland,golfclub@amklosterkamp.de,(0 28 42) 48 33,http://www.golfclub-am-kloster-kamp.de,(0 28 42) 48 35
+,Golfclub Op de Niep e.V.,Bergschenweg 71,47506,Neukirchen-Vluyn,Deutschland,OpdeNiep@golf.de,02845/28051,http://www.gc-opdeniep.de,02845/28052
+,Mühlenhof Golf und Country Club e.V.,Greilack 29,47546,Kalkar-Niedermörmter,Deutschland,info@muehlenhof.net,0 28 24 / 92 40 40,http://www.muehlenhof.net,0 28 24 / 92 40 93
+,Land-Golf-Club Schloß Moyland e.V.,Moyländer Allee 1,47551,Bedburg-Hau,Deutschland,info@landgolfclub.de,02824/4749,http://www.landgolfclub.de,02824/809128
+,Golf Moyland International GmbH & Co. KG,Moyländer Allee 10,47551,Bedburg-Hau,Deutschland,info@golfinternationalmoyland.de,02824/976680,http://www.golfinternationalmoyland.de,02824/9766825
+,Golfclub Schloß Haag e. V.,Bartelter Weg 8,47608,Geldern,Deutschland,GC-Schloss-Haag@t-online.de,02831/94777,http://www.gc-schloss-haag.de,02831/94778
+,Golfclub Issum-Niederrhein e.V.,Pauenweg 68,47661,Issum,Deutschland,golfclub-issum@t-online.de,0 28 35 -9 23 10,http://www.golfclub-issum.de,0 28 35 - 92 31 20
+,Golfclub Stadtwald e.V.,Hüttenallee 188,47800,Krefeld,Deutschland,info@golfclub-stadtwald.de,(02151) 590243,http://www.golflclub-stadtwald.de,(02151) 500248
+,Golf Club Elfrather Mühle e.V.,An der Elfrather Mühle 145,47802,Krefeld,Deutschland,info@gcem.de,02151/49690,http://www.gcem.de,02151/477459
+,Krefelder Golf Club e.V.,Eltweg 2,47809,Krefeld,Deutschland,kgc@krefelder-gc.de,(0 21 51) 570071,http://www.krefelder-gc.de,(0 21 51) 5799011
+,Golfclub Duvenhof e.V.,Hardt 21,47877,Willich,Deutschland,info@duvenhof.de,02159 911093,http://www.duvenhof.de,02159 911095
+,Golfsport Willich GmbH & Co. KG Duvenhof,Hardt 21,47877,Willich,Deutschland,info@duvenhof.de,0 21 59 - 91 59 50,http://www.duvenhof.de,0 21 59 - 9 15 95 69
+,Golfpark Renneshof GmbH,Zum Renneshof 10,47877,Willich-Anrath,Deutschland,info@gc-renneshof.de,02156-9142180,http://www.renneshof.de,02156-9142181
+,Golfclub Münster-Wilkinghege e.V.,Steinfurter Str. 448,48159,Münster,Deutschland,kontakt@golfclub-wilkinghege.de,0251-21409-0,http://www.golfclub-wilkinghege.de,0251/2140940
+,Golfclub Münster-Tinnen e.V.,Am Kattwinkel 244,48163,Münster,Deutschland,info@gc-tinnen.de,02536/3301011,http://www.gc-tinnen.de,02536/3301021
+,Golfanlage Münster,Westfalenstraße 332,48165,Münster-Hiltrup,Deutschland,domus-golf@gmx.de,0 25 01 - 59 48 79 1,http://www.golf.de/golffuehrer/clubs/club_detail.cfm?clubnr=4568,
+,Golfpark Heidewald Vohren der Dieckmann GbR,Vohren 41,48231,Warendorf,Deutschland,info@golfpark-heidewald.de,(0 25 86) 17 92,http://www.golfpark-heidewald.de,(0 25 86) 84 08
+,Warendorfer Golfclub an der Ems der Dieckmann GbR,Vohren 41,48231,Warendorf,Deutschland,info@warendorfer-golfclub.de,0 25 86 - 17 92,http://www.warendorfer-golfclub.de,0 25 86 - 84 08
+,Golf-Club Aldruper Heide e.V.,Aldruper Oberesch 12,48268,Greven,Deutschland,info@golfclub-aldruper-heide.de,02571-97095,http://golfclub-aldruper-heide.de,02571-952047
+,Golfclub Gut Hahues zu Telgte e.V.,Harkampsheide 5,48291,Telgte,Deutschland,sekretariat@golfclub-telgte.de,02504-72326,http://www.traumgolf.de,02504 - 72321
+,Golfclub Brückhausen e.V.,Holling 4,48351,Everswinkel,Deutschland,info@golfclub-brueckhausen.de,02582 5645,http://www.golfclub-brueckhausen.de,02582 9919152
+,Golfsportclub Rheine/Mesum Gut Winterbrock e.V.,Wörstraße 201,48432,Rheine,Deutschland,info@golfclub-rheine.de,05975/9490,http://www.golfclub-rheine.de,05975/9491
+,Internationaler Golfclub Mergelhof Sektion Deutsch,Rue de Terstraeten 254,4851 ,Gemmenich / Belgien,Deutschland,mail@gc-mergelhof.net,0032 8778 9280,http://www.gc-mergelhof.net,0032 8778 9297
+,Golfclub Münsterland e.V., Burgsteinfurt,Bagno,48565,Steinfurt,Deutschland,info@gc-muensterland.de,02551/833550,http://www.gc-muensterland.de,02551/833555
+,Golf- und Landclub Coesfeld e.V.,Stevede 8 a,48653,Coesfeld,Deutschland,coesfeld@golf.de,0 25 41 - 59 57,http://www.golfclub-coesfeld.de,0 25 41 - 59 86
+,Golf- und Landclub Ahaus e.V.,Schmäinghook 36,48683,Ahaus-Alstätte,Deutschland,info@glc-ahaus.de,(0 25 67) 4 05,http://www.glc-ahaus.de,(0 25 67) 35 24
+,Golfclub Uhlenberg Reken e.V.,Uhlenberg 8,48734,Reken,Deutschland,info@uhlenberg-reken.de,0 28 67 - 90 72 37,http://www.uhlenberg-reken.de,0 28 67 - 90 72 39
+,Golfclub Habichtswald e.V.,Industriestrasse 16,49492,Westerkappeln-Velpe,Deutschland,sekretariat@golfclub-habichtswald.de,(0 54 56) 9 60 13,http://www.golfclub-habichtswald.de,(0 54 56) 9 60 14
+,Golfclub Osnabrück-Dütetal e.V.,Wersener Straße 17,49504,Lotte-Wersen,Deutschland,info@golf-duetetal.de,05404 998610,http://www.golf-duetetal.de,05404 9986122
+,Golfclub Tecklenburger Land e.V.,Wallenweg 24,49545,Tecklenburg,Deutschland,vorstand@golfclub-tecklenburg.de,05455 1035,http://www.golfclub-tecklenburg.de/,05455 962021
+,Golfclub Ladbergen e.V.,Hölterweg 8,49549,Ladbergen,Deutschland,info@golf-ladbergen.de,0 54 85 - 83 18 13,http://www.golf-ladbergen.de,0 54 85 - 83 18 14
+,Golfclub Am Alten Fliess e.V.,Am Alten Fliess 66,50129,Bergheim,Deutschland,info@golfplatz-koeln.de,02238/94410,http://www.golfplatz-koeln.de,02238/944119
+,Golf Club Gut Lärchenhof e.V.,Hahnenstraße,50259,Pulheim,Deutschland,golfclub@gutlaerchenhof.de,02238/923 90 0,http://www.gutlaerchenhof.de,02238/923 9010
+,Golf & Country Club Velderhof e.V.,Velderhof,50259,Pulheim,Deutschland,info@velderhof.de,02238-92394-0,http://www.velderhof.de,02238-92394-40
+,Golf Burgkonradsheim GmbH & Co. KG,Am Golfplatz 1,50374,Erftstadt,Deutschland,info@golfburg.de,02235-955660,http://www.golfburg.de,02235-9556666
+,Golf Club Ford Köln e.V.,Parallelweg 1,50769,Köln,Deutschland,GC-Ford@t-online.de,0221/9782424,http://www.golf.de/gcfkoeln,0221/9782425
+,Kölner Golfclub,Freimersdorfer Weg,50859,Köln,Deutschland,info@koelner-golfclub.de,0221-952746255,http://www.koelner-golfclub.de,0221-952746256
+,Airport Golf K/B,Getreideweg 18,50933,Köln,Deutschland,Airportgolf@aol.com,0221/4912535,http://www.airport-golf.de,0221/4912535
+,Marienburger Golf-Club e.V.,Schillingsrotterweg,50968,Köln,Deutschland,info@marienburger-golfclub.de,0221 / 38 40 53,http://www.marienburger-golfclub.de,0221 /34 15 20
+,Golfclub Leverkusen e.V.,Am Hirschfuß 2 - 4,51061,Köln,Deutschland,info@golfclub-leverkusen.de,0214/ 500 47 500,http://www.golfclub-leverkusen.de,0214/ 500 47 50 20
+,Golf- und Land-Club Köln e.V.,Golfplatz 2,51429,Berg. Gladbach,Deutschland,info@glckoeln.de,02204/92760,http://www.glckoeln.de,02204/927615
+,Golfclub am Lüderich e.V.,Am Golfplatz 1,51491,Overath,Deutschland,info@gc-luederich.de,(0 22 04) 9 76 00,http://www.gc-luederich.de,(0 22 04) 9 76 02
+,Golf-Club Kürten e.V.,Johannesberg 13,51515,Kürten,Deutschland,golfclub-kuerten@web.de,02268 8989,http://www.golfclub-kuerten.de/,02268 3089
+,Golf Club Oberberg e.V.,Hasseler Str. 2a,51580,Reichshof,Deutschland,info@golfcluboberberg.de,02297-7131,http://www.golfcluboberberg.de,02297-7117
+,Golfclub Gimborner Land e.V.,Kreuzstraße 10,51647,Gummersbach,Deutschland,info@gimborner-land.de,0 22 66 / 44 04 47,http://www.gimborner-land.de,0 22 66 / 44 04 48
+,Golfclub Schloß Georghausen e.V.,Georghausen 8,51789,Lindlar,Deutschland,GCSchlossGeorghausen@golf.de,02207 4938,http://www.golfclub-schloss-georghausen.de,02207 81230
+,Aachener Golf Club 1927 e.V.,Schurzelter Straße 300,52074,Aachen,Deutschland,info@agc-ev.de,0241/12501,http://www.agc-ev.de/,0241/171075
+,Golfclub Haus Kambach Eschweiler-Kinzweiler e.V.,Kambachstraße 9-13,52249,Eschweiler,Deutschland,club@golfclub-kambach.de,0 24 03 - 50890,http://www.golfclub-kambach.de,0 24 03 - 83 92 04
+,Golf Club Düren e.V.,Am Golfplatz 2,52355,Düren,Deutschland,info@gcdueren.de,(0 24 21) 6 72 78,http://www.gcdueren.de,(0 24 21) 6 34 92
+,Golfpark Loherhof,Pater-Briers-Weg 85,52511,Geilenkirchen,Deutschland,s.davids@golfpark-loherhof.de,02451-1234,http://www.golfpark-loherhof.de,02451-9534066
+,Golfclub Römerhof e.V.,Römerhof,53332,Bornheim,Deutschland,gc-roemerhof@t-online.de,02222/938539,http://www-golfanlage-roemerhof.de,02222/938947
+,Golfanlage Römerhof GmbH,Römerhof,53332,Bornheim,Deutschland,golfanlage-roemerhof@t-online.de,(0 22 22) 93 19 41,http://www.golfanlage-roemerhof.de,(0 22 22) 93 19 42
+,Golfclub Bonn-Godesberg in Wachtberg e.V.,Landgrabenweg,53343,Wachtberg-Niederbachem,Deutschland,info@gc-bonn-godesberg.de,(02 28) 34 40 03,http://www.gc-bonn-godesberg.de,(02 28) 34 08 20
+,Internationaler Golf Club Bonn e.V.,Gut Großenbusch,53757,St. Augustin,Deutschland,info@gcbonn.de,(0 22 41) 3 98 80,http://www.gcbonn.de,(0 22 41) 39  88 88
+,Golfclub Rhein-Sieg e.V.,Haus Dürresbach,53773,Hennef,Deutschland,sekretariat@gcrs.de,02242-6501,http://www.gcrs.de,02242-909660
+,Gut Heckenhof - Hotel & Golfresort an der Sieg,Heckerhof 5,53783,Eitorf,Deutschland,info@gut-heckenhof.de,02243/92320,http://www.gut-heckenhof.de,02243/923299
+,Golfclub Schloß Auel,Haus Auel 1,53797,Lohmar-Wahlscheid,Deutschland,Info@gc-Schloss-Auel.de,02206/909056,http://www.gc-schloss-auel.de,02206/909057
+,Golfclub Burg Overbach e.V.,Overbach 1,53804,Much,Deutschland,widl@golfclub-burg-overbach.de,02245-5550,http://www.golfclub-burg-overbach.de,02245-8247
+,West Golf GmbH,Kriegsdorferstraße / Uckendorferstraße,53844,Troisdorf-Kriegsdorf,Deutschland,info@west-golf.com,02 21 - 3 59 62 40,http://www.west-golf.com,02 21 - 78 80 55 25
+,Golfclub Clostermanns Hof e.V.,Golfplatz,53859,Niederkassel,Deutschland,info@golfclubclostermannshof.de,02208 506790,http://www.golfclubclostermannshof.de,02208 5067940
+,Golfclub Burg Zievel e.V.,Burg Zievel,53894,Mechernich,Deutschland,gcburg@zievel.de,(0 22 56) 16 51,http://www.gcburgzievel.de,(0 22 56) 34 79
+,Golfclub Bad Münstereifel Stockert e.V.,Moselweg 4,53902,Bad Münstereifel,Deutschland,club@golfbadmuenstereifel.de,02253/2714,http://www.golfbadmuenstereifel.de,02253/930880
+,Golfbetriebsgesellschaft Schloss Miel GmbH,Schlossallee 1,53913,Swisttal/Miel,Deutschland,mail@schlossmiel.de,02226/10050,http://www.schlossmiel.de,02226/17001
+,Golfclub Siegerland e.V.,Berghäuser Weg,57223,Kreuztal,Deutschland,info@golfclub-siegerland.de,(0 27 32) 5 94 70,http://www.golfclub-siegerland.de,(0 27 32) 59 47 24
+,Golfclub Schmallenberg e.V.,Winkhausen 75,57392,Schmallenberg,Deutschland,Golfclub-Schmallenberg@t-online.de,02975/8745,http://www.golfclub-schmallenberg.de,02975/339
+,Golfclub Sellinghausen e.V.,Sellinghausen 10,57392,Schmallenberg,Deutschland,info@golfclub-sellinghausen.de,02971-9609106,http://www.golfclub-sellinghausen.de,02971-9609105
+,Golfclub Repetal Südsauerland e.V.,Repetalstr. 220,57439,Attendorn,Deutschland,info@gc-repetal.de,02721-718032,http://www.gc-repetal.de,02721-718033
+,Golf Club Siegen-Olpe e. V.,Am Golfplatz,57482,Wenden,Deutschland,info@gcso.de,02762-97620,http://www.gcso.de,02762-976212
+,Märkischer Golf Club e.V. Hagen,Tiefendorfer Str. 48,58093,Hagen,Deutschland,mgc-hagen@t-online.de,(0 23 34) 5 17 78,http://www.german-golf.com,(0 23 34) 5 44 76
+,Golfclub Gut Berge Gevelsberg/Wetter e.V.,Berkenberg 1,58285,Gevelsberg,Deutschland,info@gutberge.de,02332 / 913 755,http://www.gutberge.de,02332 / 913 757
+,Golfen in Herdecke,Ackerweg 30 a,58313,Herdecke,Deutschland,info@golfen-in-herdecke.de,02330/973505,http://www.golfen-in-herdecke.de,02330/973507
+,Golfclub am Kemnader See e.V.,In der Lake 33,58456,Witten,Deutschland,info@golfclub-kemnadersee.de,0 23 02 - 2 02 68 28,http://www.golfclub-kemnadersee.de,0 23 02 - 2 02 68 30
+,Golf-Club Varmert e.V.,Woeste 2,58566,Kierspe,Deutschland,post@golfclub-varmert.de,02359-290215,http://www.golfclub-varmert.de,02359-290216
+,GC Gelstern Lüdenscheid-Schalksmühle e.V.,Gelstern 2,58579,Schalksmühle,Deutschland,kontakt@gc-gelstern.de,02351- 51819,http://www.gc-gelstern.de,02351- 52620
+,Golf-Club Unna-Fröndenberg e.V.,Schwarzer Weg 1,58730,Fröndenberg,Deutschland,Golf-Club-UNFR@t-online.de,(0 23 73) 7 00 68,http://www.gcuf.de,(0 23 73) 7 00 69
+,Golfclub Gut Neuenhof e.V.,Eulenstraße 58,58730,Fröndenberg,Deutschland,gut.neuenhof@golf.de,(0 23 73) 7 64 89,http://www.golfclub-gut-neuenhof.de,(0 23 73) 7 00 46
+,Golfclub Hamm -Gut Drechen- e.V.,Drei Eichen Weg 5,59069,Hamm,Deutschland,info@gc-hamm.de,02385 - 913500,http://www.gc-hamm.de,02385 - 913501
+,Golfclub Schloß Vornholz e.V.,Steinpatt 13,59320,Ennigerloh-Ostenfelde,Deutschland,info@gcsv.de,(0 25 24) 57 99,http://www.gcsv.de,(0 25 24) 95 03 55
+,Golfplatz Werne an der Lippe,Kerstingsweg 10,59368,Werne,Deutschland,Golfclub-Werne@t-online.de,02389/539060,http://www.golfclub-werne.de,02389/402828
+,Golf Club Wasserschloß Westerwinkel e.V.,Horn-Westerwinkel 5,59387,Ascheberg-Herbern,Deutschland,info@golfclub-westerwinkel.de,02599-92220,http://www.golfclub-westerwinkel.de,02599-92223
+,Golf- und Landclub Nordkirchen e.V.,Am Golfplatz 6,59394,Nordkirchen,Deutschland,info@golfclub-nordkirchen.de,(0 25 96) 91 90,http://www.golfclub-nordkirchen.de,(0 25 96) 91 95
+,Golf Club Werl e.V.,Am Golfplatz 1,59457,Werl,Deutschland,gcwerl@t-online.de,(0 23 77) 63 07,http://www.golfclub-werl.de,(0 23 77) 78 57 85
+,Golfclub Stahlberg im Lippetal e.V.,Ebbeckeweg 3,59510,Lippetal-Lippborg,Deutschland,golfclub.stahlberg@t-online.de,02527/8191,http://www.golfclub-stahlberg.de,02527/8516
+,Golfclub Möhnesee e.V.,Frankenufer 17,59519,Möhnesee Völlinghausen,Deutschland,info@gc-moehnesee.de,(0 29 25) 49 35,http://www.gc-moehnesee.de,(0 29 25) 48 37
+,Golfclub Lippstadt e.V.,Wiesenhausweg 14,59555,Lippstadt,Deutschland,info@golfclub-lippstadt.de,(0 29 41) 81 01 10,http://www.golfclub-lippstadt.de,(0 29 41) 81 01 15
+,Golfclub Gut Mentzelsfelde e.V.,Wiesenhausweg 14,59555,Lippstadt,Deutschland,verwaltung@golfclub-lippstadt.de,(0 29 41) 8 20 14,http://www.wolters-golf.de,(0 29 41) 8 15 09
+,Golfclub Sauerland e.V,Zum Golfplatz 19,59759,Arnsberg,Deutschland,Sekretariat@golfclub-sauerland.de,02932 31546,http://www.golfclub-sauerland.de,02932 39961
+,Golfclub Brilon e.V.,Hölsterloh 7,59929,Brilon,Deutschland,info@golfclub-brilon.de,(0 29 61) 5 35 50,http://www.golfclub-brilon.de,(0 29 61) 5 35 51
+,Golfclub Winterberg e.V.,In der Büre,59955,Winterberg,Deutschland,info@golfclub-winterberg.de,02981/1770,http://www.golfclub-winterberg.de/,02981/81271
+,Golfclub Mecklenburg-Strelitz e.V.,Baumwallsweg 6b,17034,Neubrandenburg,Deutschland,golfclub-mst@gmx.de,(039605) 27 37 6,http://www.gc-mst.de,(03 95) 4 22 74 19
+,Golfclub Schloss-Teschow e.V.,Gutshofallee 1,17166,Teschow,Deutschland,golf@schloss-teschow.de,03996-140 454,http://www.schloss-teschow.de,03996-140 455
+,DERTOUR Golfclub e.V.,Gutshofallee 1,17166,Teschow,Deutschland,oliver.gerhardt@dertour-golfclub.de,03996/140-0,http://www.dertour-golfclub.de,03996/140-100
+,Fleesensee GmbH & Co. Sportanlage KG,Tannenweg 1,17213,Göhren-Lebbin,Deutschland,info.golf@fleesensee.de,039932/8040-0,http://www.fleesensee-golfclub.de,039932/8040-20
+,Scandinavian Golf Club e.V.,Tannenweg 1,17213,Göhren-Lebbin,Deutschland,info@scandinavian-golf-club.de,01803-100012 (0,09 € p. Min),http://www.scandinavian-golf-club.de,01803-100014 (0,09 € p. Min)
+,Golf & Country Club Schloss Krugsdorf e.V.,Zerrenthiner Str. 2-3,17309,Krugsdorf,Deutschland,vorstand@gccsk.de,039743 519 611,http://www.gccsk.de,039743 519 612
+,Baltic Hills Golf Usedom,Hauptstr. 10,17419,Korswandt,Deutschland,info@baltic-hills.de,038378-32318,http://www.baltic-hills.de,038378-33730
+,Golfclub Balmer See-Insel Usedom e.V.,Drewinscher Weg 1,17429,Balm/Insel Usedom,Deutschland,golfhus@golfhotel-usedom.de,038379/28-199,http://www.golfhotel-usedom.de,038379/28-200
+,Hanseatischer GC e.V. in Greifswald,Golfplatz 1,17498,Greifswald - Wackerow,Deutschland,info@golfclub-greifswald.de,(03834)887520,http://www.golfclub-greifswald.de,(03834)887510
+,Golfanlage Warnemünde GmbH & Co. KG,Am Golfplatz 1,18119,Rostock/Warnemünde,Deutschland,info@golf-warnemuende.de,03 81 - 7 78 68 30,http://www.golf-warnemuende.de,03 81 - 7 78 68 318
+,Golfclub Tessin e.V.,Alte Zuckerfabrik,18195,Tessin,Deutschland,post@golfclub-tessin.de,038205/12767,http://www.golfclub-tessin.de,038205/13453
+,Ostseegolfclub Wittenbeck e.V.,Zum Belvedere 1,18209,Wittenbeck,Deutschland,info@golf-resort-wittenbeck.de,038293 / 410090,http://www.golf-resort-wittenbeck.de,038293 / 4100911
+,Landhaus Serrahn van der Valk GmbH,Dobbiner Weg 24,18292,Serrahn,Deutschland,serrahn@vandervalk.de,038456 66920,http://www.serrahn.vandervalk.de,038456 66 922 00
+,Golfclub Zum Fischland e.V.,Pappelallee 23 a,18311,Neuhof,Deutschland,golf-fischland@t-online.de,(0 38 21) 89 46 10,http://www.golfclub-fischland.de,(0 38 21) 89 46 11
+,Golfpark Strelasund GmbH & Co KG,Kaschow 14,18516,Süderholz,Deutschland,info@golfpark-strelasund.de,038326/469250,http://www.golfpark-strelasund.de,038326/469252
+,Golfclub Sassnitz e.V.,Uferstr. 1,18546,Sassnitz,Deutschland,info@golfaufruegen.de,(0 38 39 2) 63210,http://www.golfaufruegen.de,(0 38 39 2) 63210
+,Schloss Ranzow - Achtung falsche GoogleDarstellung,Schlossallee 1,18551,Lohme,Deutschland,info@schloss-ranzow.de,038302-88910,http://www.schloss-ranzow.de,038302-889188
+,Golfclub Rügen, Schloß Karnitz e.V.,Am Golfplatz,18574,Karnitz/Rügen,Deutschland,info@golfclub-ruegen.de,(03 83 04) 82470,http://www.golfclub-ruegen.de,(03 83 04) 82886
+,WINSTONgolf GmbH,Kranichweg 1,19065,Vorbeck,Deutschland,info@winstongolf.de,03860-5020,http://www.winstongolf.de,03860-502222
+,Golf Club Hohen Wieschendorf e.V.,Am Golfplatz 1,23968,Hohen Wieschendorf,Deutschland,info@howido-ostsee.de,03 84 28 - 6 60,http://www.howido-golfclub.de,03 84 28 - 66 66
+,Hamburger Land- und Golf-Club Hittfeld e.V.,Am Golfplatz 24,21218,Seevetal,Deutschland,sekretariat@hlgc-hittfeld.de,(0 41 05) 23 31,http://www.hlgc-hittfeld.de,(0 41 05) 5 25 71
+,Golf & Country Club Am Hockenberg GmbH & Co. KG,Am Hockenberg 100,21218,Seevetal,Deutschland,info@amhockenberg.de,(0 41 05) 5 22 45,http://www.amhockenberg.de,(0 41 05) 5 20 80
+,Golfclub Buchholz-Nordheide e.V.,An der Rehm 25,21244,Buchholz,Deutschland,gc-buchholz@t-online.de,04181/36200,http://www.golfclub-buchholz.de,04181/97294
+,Golf Club St. Dionys e.V.,Widukindweg,21357,St. Dionys,Deutschland,g.c.st.dionys@t-online.de,0 41 33 - 21 33 11,http://www.golfclub-st-dionys.de,0 41 33 - 21 33 13
+,Wentorf-Reinbeker Golf-Club e.V.,Golfstraße 2,21465,Wentorf,Deutschland,sekretariat@wrgc.de,040/72 97 80 68,http://www.wrgc.de,040/72 97 80 67
+,Golfclub Gut Immenbeck e.V.,Ardestorfer Weg 1,21614,Buxtehude,Deutschland,info@gut-immenbeck.de,04161/87699,http://www.gut-immenbeck.de,04161/88660
+,Golf-Club Buxtehude GmbH & Co. KG,Zum Lehmfeld 1,21614,Buxtehude,Deutschland,post@golfclubbuxtehude.de,(0 41 61) 8 13 33,http://www.golfclubbuxtehude.de,(0 41 61) 8 72 68
+,Red Golf Moorfleet e.V.,Vorlandring 16,22113,Hamburg,Deutschland,moorfleet@redgolf.de,040-788 772-0,http://www.redgolf.de,040-788 772-22
+,GolfRange Hamburg-Oststeinbek,Meessen 38,22113,Oststeinbek,Deutschland,hamburg@golfrange.de,040 4130490,http://www.golfrange.de,040 41304922
+,Golf- und Country Club Hamburg-Treudelberg e. V.,Lemsahler Landstraße 45,22397,Hamburg,Deutschland,golf@treudelberg.com,040 – 608 22 8877,http://www.treudelberg.com,040 – 608 22 8874
+,Golfclub auf der Wendlohe e.V.,Oldesloer Straße 251,22457,Hamburg,Deutschland,sekretariat@wendlohe.de,040/ 5528966,http://www.wendlohe.de,040/ 5503668
+,Hamburger Golf-Club e.V.,In de Bargen 59,22587,Hamburg,Deutschland,info@golfclub-falkenstein.de,0 40 - 81 21 77,http://www.golfclub-falkenstein.de,0 40 - 81 73 15
+,Großflottbeker Tennis-, Hockey- und Golf-Club e.V.,Otto-Ernst-Str. 32,22605,Hamburg,Deutschland,info@gthgc.de,0 40 - 82 72 08 Sekr,http://www.gthgc.de,0 40 - 82 36 13
+,Golfclub Hamburg - Ahrensburg e.V.,Am Haidschlag 39-45,22926,Ahrensburg,Deutschland,info@golfclub-ahrensburg.de,(0 41 02) 5 13 09,http://www.golfclub-ahrensburg.de,(0 41 02) 8 14 10
+,Golfclub Hamburg-Walddörfer e.V.,Schevenbarg,22949,Ammersbek,Deutschland,info@gchw.de,040-605 13 37,http://www.gchw.de,040-605 48 79
+,Golf-Club Hoisdorf e.V.,Hof Bornbek / Hoisdorf,22952,Lütjensee,Deutschland,info@gc-hoisdorf.com,04107-7831,http://www.gc-hoisdorf.com,04107-9934
+,Gut Waldhof Golf AG,Am Waldhof 3,24629,Kisdorferwohld,Deutschland,info@gut-waldhof.de,(04194) 99 74-0,http://www.gut-waldhof.de,(04194) 99 74-25
+,Spielvereinigung Gut Waldhof e.V.,Am Waldhof 3,24629,Kisdorferwohld,Deutschland,info@gut-waldhof.de,(0 41 94) 9 97 40,http://www.gut-waldhof.de,(0 41 94) 12 51
+,Golf Club Lutzhorn e.V.,Bramstedter Landstraße,25355,Lutzhorn,Deutschland,info@golf-lutzhorn.de,(0 41 23) 74 08,http://www.golfclub-lutzhorn.de,(0 41 23) 95 96 91
+,Golf-Club An der Pinnau e.V.,Pinneberger Str. 81 a,25451,Quickborn-Renzel,Deutschland,info@pinnau.de,0 41 06 - 8 18 00,http://www.pinnau.de,0 41 06 - 8 20 03
+,Gut Kaden Golf und Land Club GmbH,Kadener Str. 9,25486,Alveslohe,Deutschland,info@gutkaden.de,04193-992 90,http://www.gutkaden.de,04193-99 29 19
+,Golfclub Hamburg-Holm e.V.,Haverkamp 1,25488,Holm,Deutschland,Info@gchh.de,(0 41 03) 9 13 30,http://www.gchh.de,(0 41 03) 91 33 13
+,Golf-Park Peiner Hof e.V.,Peiner Hag,25497,Prisdorf,Deutschland,buero@peinerhof.de,04101 73790,http://www.peinerhof.de,04101 76640
+,Golf-Club Escheburg e.V.,Am Soll 3,21039,Escheburg,Deutschland,info@gc-escheburg.de,04152/83204,http://www.gc-escheburg.de,04152/83205
+,Golf Gut Glinde,In der Trift 4,21509,Glinde,Deutschland,info@golf-gut-glinde.de,0 40 - 7 10 05 06,http://www.golf-gut-glinde.de,0 40 - 71 00 50 79
+,Golf-Club am Sachsenwald e.V.,Am Riesenbett,21521,Dassendorf,Deutschland,info@gc-sachsenwald.de,0 41 04 - 61 20,http://www.gc-sachsenwald.de,0 41 04 - 65 51
+,Golf und Country Club Brunstorf e.V.,Am Golfplatz,21524,Brunstorf,Deutschland,info@golfclub-brunstorf.de,04151/867878,http://www.golfclub-brunstorf.de,04151/867877
+,Golf Club Airport Hamburg e.V.,Scheelring 5,22457,Hamburg,Deutschland,info@gc-hamburg-airport.de,040 55971902,http://www.gc-hamburg-airport.de,040 55971903
+,Golf-Club Jersbek e. V.,Oberteicher Weg,22941,Jersbek,Deutschland,mail@golfclub-jersbek.de,04532 20950,http://www.golfclub-jersbek.de,04532 24779
+,Golf-Club Großensee e.V.,Hamburger Straße 29,22946,Großensee,Deutschland,info@gc-grossensee.de,04154 - 6473,http://www.gc-grossensee.de,04154 - 60428
+,Golfplatz Siek/Ahrensburg,Bültbek 31 a,22962,Siek,Deutschland,info@golfplatz-siek.de,04107 / 85 12 01,http://www.golfplatz-siek.de,04107 / 85 12 02
+,Golf-Club-Curau e.V.,Malkendorfer Weg 18,23617,Stockelsdorf-Curau,Deutschland,info@golfclub-curau.de,04505/594082,http://www.golfclub-curau.de,04505/5706969
+,amp-Golfclub Lübecker Bucht e.V.,Masselbett 14,23569,Lübeck,Deutschland,info@amp-golf.de,0451-7099870,http://www.amp-golf.de,0451-7099879
+,Golfplatz Thürk,Bergstraße 3,23715,Thürk,Deutschland,info@golfplatz-thuerk.de,(0 45 27) 1842,http://www.open-golf-academy.de,(0 45 27) 15 48
+,Lübeck-Travemünder Golf-Klub e.V.,Kowitzberg 41,23570,Lübeck-Travemünde,Deutschland,info@ltgk.de,04502-74018,http://www.ltgk.de,04502-72184
+,Maritim Golfclub Ostsee e.V.,Schloßstraße 14,23626,Warnsdorf,Deutschland,info.golf@maritimgolfpark.de,04502-77770,http://www.maritim-golfpark-ostsee.de,04502-777799
+,Golfanlage Seeschlösschen Timmendorfer Strand,Am Golfplatz 3,23669,Timmendorfer Strand,Deutschland,info@golfclub-scharbeutz.de,04503 704400,http://www.golfclub-scharbeutz.de,04503 70440-14
+,Golf Club Brodauer Mühle e.V.,Baumallee 14,23730,Gut Beusloe,Deutschland,GC-Brodauermuehle@t-online.de,04561/8140,http://www.GC-Brodauermuehle.de,04561/407397
+,Golf Club Ostseeheilbad Grömitz e.V.,Am Schoor 46,23743,Grömitz,Deutschland,golfplatzgroemitz@gmx.de,0 45 62 - 22 26 50,http://www.golfclub-groemitz.de,0 45 62 - 22 26 51
+,Golfclub Fehmarn e.V.,Am Golfplatz 1,23769,Wulfen,Deutschland,golfclub-fehmarn@t-online.de,(0 43 71) 69 69,http://www.golfclub-fehmarn.de,(0 43 71) 63 30
+,Golf Club Segeberg e.V.,Feldscheide 2,23827,Wensin,Deutschland,golfclub-segeberg@t-online.de,04559-1360,http://www.golfclub-segeberg.de,04559-1371
+,Golfclub Reinfeld e.V.,Binnenkamp 29,23858,Reinfeld,Deutschland,gcreinfeld@gmx.de,04533 - 610308,http://www.golfclub-reinfeld.de,04533 - 791748
+,Golfclub Sülfeld e.V.,Petersfelde 4a,23867,Sülfeld,Deutschland,info@golf-suelfeld.de,04537-701551,http://www.golf-suelfeld.de,04537-701521
+,Golf-Club Kitzeberg e.V.,Wildgarten 1,24226,Heikendorf,Deutschland,info@golf-kiel.de,0431-23 23 24,http://www.golf-kiel.de,0431-69 10 929
+,Golfclub Gut Grambek e.V.,Schloßstrasse 21,23883,Grambek,Deutschland,info@gcgrambek.de,04542-841474,http://www.gcgrambek.de,04542-841476
+,Kieler Golfclub Havighorst,Havighorster Weg 20,24211,Honigsee,Deutschland,info@gc-kiel.de,(0 43 02) 96 59 80,http://www.gc-kiel.de,(0 43 02) 96 59 81
+,Golf- und Landclub Uhlenhorst,Mühlenstr. 37,24229,Dänischenhagen,Deutschland,golf@gut-uhlenhorst.de,04349 91700,http://www.gut-uhlenhorst.de,04349 919400
+,Golf & Country Club Hohwachter Bucht e.V.,Eichenallee 1,24321,Hohwacht,Deutschland,info@golfclub-hohwacht.de,04381-9690,http://www.golfclub-hohwacht.de,04381-6098
+,Golfclub Krogaspe e.V.,Aalbeksweg,24644,Krogaspe,Deutschland,info@golfpark-krogaspe.de,(0 43 21) 85 29 93,http://www.golfpark-krogaspe.de,(0 43 21) 85 29 94
+,Golf-Club Altenhof e.V.,Schloß Altenhof,24340,Altenhof,Deutschland,info@gcaltenhof.de,04351-41227,http://www.gcaltenhof.de,04351-751304
+,Gut und Golf - Waldshagen Golfanlagen GmbH,Gut Waldshagen,24306,Waldshagen,Deutschland,Info@gut-waldshagen.de,04522/766766,http://www.gut-waldshagen.de,04522/766767
+,Golf-Club an der Schlei e.V.,Borgwedeler Weg 16,24357,Güby,Deutschland,GC-Schlei@gmx.de,04354/98184,http://www.gc-schlei.de,04354/98185
+,Golf Club Stenerberg e.V.,Morgensterner Str. 6,24407,Rabenkirchen,Deutschland,stenerberg@gmx.de,04642-3853,http://www.golfplatz-stenerberg.de,04642-910859
+,Golfclub Bad Bramstedt e.V.,Hamburger Str. 61,24576,Bad Bramstedt,Deutschland,info@golfclub-badbramstedt.de,(0 41 92) 89 75 15,http://www.golfclub-badbramstedt.de,(0 41 92) 89 75 16
+,Golf & Country Club Gut Bissenmoor e.V.,Golfparkallee 11,24576,Bad Bramstedt,Deutschland,golf@gut-bissenmoor.de,04192 / 81 95 60,http://www.gut-bissenmoor.de,04192 / 81 95 619
+,Mittelholsteinischer Golf-Club Aukrug e.V.,Zum Glasberg 9,24613,Aukrug-Bargfeld,Deutschland,sekretariat@golfclub-aukrug.de,0 48 73 - 5 95,http://www.golfclub-aukrug.de,0 48 73 - 16 98
+,Golfclub Play for Life e.V.,Aalbeksweg,24644,Krogaspe,Deutschland,dagne@golfclub-playforlife.de,06241 / 200 1810,http://www.golfclub-playforlife.de,06241 / 200 1819
+,Golfpark Krogaspe Betriebs GmbH,Aalbeksweg,24644,Krogaspe,Deutschland,info@golfpark-krogaspe.de,0 43 21 - 85 29 93,http://www.gc-krogaspe.de,0 43 21 - 85 29 94
+,Förde-Golf-Club e.V.,Bockholm 23,24960,Glücksburg,Deutschland,info@foerde-golf-club.de,04631-2547,http://www.foerde-golf-club.de,04631-408804
+,Red Golf Quickborn e.V.,Harksheider Weg 226,25451,Quickborn,Deutschland,quickborn@redgolf.de,04106-804433,http://www.redgolf.de,04106-804477
+,Golfpark Weidenhof e.V.,Mühlenstrasse 140,25421,Pinneberg,Deutschland,golfpark-weidenhof@t-online.de,04101/511830,http://www.golfparkweidenhof.de,04101/204964
+,Golfclub Gut Haseldorf e.V.,Heister Feld 7,25489,Haselau,Deutschland,info@golfclub-gut-haseldorf.de,(0 41 22) 85 35 00,http://www.gc-gut-haseldorf.de,(0 41 22) 85 35 20
+,Prisdorfer Sport- und Freizeitanlagenbau GmbH,Peiner Hof,25497,Prisdorf,Deutschland,info@golf-park.de,0 41 01 - 7 55 60,http://www.golf-park.de,0 41 01 - 78 99 04
+,Golf-Club Schloss Breitenburg e.V.,Gut Osterholz,25524,Breitenburg,Deutschland,Golf-Club-Schloss-Breitenburg@t-online.de,04828-8188,http://www.golfclubschlossbreitenburg.de,04828-8100
+,Golfanlage Gut Wulfsmühle GmbH,Mühlenstraße 98,25499,Tangstedt,Deutschland,info@golfanlage-wulfsmuehle.de,(0 41 01) 58 67 77,http://www.golfanlage-wulfsmuehle.de,(0 41 01) 58 67 88
+,Golfclub am Donner Kleve e.V.,Alte Landstr. 1,25693,St. Michaelisdonn,Deutschland,info@golf-am-donner-kleve.de,04853/880909,http://www.golf-am-donner-kleve.de,04853/880187
+,Golfclub Büsum Dithmarschen e.V.,Zwischen den Deichen,25761,Warwerort,Deutschland,info@gc-buesum.de,04834-960460,http://www.gc-buesum.de,04834-960463
+,Golf Club Husumer Bucht e.V.,Hohlacker 5,25813,Schwesing,Deutschland,info@gc-husumer-bucht.de,04841-72238,http://www.gc-husumer-bucht.de,04841-72541
+,Golfclub Deichgrafenhof e.V.,Esing 7,25881,Tating,Deutschland,info@gcdeichgrafenhof.de,(0 48 63) 95 50 60,http://www.gcdeichgrafenhof.de,(0 48 63) 95 50 61
+,Golfclub Hof Berg e.V.,Hof Berg 3,25917,Stadum,Deutschland,info@gc-hofberg.de,04662-70577,http://www.gc-hofberg.de,04662-70578
+,Golf Club Gut Apeldör e. V.,Gut Apeldör,25779,Hennstedt,Deutschland,info@apeldoer.de,0 48 36/99 60 0,http://www.apeldoer.de,0 48 36/99 60 33
+,Gut Apeldör GmbH & Co. Golfplatz KG,Gut Apeldör,25779,Hennstedt,Deutschland,info@apeldoer.de,04836/9960-0,http://www.apeldoer.de,04836/9960-33
+,Nordsee-Golfclub St. Peter-Ording e.V.,Eiderweg 1,25826,St. Peter-Ording,Deutschland,nordseegolfclub@gmx.de,(0 48 63) 35 45,http://www.ngc-spo.de,04863-4260
+,Golf Club Lohersand e.V.,Am Golfplatz,24806,Sorgbrück,Deutschland,info@lohersand.de,04336 - 999111,http://www.lohersand.de,04336 - 1224
+,Golf Club Föhr e.V.,Grevelingstieg 6,25938,Nieblum,Deutschland,info@golfclubfoehr.de,04681-580455,http://www.golfclubfoehr.de,04681-580456
+,Marine-Golf-Club Sylt e.G.,Flughafen 69,25980,Westerland,Deutschland,marinegolf@t-online.de,04651-927575,http://www.golf-sylt.de,04651-927155
+,Golf-Club Sylt e.V.,Golfplatz,25996,Wenningstedt,Deutschland,info@gcsylt.de,04651-99598-0,http://www.golfclubsylt.de,04651-99598-19
+,Golfclub Morsum auf Sylt e.V.,Uasterhörn 37,25980,Sylt OT Morsum,Deutschland,info@golfclubmorsum.de,04651-890387,http://www.golfclubmorsum.de,04651-97153
+,Lausitzer Golfclub e.V.,Am Golfplatz 3,03058,Neuhausen/Spree,Deutschland,info@lausitzer-golfclub.de,(03 56 05) 4 23 32,http://www.Lausitzer-Golfclub.de,(03  55) 42 59 61
+,Berliner Golf Club Gatow e.V.,Sparnecker Weg 100,14089,Berlin,Deutschland,golfclub.gatow@t-online.de,030 - 365 00 06,http://www.golfclubgatow.de,030 - 365 000 81
+,Golfclub Berlin Blankenburg e.V.,Blankenburger Pflasterweg 40,13129,Berlin,Deutschland,info@golf-pankow.de,030-500 194 90,http://www.golf-pankow.de,030-500 194 99
+,Golf- und Land-Club Berlin-Wannsee e.V.,Golfweg 22,14109,Berlin,Deutschland,info@wannsee.de,030/806 706-0,http://www.wannsee.de,030/806 706-10
+,Märkische Golfland GmbH,Kemnitzer Schmiedeweg 1,14542,Werder / OT Kemnitz,Deutschland,info@dermaerkische.de,03327/6637-0,http://www.dermaerkische.de,03327/6637-37
+,Golf- und Country Club Seddiner See e.V.,Zum Weiher 44,14552,Wildenbruch,Deutschland,info@gccseddinersee.de,033205/7320,http://www.gccseddinersee.de,033205/73229
+,Golfclub Kallin e. V.,Am Kallin 1,14641,Börnicke,Deutschland,info@golf-kallin.de,03 32 30/89 4-0,http://www.golf-kallin.de,03 32 30/89 4-19
+,Potsdamer Golfclub e.V.,Zachower Str.,14669,Ketzin,Deutschland,clubsekretariat@potsdamer-golfclub.de,033233/705-0,http://www.potsdamer-golfclub.de,033233/705-19
+,Golf- und Landclub Semlin am See e.V.,Ferchesarer Straße 8 b,14712,Rathenow / Ortsteil Semlin,Deutschland,golf@golfresort-semlin.de,(0 33 85) 55 44 10,http://www.golfresort-semlin.de,(0 33 85) 55 44 00
+,Semliner Golfplatzprojekt-Verwaltungsgesellschaft,Ferchesarer Str. 8b,14712,Rathenow/OT Semlin,Deutschland,info@golfresort-semlin.de,0 33 85 - 55 44 10,http://www.golfresort-semlin.de,0 33 85 - 55 44 00
+,Golfclub GolfRange Berlin-Großbeeren e.V.,Am Golfplatz 1,14979,Großbeeren,Deutschland,berlin@golfrange.de,(03 37 01) 3 28 90,http://www.golfrange.de,(03 37 01) 32 89 19
+,Golfpark Schloss Wilkendorf,Am Weiher 1,15345,Altlandsberg,Deutschland,service@golfpark-schloss-wilkendorf.com,(0 33 41) 33 09 60,http://www.golfpark-schloss-wilkendorf.com,(0 33 41) 33 09 61
+,Sporting Club Berlin Scharmützelsee e.V.,Parkallee 3,15526,Bad Saarow,Deutschland,golf.bsa@a-rosa.de,03 36 31 - 6 33 00,http://www.sporting-club-berlin.de,03 36 31 - 6 33 10
+,A-ROSA Golf Club e.V.,Parkallee 1,15526,Bad Saarow,Deutschland,reservierung.bsa@a-rosa.de,03 36 31 - 6 33 00,http://www.a-rosa.de/RESORTS/scharmuetzelsee/golf-sport.html,03 36 31 - 6 33 10
+,Berliner Golf- und Country Club Motzener See e.V.,Am Golfplatz 5,15741,Motzen,Deutschland,info@golfclubmotzen.de,033769/50130,http://www.golfclubmotzen.de,033769/50134
+,GOFUS e.V.,Parkallee 3,15526,Bad Saarow,Deutschland,info@gofus.de,02 01 - 4 55 89 73,http://www.gofus.de,02 01 - 4 55 67 25
+,Golf Club Mahlow e.V.,Föhrenweg,15831,Mahlow,Deutschland,info@gcmahlow.de,03379 370 595,http://www.gcmahlow.de,03379 370 596
+,Golfclub Gross Kienitz e.V.,An der Strasse nach Dahlewitz,15831,Groß Kienitz,Deutschland,info@grosskienitz.de,033708/ 537 70,http://www.grosskienitz.de,033708/ 537 71
+,Golfclub Prenden e.V.,Waldweg 3,16348,Prenden,Deutschland,info@golfplatz-prenden.de,(03 33 96) 77 90,http://www.golfplatz-prenden.de,(03 33 96) 7 79 90
+,Berliner Golfclub Stolper Heide e.V.,Am Golfplatz 1,16540,Hohen Neuendorf,Deutschland,Info@golfclub-stolperheide.de,(0 33 03) 5 49-214,http://www.golfclub-stolperheide.de,(0 33 03) 5 49-222
+,Golfanlage Stolper Heide,Am Golfplatz 1,16540,Hohen Neuendorf OT Stolpe,Deutschland,info@golfclub-stolperheide.de,03303-549214,http://www.golfclub-stolperheide.de,03303-549222
+,Golf in Wall GmbH & Co. KG,Am Königsgraben 1,16818,Wall,Deutschland,info@golfinwall.de,03 39 25 - 7 11 35,http://www.golfinwall.de,03 39 25 - 9 08 05
