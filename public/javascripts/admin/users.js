@@ -52,12 +52,14 @@ function showUserTable() {
 }
 
 function createUserLine(user) {
+
+    // var admin = user.isAdmin ? 'Admin':'User';
     var line = $("<tr>");
     line
         .append($('<td>').append($("<a>").attr("href","/admin/users/"+user._id).html(user.name)))
         .append($('<td>').html(user.email))
         .append($('<td>').html(user.realName))
-        .append($('<td>').html(user.isAdmin))
+        .append($('<td>').html(user.isAdmin ? 'Admin':'User'))
         .append(
             $('<td>')
             .append(

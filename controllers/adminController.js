@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 const MongoClient = require('mongodb').MongoClient;
 var ObjectID = require('mongodb').ObjectID; 
 var db;
@@ -29,21 +27,5 @@ controller.getStatistics = (collection) => {
     return promise;
     
 };
-
-controller.saveAPIKey = apiKey => {
-    return db.collection('apiKeys').insertOne(apiKey);
-}
-
-controller.getAPIKeys = () => {
-    return db.collection('apiKeys').find().toArray();
-}
-
-controller.getAPIKeyByID = id => {
-    return db.collection('apiKeys').findOne({"_id": new ObjectID(id)});
-}
-
-controller.deleteAPIKeyByID = id => {
-    return db.collection('apiKeys').findOneAndDelete({"_id": new ObjectID(id)});
-}
 
 module.exports = controller;
