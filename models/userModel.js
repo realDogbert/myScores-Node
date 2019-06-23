@@ -1,5 +1,15 @@
 const mongoose = require('mongoose');
 
+const ChanngeSchema = new mongoose.Schema(
+    {
+        oldHandicap: Number,
+        newHandicap: Number
+    },
+    {
+        timestamps: { createdAt: 'dateCreated', updatedAt: 'dateLastModified' } 
+    }
+);
+
 /**
  * User Schema
  */
@@ -10,7 +20,8 @@ const UserSchema = new mongoose.Schema(
         password: { type: String, required: true },
         realName: { type: String, required: false },
         handicap: { type: Number, required: false },
-        isAdmin: { type: Boolean, default: false, required: true}
+        isAdmin: { type: Boolean, default: false, required: true},
+        changes: [ChanngeSchema]
     },
     { 
         timestamps: { createdAt: 'dateCreated', updatedAt: 'dateLastModified' } 
