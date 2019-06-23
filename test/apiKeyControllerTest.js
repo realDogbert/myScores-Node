@@ -32,9 +32,9 @@ var testApiKey = {
 };
 var apiKeyId = null;
 
-describe('Test apiKey collection', () => {
+describe('ApiKey Collection Test', () => {
 
-    it('should create api key', (done) => {
+    it('Create api key', (done) => {
 
         controller.create(testApiKey)
         .then((apiKey) => {
@@ -50,7 +50,7 @@ describe('Test apiKey collection', () => {
     }),
 
 
-    it('should find at least one api Key', (done) => {
+    it('Find at least one api Key', (done) => {
 
         controller.find()
         .then((result) => {
@@ -64,7 +64,7 @@ describe('Test apiKey collection', () => {
     }),
 
 
-    it('should find api key by id', () => {
+    it('Find api key by id', () => {
         controller.findById(apiKeyId)
         .then( apiKey => {
             assert.equal(apiKey.token, testApiKey.token, "Expected name to be new token");
@@ -72,7 +72,7 @@ describe('Test apiKey collection', () => {
         .catch( error => done(error)) 
     }),
     
-    it('should delete api key', (done) => {
+    it('Delete api key', (done) => {
 
         controller.deleteById(apiKeyId)
         .then((apiKey) => {
