@@ -114,46 +114,35 @@
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="website">Website</label>
-                                    <input class="form-control" type="text" id="website" value="{{club.contact.website}}">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input class="form-control" type="text" id="email" value="{{club.contact.email}}">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="phone">Phone</label>
-                                    <input class="form-control" type="text" id="phone" value="{{club.contact.phone}}">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="fax">Fax</label>
-                                    <input class="form-control" type="text" id="fax" value="{{club.contact.fax}}">
-                                </div>        
-                            </div>
-                        </div>
+<!-- Start Contacts -->
+
+{{#each club.contacts}}
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="{{type}}">{{type}}</label>
+                <input class="form-control" type="text" id="phone" value="{{value}}">
+            </div>
+        </div>
+    </div>
+    
+{{/each}}
+
+<!-- End Contacts -->
+
 
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="phone">Lattitude</label>
-                                    <input class="form-control" type="text" id="location_lat" value="{{club.geocode.geometry.location.lat}}">
+                                    <input class="form-control" type="text" id="location_lat" value="{{club.geometry.location.lat}}">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="fax">Longitude</label>
-                                    <input class="form-control" type="text" id="location_lng" value="{{club.geocode.geometry.location.lng}}">
+                                    <input class="form-control" type="text" id="location_lng" value="{{club.geometry.location.lng}}">
                                 </div>        
                             </div>
                         </div>       

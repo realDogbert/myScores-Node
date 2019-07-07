@@ -96,14 +96,12 @@ router.get('/clubs/:id', (req, res) => {
     request.get(options, (error, response, body) => {
 
         var club = JSON.parse(body);
-        // var lastModified = new Date(club.dateLastModified).toLocaleString();
-        // var created = new Date(club.dateCreated).toLocaleString();
 
         res.render('admin/clubs/detail', {
             title: 'Club Details',
             club: club,
-            lastModified: new Date(),
-            created: new Date(),
+            lastModified: club.dateCreated,
+            created: club.dateLastModified,
             user: req.user,
             apiKey: process.env.SCORES_API_KEY
         });
