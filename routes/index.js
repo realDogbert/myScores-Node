@@ -22,7 +22,7 @@ router.get('/clubs', (req, res, next) => {
 router.get('/clubs/:id', (req, res, next) => {
 
   var options = {
-    url: process.env.BASE_URL + "api/clubs/" + req.params.id,
+    url: process.env.BASE_URL + "api/golfclubs/" + req.params.id,
     headers: {
       'X-API-Key': process.env.SCORES_API_KEY
     }

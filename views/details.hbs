@@ -47,9 +47,9 @@
 
       <h2 class="label">Kontaktdaten</h2>
       <div id="contact">
-          <div id="phone">{{ club.contact.phone }}</div>
-          <div id="email">{{ club.contact.email }}</div>
-          <div id="website"><a href="{{ club.contact.website }}">{{ club.contact.website }}</a></div>
+          <div id="phone">{{ club.contacts.[0].value }}</div>
+          <div id="email">{{ club.contacts.[1].value }}</div>
+          <div id="website"><a href="{{ club.contacts.[2].value }}">{{ club.contacts.[2].value }}</a></div>
       </div>
 
 
@@ -78,7 +78,7 @@ var infowindow;
 
 function initMap() {
 
-  var club = new google.maps.LatLng({{ club.geocode.geometry.location.lat }}, {{ club.geocode.geometry.location.lng }});
+  var club = new google.maps.LatLng({{ club.geometry.location.lat }}, {{ club.geometry.location.lng }});
 
   var map = new google.maps.Map(document.getElementById('map'), {center: club, zoom: 14});
   var marker = new google.maps.Marker({position: club, map: map});

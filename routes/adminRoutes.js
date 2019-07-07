@@ -142,7 +142,7 @@ router.get('/addCourse', (req, res) => {
 
 router.get('/statistics', (req, res) => {
 
-    var collections = ["clubs", "courses", "users"];
+    var collections = ["golfclubs", "courses", "users"];
     var promises = [];
     collections.forEach(collection => {
         promises.push(controller.getStatistics(collection));

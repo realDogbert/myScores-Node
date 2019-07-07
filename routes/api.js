@@ -242,6 +242,30 @@ router.delete('/rounds/:id', (req, res) => {
 
 });
 
+
+router.get('/golfclubs', (req, res) => {
+
+  if (!req.query.search) req.query.search = ''
+  Club.find({
+    name: { 
+      $regex: req.query.search ,
+      $options: "$i"
+    }
+  })
+  .then( result => {
+    res.json(result);
+  })
+  .catch( error => res.status(401).json({ error }) )
+});
+
+router.get('/golfclubs/:id', (req,res) => {
+  Club.findById(req.params.id)
+  .then( result => {
+    res.json(result);
+  })
+  .catch( error => res.status(401).json({ error }) )
+});
+
 router.post('/golfclubs', (req, res) => {
 
   let newClub = new Club(req.body);

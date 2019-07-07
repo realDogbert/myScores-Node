@@ -10,7 +10,7 @@ $(document).ready(function() {
                     'X-API-Key': apiKey
                 },
                 method: "GET",
-                url: "/api/clubs?search=" + searchText
+                url: "/api/golfclubs?search=" + searchText
             })
             .done(function(clubs) {
                 $("#result-header").html("Gefundene Clubs: " +  clubs.length);
