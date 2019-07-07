@@ -8,6 +8,8 @@ var userController = require('../controllers/userController');
 var roundsController = require('../controllers/roundsController');
 var dashboardController = require('../controllers/dashboardController');
 
+const Club = require('../models/golfclubModel');
+
 
 const apiKey = 'X-API-Key';
 
@@ -238,6 +240,17 @@ router.delete('/rounds/:id', (req, res) => {
     res.json(result);
   });
 
+});
+
+router.post('/golfclubs', (req, res) => {
+
+  let newClub = new Club(req.body);
+  newClub.save()
+  .then(result => {
+    res.json(result);
+  })
+  .catch( error => res.status(401).json({ error }) )
+  
 });
 
 module.exports = router;

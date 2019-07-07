@@ -8,11 +8,18 @@ const ContactSchema = new mongoose.Schema(
     }
 );
 
+const RatingSchema = new mongoose.Schema(
+    {
+        type: String,
+        value: Number
+    }
+);
+
 const CourseSchema = new mongoose.Schema(
     {
         name: String,
-        courseRating: String,
-        slope: String
+        courseRating: [RatingSchema],
+        slopeRating: [RatingSchema]
     },
     { 
         timestamps: { createdAt: 'dateCreated', updatedAt: 'dateLastModified' } 
@@ -30,7 +37,13 @@ const ClubSchema = new mongoose.Schema(
             country: String
         },
         contacts: [ContactSchema],
-        courses: [CourseSchema]
+        courses: [CourseSchema],
+        geometry: {
+            location: {
+                lat: Number,
+                lng: Number
+            }
+        }
     },
     { 
         timestamps: { createdAt: 'dateCreated', updatedAt: 'dateLastModified' } 

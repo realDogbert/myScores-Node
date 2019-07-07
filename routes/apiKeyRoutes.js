@@ -47,6 +47,7 @@ router.post('/create', (req, res, next) => {
     )
     .then(
         result => {
+            console.log('Created new api key for ' + result.payload.aud);
             res.redirect('/admin/apiKey');
         },
         error => {

@@ -36,6 +36,12 @@ describe('Model test for Golf Club', () => {
                 zip: '80000',
                 city: 'Golfcity',
                 country: 'Deutschland'
+            },
+            geometry: {
+                location: {
+                    lat: 48.11111,
+                    lng: 12.02311
+                }
             }
         });
 
@@ -48,6 +54,8 @@ describe('Model test for Golf Club', () => {
             type: 'web',
             value: 'https://www.test.com'
         });
+
+        
 
         club.save()
         .then( result => {
@@ -65,7 +73,10 @@ describe('Model test for Golf Club', () => {
         Club.findOne({ name: '--- TEST --- New automated Test'})
         .then( club => {
 
-            let course1 = { name: 'new test course 1'};
+            let course1 = { name: 'new test course 1', courseRating: [
+                {type: 'red', value: 100 },
+                {type: 'yellow', value: 120 }
+            ]};
             let course2 = { name: 'new test course 2'};
 
             club.courses.push(course1);
@@ -83,7 +94,7 @@ describe('Model test for Golf Club', () => {
         
     }),
 
-    it.skip('Delete golf club', done => {
+    it('Delete golf club', done => {
 
         assert.notEqual(clubId, null, 'Expect clubId to have a value');
         Club.findByIdAndDelete(clubId)

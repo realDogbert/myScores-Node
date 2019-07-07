@@ -1,0 +1,20 @@
+/* Color Theme Swatches in Hex */
+.Golf-LP-1-hex { color: #0B1418; }
+.Golf-LP-2-hex { color: #A3CE33; }
+.Golf-LP-3-hex { color: #F4F2BB; }
+.Golf-LP-4-hex { color: #889094; }
+.Golf-LP-5-hex { color: #837F7B; }
+
+/* Color Theme Swatches in RGBA */
+.Golf-LP-1-rgba { color: rgba(11, 20, 23, 1); }
+.Golf-LP-2-rgba { color: rgba(163, 205, 51, 1); }
+.Golf-LP-3-rgba { color: rgba(244, 242, 186, 1); }
+.Golf-LP-4-rgba { color: rgba(135, 144, 147, 1); }
+.Golf-LP-5-rgba { color: rgba(131, 126, 123, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Golf-LP-1-hsla { color: hsla(198, 37, 6, 1); }
+.Golf-LP-2-hsla { color: hsla(76, 61, 50, 1); }
+.Golf-LP-3-hsla { color: hsla(57, 72, 84, 1); }
+.Golf-LP-4-hsla { color: hsla(199, 5, 55, 1); }
+.Golf-LP-5-hsla { color: hsla(29, 3, 49, 1); }

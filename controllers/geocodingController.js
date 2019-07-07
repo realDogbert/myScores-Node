@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 var rp = require('request-promise-native');
 var controller = new Object();
 
