@@ -87,7 +87,7 @@ router.get('/clubs', (req, res) => {
 router.get('/clubs/:id', (req, res) => {
 
     var options = {
-        url: process.env.BASE_URL + "api/clubs/" + req.params.id,
+        url: process.env.BASE_URL + "api/golfclubs/" + req.params.id,
         headers: {
             'X-API-Key': process.env.SCORES_API_KEY
         }
@@ -96,14 +96,14 @@ router.get('/clubs/:id', (req, res) => {
     request.get(options, (error, response, body) => {
 
         var club = JSON.parse(body);
-        var lastModified = new Date(club.dateLastModified).toLocaleString();
-        var created = new Date(club.dateCreated).toLocaleString();
+        // var lastModified = new Date(club.dateLastModified).toLocaleString();
+        // var created = new Date(club.dateCreated).toLocaleString();
 
         res.render('admin/clubs/detail', {
             title: 'Club Details',
             club: club,
-            lastModified: lastModified,
-            created: created,
+            lastModified: new Date(),
+            created: new Date(),
             user: req.user,
             apiKey: process.env.SCORES_API_KEY
         });

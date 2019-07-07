@@ -13,7 +13,7 @@ $(document).ready(function() {
                 'X-API-Key': apiKey
             },
             method: "GET",
-            url: "/api/clubs?search=" + searchText,
+            url: "/api/golfclubs?search=" + searchText,
         })
         .done(function(clubs) {
             $("#result").html("");
@@ -34,6 +34,6 @@ function createClubLine(club) {
     var line = $("<tr>");
     line.append($("<td>").append($("<a>").attr("href", "/admin/clubs/" + club._id).html(club.name))); 
     line.append($("<td>").html(club.address.street + "<br>" + club.address.zip + " " + club.address.country));
-    line.append($("<td>").html(club.contact.website));
+
     return line;
 }

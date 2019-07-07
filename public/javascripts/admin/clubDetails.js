@@ -51,7 +51,7 @@ $(document).ready(function() {
                 'X-API-Key': apiKey
             },
             method: "PUT",
-            url: "/api/clubs/" + clubId,
+            url: "/api/golfclubs/" + clubId,
             dataType: "json",
             data: JSON.stringify(data),
             contentType: 'application/json'

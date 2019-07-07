@@ -3,7 +3,6 @@ var express = require('express');
 var router = express.Router();
 var jwt = require('jsonwebtoken');
 
-var clubController = require('../controllers/clubController');
 var userController = require('../controllers/userController');
 var roundsController = require('../controllers/roundsController');
 var dashboardController = require('../controllers/dashboardController');
@@ -47,34 +46,6 @@ router.use((req, res, next) => {
 router.get('/', function(req, res, next) {
   res.render('clubs', { title: 'myScores' });
 });
-
-router.get('/clubs', function(req, res, next) {
-  clubController.get(req, res);
-});
-
-router.get('/clubs/:id', function(req,res,next) {
-  clubController.getByID(req.params.id, req, res);
-});
-
-router.post('/clubs', function(req, res, next) {
-  clubController.create(req.body, (error, result) => {
-    if (error) return console.log(error)
-    // return the created object, which is the first element in ops
-    res.status(201).json(result.ops[0]);
-  });
-});
-
-router.put('/clubs/:id', (req, res) => {
-  clubController.update(req.params.id, req.body, (error, result) => {
-    if (error) return console.log(error);
-    res.json(result.value);
-  });
-});
-
-router.delete('/clubs/:id', function (req, res, next) {
-  clubController.delete(req, res);
-});
-
 
 
 router.get('/courses', (req, res) => {
@@ -276,5 +247,14 @@ router.post('/golfclubs', (req, res) => {
   .catch( error => res.status(401).json({ error }) )
   
 });
+
+router.delete('/clubs/:id', (req, res) => {
+  Club.deleteById(req.params.id)
+  .then(result => {
+    res.json(result);
+  })
+  .catch( error => res.status(401).json({ error }) )
+});
+
 
 module.exports = router;
