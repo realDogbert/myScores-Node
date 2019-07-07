@@ -39,7 +39,8 @@ router.get('/clubs/:id', (req, res, next) => {
         club: club,
         lastModified: lastModified,
         created: created,
-        user: req.user
+        user: req.user,
+        googleKey: process.env.GOOGLE_API_KEY
     });
   });
   
