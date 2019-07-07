@@ -46,10 +46,11 @@
       </div>
 
       <h2 class="label">Kontaktdaten</h2>
+
       <div id="contact">
-          <div id="phone">{{ club.contacts.[0].value }}</div>
-          <div id="email">{{ club.contacts.[1].value }}</div>
-          <div id="website"><a href="{{ club.contacts.[2].value }}">{{ club.contacts.[2].value }}</a></div>
+      {{#each club.contacts}}
+        <div id="{{type}}"><b>{{type}}</b> {{value}}</div>
+      {{/each}}
       </div>
 
 

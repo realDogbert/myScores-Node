@@ -110,7 +110,7 @@ router.get('/clubs/:id', (req, res) => {
 });
 
 router.get('/addClub', (req, res) => {
-    res.render('admin/clubs/details', {
+    res.render('admin/clubs/detail', {
         title: 'Add new Club',
         create: true,
         user: req.user,
